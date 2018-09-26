@@ -1,3 +1,27 @@
+#history-container{
+  text-align: center;
+  color: rgb(271,271,271);
+  background-color: rgb(210,210,210);
+  min-height: 200px;
+  color : #9D9D9C;
+}
+
+#map-container{
+  text-align: center;
+  background-color: white;
+  min-height: 600px;
+  color : #6AA031;
+}
+
+.map-elements{
+  padding: 30px;
+}
+
+.history-elements{
+  padding: 30px;
+}
+
+
 #president-container{
   text-align: center;
   color: rgb(271,271,271);
@@ -15,13 +39,12 @@
 }
 
 .president-discours {
-  border-style: solid;
   font-style: italic;
   position : relative;
-  height: 90%;
   padding: 5% 5%;
   border-radius: 4px;
   background-color: #9D9D9B;
+  min-height: 400px;
 }
 
 .highlight{
@@ -30,19 +53,38 @@
 }
 
 .president-profil{
-  padding: 5% 0;
+  padding-top: 50px; ;
   text-align: center;
+  min-height: 400px;
+  padding-top: 110px;
 }
+
+.president-profil h2{
+  margin-bottom: 80px;
+}
+
+.president-profil p{
+  text-align: right;
+  font-size: 15px;
+}
+
 
 .president-discours:before {
    content:"";
    position: absolute;
    right: 100%;
-   top: 200px;
+   top: 280px;
    width: 0;
    height: 0;
-   border-top: 13px solid transparent;
-   border-right: 26px solid #9D9D9B;
-   border-bottom: 13px solid transparent;
+   border-top: 25px solid transparent;
+   border-right: 46px solid #9D9D9B;
+   border-bottom: 0px solid transparent;
+}
+
+.avatar-medium{
+  width: 120px;
+  height: 100px;
+  border-radius: 5px;
+  border-style: solid;
 }
 
