@@ -1,16 +1,15 @@
 #history-container{
   text-align: center;
   color: rgb(271,271,271);
-  background-color: rgb(210,210,210);
+  background-color: rgb(157,157,157);
   min-height: 200px;
-  color : #9D9D9C;
+  color : white;
 }
 
 #map-container{
   text-align: center;
   background-color: white;
-  min-height: 600px;
-  color : #6AA031;
+  color : #9D9D9D;
 }
 
 .map-elements{
@@ -45,6 +44,10 @@
   border-radius: 4px;
   background-color: #9D9D9B;
   min-height: 400px;
+}
+
+.map-discours h2{
+  padding: 17% 0;
 }
 
 .highlight{
