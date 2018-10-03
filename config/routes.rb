@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'ecosystem', to: 'pages#ecosystem'
+  resources 'users', only: [:new, :edit, :show, :index]
+  resources 'associations', only: [:new, :create, :show, :index]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
