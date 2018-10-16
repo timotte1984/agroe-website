@@ -1,0 +1,33 @@
+<div class="ecosystem-title-container">
+  <h2> Tous l'écosystème agroalimentaire régionale...</h2>
+  <% @associations.each do |association| %>
+  <% image = association.img_url, class: '' %>
+  <%= image_tag image %>
+  <% end %>
+  <h3>...en 1 page </h3>
+</div>
+<div class="ecosystem-news-container">
+  <h2> Dernières News </h2>
+  <div class="ecosystem-news-list">
+    <div class="row">
+      <% @associations.each do |association| %>
+      <div class="col-xs-12 col-sm-4 element-twitter-timelines">
+        <%= association.name %>
+        <% t_name = association.twitter_name %>
+        <a class="twitter-timeline" data-lang="fr" data-width="350" data-height="350" data-theme="dark" data-link-color="#E15F28" href=<%= "https://twitter.com/#{t_name}?ref_src=twsrc%5Etfw/media" %> ></a>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="ecosystem-agenda-container">
+  <h4> Agendas </h4>
+    <div class="ecosystem-agenda-list">
+      <% @associations.each do |association| %>
+      <%= link_to association.name, association.agenda_url %>
+      <% end %>
+    </div>
+</div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
