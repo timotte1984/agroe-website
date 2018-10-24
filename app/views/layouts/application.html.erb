@@ -10,13 +10,14 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if current_page?('/temp_page') %>
+    <% if current_page?('/temp_page') || current_page?('/temp_page2') %>
       <%= render 'shared/navbar_temp' %>
     <% else %>
       <%= render 'shared/navbar' %>
     <% end %>
     <%= render 'shared/flashes' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

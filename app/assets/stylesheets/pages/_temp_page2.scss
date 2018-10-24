@@ -15,19 +15,19 @@ text-decoration: none;
 letter-spacing: 1px;
  }
 
-.extra-links a:hover {
+.extra-links2 a:hover {
   font-weight: bold;
   text-decoration: none;
   color: rgb(200,200,200);
 }
 
 //BANNER
-  .temp-banner{
+.temp-banner2{
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  height: calc(60vh - 100px);
+  flex-direction : column;
+   align-items: center;
+   justify-content: center;
+  height: calc(70vh - 100px);
   height-min: 400px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,19 +35,18 @@ letter-spacing: 1px;
   background-image: linear-gradient(225deg, rgba(0,151,168,0.3) 10%, rgba(10,40,40,0.6) 20%), url('https://sloanreview.mit.edu/content/uploads/2017/11/DL-SU-Unruh-Digital-Transformation-Sustainability-Climate-Change-Digitalization-World-Global-Business-Technology-1200-1200x627.jpg')
 }
 
-.temp-banner-content {
+.temp-banner-content2 {
   text-align: left;
-  width: 900px;
   padding : 20px;
 }
 
-.temp-banner-content h4{
+.temp-banner-content2 h4{
   color: rgb(271,271,271);
   margin-bottom: 40px;
   letter-spacing: 3px;
 }
 
-.temp-banner-content strong{
+.temp-banner-content2 strong{
   // color: rgb(271,271,271);
   color : #DADADA;
   margin-bottom: 40px;
@@ -55,18 +54,17 @@ letter-spacing: 1px;
   font-size: 40px;
 }
 
-.temp-banner-content h1{
+.temp-banner-content2 h1{
   color: rgb(271,271,271);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.extra-links a{
+.extra-links2 a{
   font-size: 15px;
-  color: rgb(271,271,271);
 }
 
 // CALLS TO ACTIONS
-.cta-container{
+.cta-container2{
   margin : 40px 10px;
   color: #616668;
   .extra-links a{
@@ -74,85 +72,97 @@ letter-spacing: 1px;
   }
 }
 
-.btn-position{
+.btn-position2{
  display: flex;
  text-align: center;
  justify-content: center;
  transition: transform .1s;
 }
 
-.btn-position:hover {
+.btn-position2:hover {
  transform: scale(1.01);
 }
 
-.btn-position a:hover {
+.btn-position2 a:hover {
  color: rgb(280,280,280);
  text-decoration: none;
+ margin: 0px auto;
 }
 
-.call-to-action{
+.call-to-action2{
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-.color-rse{
-  width: 300px;
-  background-color: #9A9A98;
-  padding: 4px;
+.color-offre{
+  width: 270px;
+  height: 50px;
+  background-color: $red;
   color: white;
+  border-radius:4px;
+  box-shadow: 1px 1px 3px grey;
 }
 
-.color-digital{
-  background-color: #669C2D;
-  padding: 4px;
-  color: white;
-  width: 300px;
-}
-
-.btn-position{
-  margin: 20px 0px;
-  width: 400px;
-  border-radius: 8px;
+.btn-position3{
+  border-radius: 4px;
   box-shadow: 1px 1px 3px rgb(171,171,171);
-  z-index: 3;
+  width: 270px;
+  height: 270px;
+  background-color: rgb(251,251,251);
+  padding : 5px;
 }
 
-.opacity-light{
+.color-trans2 h5{
+  color: $red;
+}
+
+.color-rse2 h5{
+    color: $blue;
+}
+
+.color-digital2 h5{
+    color: $green;
+
+}
+
+
+
+.opacity-light2{
   opacity: 0.7;
 }
 
 
 // LOCALISTION
 
-.localisation-container {
+.localisation-container2 {
   // display: flex;
   padding: 10px 0px;
   background-color: #1D7D6A;
   height: 500px;
 }
 
-.localisation-map{
+.localisation-map2{
   margin: 30px;
 }
 
-.localisation-info{
+.localisation-info2{
   margin: 30px;
   color: white;
 }
 
-.social-container{
+.social-container2{
   padding-bottom: 40px;
 }
 
-.social-container a{
+.social-container2 a{
     color: rgb(200,200,200);
 }
-.social-container h3{
+.social-container2 h3{
       color: #616668;
   }
 
-.social-list-entreprises{
+.social-list-entreprises2{
   display: flex;
   align-items: center;
   justify-content: center;
