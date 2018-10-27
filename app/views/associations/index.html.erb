@@ -1,7 +1,7 @@
 <div class="ecosystem-title-container">
   <h2> Tous l'écosystème agroalimentaire régionale...</h2>
   <% @associations.each do |association| %>
-  <% image = association.img_url, class: '' %>
+  <% image = association.img_url %>
   <%= image_tag image %>
   <% end %>
   <h3>...en 1 page </h3>
@@ -13,8 +13,10 @@
       <% @associations.each do |association| %>
       <div class="col-xs-12 col-sm-4 element-twitter-timelines">
         <%= association.name %>
+        <% ActiveSupport::JSON.decode(Association.find(1).tags)["tags"].each do |tag| %>
+        <%= tag %>
+        <% end %>
         <% t_name = association.twitter_name %>
-        <a class="twitter-timeline" data-lang="fr" data-width="350" data-height="350" data-theme="dark" data-link-color="#E15F28" href=<%= "https://twitter.com/#{t_name}?ref_src=twsrc%5Etfw/media" %> ></a>
       </div>
       <% end %>
     </div>
