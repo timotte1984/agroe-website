@@ -15,6 +15,12 @@ text-decoration: none;
 letter-spacing: 1px;
  }
 
+ .h2{
+  font: 20px Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+ }
+
 .extra-links2 a:hover {
   font-weight: bold;
   text-decoration: none;
@@ -27,7 +33,7 @@ letter-spacing: 1px;
   flex-direction : column;
    align-items: center;
    justify-content: center;
-  height: calc(70vh - 100px);
+  height: calc(80vh - 100px);
   height-min: 400px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +48,6 @@ letter-spacing: 1px;
 
 .temp-banner-content2 h4{
   color: rgb(271,271,271);
-  margin-bottom: 40px;
   letter-spacing: 3px;
 }
 
@@ -65,14 +70,17 @@ letter-spacing: 1px;
 
 // CALLS TO ACTIONS
 .cta-container2{
-  margin : 40px 10px;
+  margin : 40px 1;
   color: #616668;
+  min-height: 400px;
   .extra-links a{
     color: rgb(200,200,200);
+
   }
 }
 
 .btn-position2{
+
  display: flex;
  text-align: center;
  justify-content: center;
@@ -107,26 +115,39 @@ letter-spacing: 1px;
 .btn-position3{
   border-radius: 4px;
   box-shadow: 1px 1px 3px rgb(171,171,171);
-  width: 270px;
+  width: 370px;
   height: 270px;
   background-color: rgb(251,251,251);
   padding : 5px;
+  margin: 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.color-trans2 h5{
-  color: $red;
+.btn-position3:hover{
+ transform: scale(1.01);
+ background-color: rgb(280,280,280);
 }
 
-.color-rse2 h5{
+.btn-position3 a:hover {
+ text-decoration: none;
+  p {
+    color: rgb(180,180,180);
+ }
+}
+
+.color-trans2 h2{
+  color: $green;
+}
+
+.color-rse2 h2{
     color: $blue;
 }
 
-.color-digital2 h5{
-    color: $green;
-
+.color-digital2 h2{
+    color: $red;
 }
-
-
 
 .opacity-light2{
   opacity: 0.7;
@@ -135,39 +156,56 @@ letter-spacing: 1px;
 
 // LOCALISTION
 
-.localisation-container2 {
-  // display: flex;
-  padding: 10px 0px;
-  background-color: #1D7D6A;
-  height: 500px;
+.event-container{
+  margin-top: 40px;
+  color: #616668;
 }
 
-.localisation-map2{
-  margin: 30px;
-}
-
-.localisation-info2{
-  margin: 30px;
-  color: white;
-}
-
-.social-container2{
-  padding-bottom: 40px;
-}
-
-.social-container2 a{
-    color: rgb(200,200,200);
-}
-.social-container2 h3{
-      color: #616668;
-  }
-
-.social-list-entreprises2{
+ .event{
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: space-between;
+  margin: 20px 150px;
+  background-color : white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px grey;
  }
+
+ .event-main{
+    width: 400px;
+ }
+
+ .event-title{
+  font-size: 15px;
+  font-weight: bolder;
+ }
+
+.event-intro{
+  .salon{
+  color: $green;
+  }
+  .club{
+  color: $blue;
+  }
+ }
+
+ .event-address{
+  font-size: 10px;
+ }
+
+ .tools-container{
+  color: #616668;
+  margin: 90px;
+}
+
+
+
+.tool-size{
+  height: 100px;
+}
+
+
 
 
 

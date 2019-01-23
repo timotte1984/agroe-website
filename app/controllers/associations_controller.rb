@@ -11,6 +11,8 @@ class AssociationsController < ApplicationController
   end
 
 
+
+
   private
 
   def associations_params

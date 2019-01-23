@@ -1,26 +1,50 @@
+// CSS History
 #history-container{
-  text-align: center;
-  color: rgb(271,271,271);
-  background-color: rgb(157,157,157);
+  background-color: #9D9D9B;
   min-height: 200px;
-  color : white;
-}
-
-#map-container{
-  text-align: center;
-  background-color: white;
-  color : #9D9D9D;
-}
-
-.map-elements{
-  padding: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px 200px;
 }
 
 .history-elements{
-  padding: 30px;
+  background-color: #6A9F30 ;
+  padding: 20px 20px;
+  border-radius: 4px;
+  h2{
+    margin-top: 0px;
+  }
 }
 
 
+
+// CSS team
+ #team-container{
+  background-color: white;
+  color : #9D9D9D;
+  min-height: 200px;
+  padding: 20px 20px;
+}
+
+.team-elements{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+
+.team-element{
+  .team-name{
+    padding : 5px;
+    font-weight: bolder;
+  }
+  .team-job{
+    padding : 5px;
+    font-weight: lighter;
+  }
+}
+
+// President CSS
 #president-container{
   text-align: center;
   color: rgb(271,271,271);
@@ -29,6 +53,10 @@
 
 .president-elements{
   padding: 20px;
+  .row{
+    display: flex;
+    align-items: center;
+  }
 }
 
 .president-discours p{
@@ -43,11 +71,6 @@
   padding: 5% 5%;
   border-radius: 4px;
   background-color: #9D9D9B;
-  min-height: 400px;
-}
-
-.map-discours h2{
-  padding: 17% 0;
 }
 
 .highlight{
@@ -71,12 +94,11 @@
   font-size: 15px;
 }
 
-
 .president-discours:before {
    content:"";
    position: absolute;
    right: 100%;
-   top: 280px;
+   top: 270px;
    width: 0;
    height: 0;
    border-top: 25px solid transparent;
@@ -84,10 +106,32 @@
    border-bottom: 0px solid transparent;
 }
 
+.avatar-team-medium{
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
 .avatar-medium{
   width: 120px;
   height: 100px;
   border-radius: 5px;
   border-style: solid;
+}
+
+// Map CSS
+#map-container{
+  text-align: center;
+  background-color: white;
+  color : #9D9D9D;
+}
+
+.map-elements{
+  padding: 30px;
+  .row{
+    display: flex;
+    align-items: center;
+  }
 }
 
