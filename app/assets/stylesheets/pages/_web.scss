@@ -1,0 +1,87 @@
+.domains-banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+
+.white-content{
+  color : white;
+}
+
+.big-letters{
+  font-size: 100px;
+}
+
+.service-container{
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.service-title{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  h2{
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+}
+
+.service-description{
+ text-align: left;
+}
+
+.indisponible{
+  color: grey;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.service-element{
+  width: 900px;
+  padding-top: 50px;
+}
+
+.service-container{
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.service-transition{
+  background-image: linear-gradient(#F4F4F4,#2A2B33);
+  height: 100px;
+}
+
+.rse-grey-background{
+  background-color: #2A2B33;
+}
+
+.petit-lien-black{
+  color: black;
+  border-style: solid;
+  font-size: 15px;
+  padding : 5px;
+}
+
+.petit-lien-white{
+  color: white;
+  border-style: solid;
+  font-size: 15px;
+  padding : 5px;
+}
+
+.transition-fin{
+  height: 200px;
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+}

@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'ecosystem', to: 'pages#ecosystem'
   get 'temp_page', to: 'pages#temp_page'
-  get 'temp_page2', to: 'pages#temp_page2'
+  get 'rse', to: 'pages#rse'
+  get 'commerce', to: 'pages#commerce'
+  get 'web', to: 'pages#web'
   resources 'users', only: [:new, :edit, :show, :index]
   resources 'associations', only: [:new, :create, :show, :index]
 

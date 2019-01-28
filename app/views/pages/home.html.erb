@@ -1,28 +1,119 @@
-<div class="banner">
+<!doctype html>
+<div class="banner-container">
   <div class="banner-content">
-    <h2>Spécialiste de la <strong>RSE</strong> et du <strong> Digital</strong></h2>
-    <h2>Au service des entreprises <strong>agroalimentaires</strong> des Hauts-de-France</h2>
-    <%= link_to 'Télécharger notre guide "Débuter en RSE!" (gratuit)', root_path , class:"btn btn-success btn-guide" %>
-</div>
-</div>
-
-<div class="social-proof-container">
-  <h4> Ils nous font confiance </h4>
-  <div class="social-proof-list-entreprises">
-    <%= image_tag 'https://yt3.ggpht.com/a-/AN66SAx40Ef30-k8A_2bGs0-dVlu2Iw2NqGVQJT5iQ=s900-mo-c-c0xffffffff-rj-k-no', class:'img-thumbnail img-thumb-size' %>
-    <%= image_tag 'https://pbs.twimg.com/profile_images/781066285207683072/6TNbm9Gs_400x400.jpg', class:'img-thumbnail img-thumb-size' %>
-    <%= image_tag 'https://upload.wikimedia.org/wikipedia/fr/thumb/f/fc/Groupe_Holder_Logo.svg/1003px-Groupe_Holder_Logo.svg.png', class:'img-thumbnail img-thumb-size' %>    <%= image_tag 'http://www.academie-gourmande.com/wp-content/uploads/logo_davigel.jpg', class:'img-thumbnail img-thumb-size' %>
-  </div>
-  <p> Découvrir les autres membres du club... </p>
-</div>
-
-<div class="home-team-container">
-  <h4> Une équipe à votre disposition </h4>
-  <div class="home-team-list">
-    <%= image_tag 'http://www.agroe.fr/img/photo-julien-mottet.jpg', class:'img-home-team' %>
-    <%= image_tag 'http://www.agroe.fr/img/photo-fabrice-hoschede.jpg', class:'img-home-team' %>
-    <%= image_tag 'http://www.agroe.fr/img/photo-delphine-josset.jpg', class:'img-home-team' %>
+    <%= image_tag "agroe.png" %>
+    <h4> Propose des outils et des services innovants aux entreprises agroalimentaires des Hauts-de-France. </h4>
+    <a href="https://lc.cx/contact-agroe" class="btn btn-info">Contacter Agroé</a>
+    <div class="social-proof">
+      <img src="https://pbs.twimg.com/profile_images/781066285207683072/6TNbm9Gs_400x400.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/fc/Groupe_Holder_Logo.svg/1003px-Groupe_Holder_Logo.svg.png">
+      <img src="http://www.academie-gourmande.com/wp-content/uploads/logo_davigel.jpg">
+      <img src="https://static.cgf-charcuterie.com/skin/frontend/default/cgf/images/logo.png">
+      <img src="http://www.lucullus-valenciennes.fr/img/logo.png?1545321750">
+      <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/27332347_417586088671602_4898162603219518781_n.png?_nc_cat=110&_nc_ht=scontent-cdt1-1.xx&oh=1474511abc04af76d1a3fdff6b2c266f&oe=5CC7BBE4">
+      <img src="http://www.noriap.com/wp-content/uploads/2015/02/novial.png">
+    </div>
   </div>
 </div>
+<div class="services-container">
+  <h1><strong> Domaines d'activités </strong></h1>
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <a href="web.html">
+        <div class="services-element color-web">
+          <h4> Web </h4>
+        </div>
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <a href="rse.html">
+        <div class="services-element color-rse">
 
+            <h4> RSE </h4>
+
+        </div>
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <a href="commerce.html">
+        <div class="services-element color-commerce">
+            <h4> Développement </h4>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="event-container">
+  <h1><strong>Futurs évènements</strong></h1>
+  <div class="event">
+    <div class="event-intro">
+      <div class="event-date">
+        28/02/2019
+      </div>
+      <div class="event-type club">
+        AgroClubRSE #6
+      </div>
+    </div>
+    <div class="event-main">
+      <div class="event-title">
+        Thème : Sensibilisation des équipes à l'énergie
+      </div>
+      <div class=event-entreprise>
+        <strong>NOVIAL</strong>
+      </div>
+      <div class="event-address">
+       rue de Cambrai, 59159 NOYELLES SUR ESCAUT
+      </div>
+    </div>
+    <div class="event-registration-button">
+      <a href="https://www.eventbrite.fr/e/billets-agroclubrse-6-sensibilisation-des-equipes-a-la-consommation-energetique-et-evaluation-des-impacts-55376869708" class="btn color-rse"> Inscription </a>
+    </div>
+  </div>
+  <div class="event">
+    <div class="event-intro">
+      <div class="event-date">
+        18/03/2019
+      </div>
+      <div class="event-type salon">
+        Salon
+      </div>
+    </div>
+    <div class="event-main">
+      <div class="event-title">
+        Marché du goût
+      </div>
+      <div class="event-address">
+      Parc des exposition - Courtray
+      </div>
+    </div>
+    <div class="event-registration-button">
+      <a href="http://sh1.sendinblue.com/1ya48ztl4c.html?t=1548339563" class="btn color-commerce"> Inscription </a>
+    </div>
+  </div>
+    <div class="event">
+    <div class="event-intro">
+      <div class="event-date">
+        25/05/2019
+      </div>
+      <div class="event-type club">
+        AgroClubRSE #7
+      </div>
+    </div>
+    <div class="event-main">
+      <div class="event-title">
+        Thème : A définir
+      </div>
+      <div class=event-entreprise>
+        <strong>Fizzy Distribution</strong>
+      </div>
+      <div class="event-address">
+        1 Place des Champs de Colut, 59230 Sars-et-Rosières
+      </div>
+    </div>
+    <div class="event-registration-button">
+      Bientôt
+    </div>
+  </div>
+</div>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
