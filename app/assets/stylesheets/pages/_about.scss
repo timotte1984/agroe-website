@@ -1,19 +1,20 @@
 // CSS History
 #history-container{
   background-color: #9D9D9B;
-  min-height: 200px;
+  height: 250px;
   display: flex;
   align-items: center;
   padding: 20px 200px;
 }
 
 .history-elements{
-  background-color: #6A9F30 ;
+  background-color: #595959 ;
   padding: 20px 20px;
   border-radius: 4px;
   h2{
     margin-top: 0px;
   }
+  color: white;
 }
 
 
@@ -22,7 +23,7 @@
  #team-container{
   background-color: white;
   color : #9D9D9D;
-  min-height: 200px;
+  height: 550px;
   padding: 20px 20px;
 }
 
@@ -83,28 +84,23 @@
   text-align: center;
   min-height: 400px;
   padding-top: 110px;
+  p{
+    padding-top: 5px;
+    font-size: 15px;
+  }
 }
 
-.president-profil h2{
-  margin-bottom: 80px;
-}
-
-.president-profil p{
-  text-align: right;
-  font-size: 15px;
-}
-
-.president-discours:before {
-   content:"";
-   position: absolute;
-   right: 100%;
-   top: 270px;
-   width: 0;
-   height: 0;
-   border-top: 25px solid transparent;
-   border-right: 46px solid #9D9D9B;
-   border-bottom: 0px solid transparent;
-}
+// .president-discours:before {
+//    content:"";
+//    position: absolute;
+//    right: 100%;
+//    top: 270px;
+//    width: 0;
+//    height: 0;
+//    border-top: 25px solid transparent;
+//    border-right: 46px solid #9D9D9B;
+//    border-bottom: 0px solid transparent;
+// }
 
 .avatar-team-medium{
   width: 150px;
