@@ -27,6 +27,7 @@ letter-spacing: 1px;
   background-image: linear-gradient(225deg, rgba(0,151,168,0.3) 10%, rgba(10,40,40,0.6) 20%), url('https://sloanreview.mit.edu/content/uploads/2017/11/DL-SU-Unruh-Digital-Transformation-Sustainability-Climate-Change-Digitalization-World-Global-Business-Technology-1200-1200x627.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 200px;
 }
 
 .banner-content {
@@ -36,7 +37,7 @@ letter-spacing: 1px;
     color: rgb(240,240,240);
     font-size: 38px;
   }
-  width: 600px;
+
 }
 
 .social-proof{
@@ -63,11 +64,13 @@ letter-spacing: 1px;
     font-size: 24px;
     padding-bottom: 30px;
   }
+  margin: auto;
 }
 
 .services-element{
   height: 200px;
-  width: 280px;
+  width: 300px;
+  margin: auto;
   display: flex;
   opacity: 1;
   align-items: center;
