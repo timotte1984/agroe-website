@@ -1,7 +1,9 @@
 .domains-banner-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
   height: 250px;
 }
 
@@ -11,7 +13,11 @@
 }
 
 .big-letters{
-  font-size: 60px;
+  font-size: 100px;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 20px;
+  left: 200px;
 }
 
 .service-container{
