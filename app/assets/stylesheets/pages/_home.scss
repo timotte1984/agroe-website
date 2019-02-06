@@ -90,10 +90,12 @@ letter-spacing: 1px;
     font-size: 90px;
     font-weight: lighter;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    transition: 0.4s;
   }
   border-radius: 4px;
   background-size: 200%;
   background-position: center;
+  transition: 0.4s;
 }
 
 .services-element:hover{
