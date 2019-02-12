@@ -48,15 +48,24 @@ letter-spacing: 1px;
     font-size: 22px;
     font-weight: lighter;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 1px rgb(200,200,200);
   }
+}
+
+.banner-img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(80vh - 100px);
+  margin: 50px 50px 50px 0px;
 }
 
 .banner-img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: calc(80vh - 100px);
-  margin: 50px 50px;
+  height: 350px;
+  width: 550px;
   border-radius: 2px;
 }
 
