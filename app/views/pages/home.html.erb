@@ -1,48 +1,27 @@
 <!doctype html>
-<div class="banner-container">
-  <div class="banner-content">
-    <h2> Découvrez une communauté d'industriels agroalimentaires engagés et visionnaires. </h2>
-    <p><a href="https://doodle.com/poll/m2ihbq8fiafi3m4g" class="btn color-rse"> Prenons 15 minutes pour faire connaissance !
-    </a></p>
-  </div>
-  <!-- <div class="social-proof">
-      <img src="https://pbs.twimg.com/profile_images/781066285207683072/6TNbm9Gs_400x400.jpg">
-      <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/fc/Groupe_Holder_Logo.svg/1003px-Groupe_Holder_Logo.svg.png">
-      <img src="http://www.academie-gourmande.com/wp-content/uploads/logo_davigel.jpg">
-      <img src="https://static.cgf-charcuterie.com/skin/frontend/default/cgf/images/logo.png">
-      <img src="http://www.lucullus-valenciennes.fr/img/logo.png?1545321750">
-      <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/27332347_417586088671602_4898162603219518781_n.png?_nc_cat=110&_nc_ht=scontent-cdt1-1.xx&oh=1474511abc04af76d1a3fdff6b2c266f&oe=5CC7BBE4">
-      <img src="http://www.noriap.com/wp-content/uploads/2015/02/novial.png">
-   </div> -->
-</div>
-<div class="services-container">
-  <h2><strong> Nos domaines d'activités </strong></h2>
-  <div class="services-elements">
+  <div class="banner-container" style="background-image: linear-gradient(rgba(200,200,200,0.9), rgba(200,200,200,0.9)), url(<%= asset_path 'leroux1.png'%>);">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <a href="web.html">
-          <div class="services-element" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://image.shutterstock.com/z/stock-vector-vector-abstract-futuristic-circuit-board-illustration-high-computer-technology-dark-blue-color-400761526.jpg');">
-            <h4> Web </h4>
+      <div class="col-xs-12 col-md-6">
+        <div class="banner-text-container">
+          <div class="banner-text">
+            <h2> Rejoignez une communauté </br> d'industriels de l'agroalimentaire engagés et visionnaires </h2>
+            <h4> Évènements | Veille | Formation | Accompagnements </h4>
+            <p><a href="https://doodle.com/poll/m2ihbq8fiafi3m4g" class="btn color-rse"> Découvrez nos services
+            <i class="fas fa-arrow-alt-circle-right"></i></a></p>
+            <div>
+              <%= link_to '<i class="fab fa-twitter-square fa"></i>'.html_safe, 'https://twitter.com/agroe_i' %>
+              <%= link_to '<i class="fab fa-linkedin fa"></i>'.html_safe, 'https://www.linkedin.com/company/18518876/admin/' %>
+              <%= link_to '<i class="fab fa-facebook fa"></i>'.html_safe, 'https://www.facebook.com/poleagroe/' %>
+            </div>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <a href="rse.html">
-          <div class="services-element" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://image.shutterstock.com/z/stock-photo-hand-of-a-businessman-reach-out-towards-hand-of-the-nature-621237140.jpg');">
-
-              <h4> RSE </h4>
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <a href="commerce.html">
-          <div class="services-element" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://image.shutterstock.com/z/stock-photo-development-attainment-motivation-career-growth-concept-mans-hand-reaching-for-red-ladder-leading-1029299632.jpg');">
-              <h4> Dév </h4>
-          </div>
-        </a>
+      <div class="col-xs-12 col-md-6">
+        <div class="banner-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(<%= asset_path 'recap1.png'%>);">
+        </div>
       </div>
     </div>
   </div>
-</div>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 
