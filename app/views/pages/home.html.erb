@@ -1,5 +1,5 @@
 <div id="urgence-contact">
-  <i class="fas fa-phone"></i> 03.27.70.15.80 - <i class="fas fa-envelope"></i> contact@agroe.fr
+  <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a> - <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a>
 </div>
 <div class="banner" style="background-image: linear-gradient(to right, rgba(270,270,270,0.1),rgba(270,270,270,1)), linear-gradient(to bottom, rgba(270,270,270,1), rgba(220,220,220,0.1)), url(<%= asset_path 'leroux1.png'%>);">
   <div class="banner-content">
@@ -59,6 +59,93 @@
     </div>
   </div>
 </div>
+<div id="team-container">
+  <h1><strong> Une équipe à votre écoute </strong></h1>
+  <div class="team-elements">
+    <div class="team-element">
+      <%= image_tag 'karine.jpg', class:' avatar-big' %>
+      <div class="team-name">
+        Karine Pietrzak
+      </div>
+      <div class="team-job">
+        Chargée de mission
+      </div>
+    </div>
+    <div class="team-element">
+      <%= image_tag 'http://www.agroe.fr/img/photo-delphine-josset.jpg', class:' avatar-big' %>
+      <div class="team-name">
+        Delphine Josset
+      </div>
+      <div class="team-job">
+        Assistante de direction
+      </div>
+    </div>
+    <div class="team-element">
+      <%= image_tag 'AT.jpg', class:' avatar-big' %>
+      <div class="team-name">
+        Audrey Terlynck
+      </div>
+      <div class="team-job">
+        Chef de Projet
+      </div>
+    </div>
+  </div>
+  <div class="team-elements">
+    <div class="team-element">
+      <%= image_tag 'http://www.agroe.fr/img/photo-julien-mottet.jpg', class:' avatar-big' %>
+      <div class="team-name">
+        Julien Mottet
+      </div>
+      <div class="team-job">
+        Chargé de mission
+      </div>
+    </div>
+    <div class="team-element">
+      <%= image_tag 'http://www.agroe.fr/img/photo-fabrice-hoschede.jpg', class:' avatar-big' %>
+      <div class="team-name">
+        Fabrice Hoschede
+      </div>
+      <div class="team-job">
+        Délégué Général
+      </div>
+    </div>
+  </div>
+  <div id="urgence-contact">
+    <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a> - <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a>
+  </div>
+</div>
+<div id="president-container">
+  <div class="president-elements">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="president-profil">
+          <div class="president-profil-container">
+            <h1><strong> Un président engagé </strong> </h1>
+              <%= image_tag 'http://www.agroe.fr/img/michel-lienard.jpg', class:' avatar-medium' %>
+            <p>
+              Michel Liénard, Président d'Agroé
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-xs-12 col-sm-6">
+        <div class="president-discours">
+          <div class="president-discours-container">
+            <p>
+              "Depuis sa création en 2010, <span class="highlight">Agroé accompagne les PME agroalimentaires dans leur développement</span> et leur propose d’anticiper les grands enjeux de demain.
+            </p>
+            <p>
+              Agroé veille également depuis ses débuts à <span class="highlight">créer une dynamique collective régionale</span> en collaborant avec ses nombreux partenaires experts régionaux.
+            </p>
+            <p>
+              Ma vision d’entrepreneur est en effet le partage et le recours aux compétences de tous pour faire naître des projets ambitieux. C’est pourquoi, je suis très heureux d'être président d’Agroé, bien collectif au service de la filière agroalimentaire, secteur d’excellence régional."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="adhesion" style="background-image: linear-gradient(to right,rgba(270,270,270,1),rgba(270,270,270,1),rgba(270,270,270,1), rgba(270,270,270,0.8)), url(<%= asset_path 'agroe.png'%>);">
   <h1> <strong> Nous rejoindre </strong></h1>
   <div class="adhesion-content">
@@ -104,7 +191,7 @@
           </tfoot>
         </table>
 
-      <h5><i class="fas fa-check"></i>Accès aux clubs RSE et Export d'Agroé.</h5>
+      <h5><i class="fas fa-check"></i>Accès aux clubs d'Agroé.</h5>
       <h5><i class="fas fa-check"></i>Accès aux visites.</h5>
       <h5><i class="fas fa-check"></i>Accès à des webinaires exclusifs.</h5>
       <h5><i class="fas fa-check"></i>Accès à la plateforme de veille.</h5>
@@ -129,28 +216,23 @@
             <ul>
               <li>
                 Sensibilisation RSE </br>
-                <span class="details">2h / 200 &euro;</span>
+                <span class="details">format: 2h</span>
               </li>
               <li>
-                Sensibilisation Ecoconception </br>
-                <span class="details">2h / 200 &euro;</span>
+                Formation RSE </br>
+                <span class="details">format: (2 * 1/2 j) </span>
               </li>
               <li>
-                Formation RSE</br>
-                <span class="details"> (2 * 1/2j) / 700 &euro;</span>
+                Formation et diagnostic RSE </br>
+                <span class="details">format: nous consulter</span>
               </li>
               <li>
-                Formation Ecoconception</br>
-                <span class="details"> (2 * 1/2j) / 700 &euro;</span>
+                Aide à la rédaction d'un DPEF</br>
+                <span class="details">format: nous consulter </span>
               </li>
               <li>
-                Formation + Diagnostic RSE</br>
-                <span class="details"> Nous consulter</span>
-              </li>
-
-              <li>
-                Rédaction d'un DPEF</br>
-                <span class="details"> Nous consulter </span>
+                Développer l'audience vis à vis de vos informations RSE</br>
+                <span class="details">format: nous consulter </span>
               </li>
             </ul>
           </div>

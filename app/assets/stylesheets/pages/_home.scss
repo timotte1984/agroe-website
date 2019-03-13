@@ -29,12 +29,30 @@ letter-spacing: 1px;
   object-fit: cover;
   width: 70px;
   height: 70px;
+}
 
+ .avatar-big{
+  border-radius: 50%;
+  object-fit: cover;
+  width: 20vw ;
+  height: 20vw;
+  max-width: 140px;
+  max-height: 140px;
+  margin: 5px
  }
+
+
+
 
  #urgence-contact{
   color: rgb(200,200,200);
   background-color: white;
+  a{
+    color:rgb(200,200,200);
+  }
+  a:hover{
+    color:rgb(100,100,100);
+  }
  }
 
 // BANNER
@@ -179,8 +197,7 @@ text-decoration: none;
 // // LOCALISTION
 
 .events{
-  padding : 50px;
-  padding-bottom: 100px;
+  padding: 50px 0px 100px 0px; ;
   h1{
     margin-bottom: 60px;
   }
@@ -398,7 +415,8 @@ text-align: left;
     color: black;
   }
   background-color: rgb(270,270,270);
-  margin: 20px 400px;
+  width: 90%;
+  max-width: 500px;
   border-radius: 1px;
   text-align: center;
 }
@@ -415,30 +433,33 @@ text-align: left;
     border-bottom-style: solid;
     border-color: rgb(200,200,200);
     border-width: 1px;
-    p{
-      font-size: 10px;
+    h5{
+      font-size: calc(7px + 0.9vw);
+      margin: 0px 5px;
     }
     a{
-      margin: 70px;
+      margin: 70px 0px;
     }
     table{
-      layout: fixed ;
       width: 100% ;
-      margin: 0px 5px 70px 5px;
+      margin: 0px 5px calc(30px + 2vw) 5px;
+      font-size: calc(7px + 1.2vw);
+      max-font-size: 10px;
       th{
         width: 20% ;
-        padding: 30px 0px;
+        padding: 5px 0px;
         text-align: center;
       }
       tbody{
         td{
         text-align: center;
-        font-size: 12px;
+        padding: 5px 0px;
+        font-size: calc(7px + 0.5vw);
        }
       }
       tfoot{
         td{
-        padding: 30px 0px;
+        padding: 5px 0px;
         text-align: center;
       }
       }
@@ -447,8 +468,9 @@ text-align: left;
 
 
 .logos-soutiens-resize{
-  height: 70px;
-  margin: 10px 30px;
+  max-height: 70px;
+  height: 7vw;
+  margin: 3vw 3vw;
 }
 
 
