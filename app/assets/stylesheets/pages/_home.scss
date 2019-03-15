@@ -475,11 +475,25 @@ text-align: center;
 }
 
 .questions-container{
-  h2{
-    padding-top: 50px;
-    padding-bottom: 30px;
+  background-color: white;
+  h4{
+    color: #808080;
   }
-     padding-bottom: 100px;
+  padding: 50px 0px 50px 0px;
+  a{
+    color: #808080;
+  }
+  h5{
+    padding-bottom: 30px;
+    color: #808080;
+  }
+}
+
+#partenaires{
+  h1{
+    margin: 40px 0px;
+  }
+    padding: 50px 0px 50px 0px;
 }
 
 
