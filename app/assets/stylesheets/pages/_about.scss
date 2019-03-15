@@ -24,16 +24,23 @@
   background-color: white;
   color : #9D9D9D;
   padding: 50px 0px 100px 0px;
+  a{
+    color:rgb(200,200,200);
+  }
+  a:hover{
+    color:rgb(100,100,100);
+  }
 }
 
 .team-elements{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin: 30px 0px;
 }
 
 .team-element{
+  margin: 5px 20px;
   .team-name{
     font-weight: bolder;
   }
@@ -51,6 +58,7 @@
   h1{
     margin: 20px 0px;
   }
+  padding: 50px 0px;
 }
 
 .president-elements{
