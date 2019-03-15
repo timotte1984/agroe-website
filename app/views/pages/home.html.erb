@@ -152,52 +152,73 @@
     <div class="adhesion-title">
       Offre d'adhésion
     </div>
-    <div class="service-offer">
-      <div class="service-offer-content">
-        <table>
-          <thead>
-            <tr>
-              <th>Jeune Pousse</th>
-              <th>TPE</th>
-              <th>PME 1</th>
-              <th>PME 2</th>
-              <th>ETI</th>
-            </tr>
-          </thead>
-            <tbody>
-              <tr>
-              <td>< 10 salariés </td>
-              <td>< 10 salariés</td>
-              <td>< 50 salariés</td>
-              <td>< 250 salariés </td>
-              <td>> 250 salariés</td>
-            </tr>
-              <tr>
-              <td>< 3 ans </td>
-              <td>> 3 ans </td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>100 &euro;</td>
-              <td>200 &euro;</td>
-              <td>300 &euro;</td>
-              <td>600 &euro;</td>
-              <td>1000 &euro;</td>
-            </tr>
-          </tfoot>
-        </table>
+    <!-- using href attribue of a tag to define tab content that based on content id-->
+    <ul class="nav nav-tabs service-offer" id="myNavTabs">
+      <li class="active"><a href="#navtabs1" data-toggle="tab"><strong>Jeune Pousse</strong></br>< 3 ans </a>
+      <li><a href="#navtabs2" data-toggle="tab"><strong>TPE</strong></br>< 20 jobs</a>
+      <li><a href="#navtabs3" data-toggle="tab"><strong>PME</strong></br>< 50 jobs </a>
+      <li><a href="#navtabs4" data-toggle="tab"><strong>PME</strong></br>< 250 jobs</a>
+      <li><a href="#navtabs5" data-toggle="tab"><strong>ETI / GG</strong> </br> :) </a>
+    </ul>
 
-      <h5><i class="fas fa-check"></i>Accès aux clubs d'Agroé.</h5>
-      <h5><i class="fas fa-check"></i>Accès aux visites.</h5>
-      <h5><i class="fas fa-check"></i>Accès à des webinaires exclusifs.</h5>
-      <h5><i class="fas fa-check"></i>Accès à la plateforme de veille.</h5>
-      <h5><i class="fas fa-check"></i>Accès aux prestations.</h5>
-      <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents.</h5>
-      <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
+    <!-- using fade to define fade effect -->
+    <!-- using active class to define the first actived tab and content -->
+
+    <div class="tab-content service-offer-content">
+      <div class="tab-pane fade in active" id="navtabs1">
+        <h4> pour 1 personne : </h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires exclusifs.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents.</h5>
+        <h2>100 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
+      </div>
+      <div class="tab-pane fade" id="navtabs2">
+        <h4> pour 1 personne : </h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires exclusifs.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents.</h5>
+        <h2>200 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
+      </div>
+      <div class="tab-pane fade" id="navtabs3">
+        <h4> pour 2 personnes : </h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires exclusifs.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents.</h5>
+        <h2>300 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
+        </div>
+      <div class="tab-pane fade" id="navtabs4">
+        <h4> pour 4 personnes : </h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires exclusifs.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents.</h5>
+        <h2>300 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
+      </div>
+      <div class="tab-pane fade" id="navtabs5">
+        <h4> pour un nombre illimité de personnes</h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires exclusifs.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents.</h5>
+        <h2>300 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
       </div>
     </div>
   </div>
@@ -205,195 +226,161 @@
 <div id="services">
   <h1><strong>Nos Prestations</strong></h1>
   <div class="services-content">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="service-element">
-          <div class="service-title"> Développement Durable</div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
-          </div>
-          <div class="service-element-prestations">
-            <ul>
-              <li>
-                Sensibilisation RSE </br>
-                <span class="details">format: 2h</span>
-              </li>
-              <li>
-                Formation RSE </br>
-                <span class="details">format: (2 * 1/2 j) </span>
-              </li>
-              <li>
-                Formation et diagnostic RSE </br>
-                <span class="details">format: nous consulter</span>
-              </li>
-              <li>
-                Aide à la rédaction d'un DPEF</br>
-                <span class="details">format: nous consulter </span>
-              </li>
-              <li>
-                Développer l'audience vis à vis de vos informations RSE</br>
-                <span class="details">format: nous consulter </span>
-              </li>
-            </ul>
-          </div>
-          <div class="service-contact">
-            <p> Contact</p>
-            <%= image_tag 'http://www.agroe.fr/img/photo-julien-mottet.jpg', class:'avatar-middle' %>
-            <div class="service-contact-email">
-            <p><a href="https://www.linkedin.com/in/julienmottet/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.linkedin.com/in/julienmottet/"><i class="fab fa-twitter"></i></a></p>
-             <p> j.mottet@agroe.fr </p>
-            </div>
-          </div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Export
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+                      <div class="service-element-prestations">
+                <ul>
+                  <li>
+                    Appel à Projets</br>
+                    <span class="details">Nous consulter</span>
+                  </li>
+                  <li>
+                    Étude filière </br>
+                    <span class="details"> Nous consulter</span>
+                  </li>
+                  <li>
+                    Evaluation de Business Model</br>
+                    <span class="details"> Nous consulter</span>
+                  </li>
+                  <li>
+                    </br>
+                    <span class="details"> Nous consulter</span>
+                  </li>
+                  <li>
+                    </br>
+                    <span class="details"></span></br>
+                  </li>
+                  <li>
+                    </br>
+                    <span class="details"></span></br>
+                  </li>
+                </ul>
+              </div>
+              <div class="service-contact">
+                <p> Contact</p>
+                <%= image_tag 'AT.jpg', class:'avatar-middle' %>
+                <div class="service-contact-email">
+                <a href="https://www.linkedin.com/in/audrey-terlynck-674660119/"><i class="fab fa-linkedin"></i></a>
+                 <p> a.terlynck@agroe.fr </p>
+                </div>
+              </div>
+              <div class="service-subscription">
+                <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
+              </div>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="service-element">
-          <div class="service-title"> Accompagnement des entreprises</div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
-          </div>
-          <div class="service-element-prestations">
-            <ul>
-              <li>
-                Visit Planner de salons </br>
-                <span class="details">500 &euro;</span>
-              </li>
-              <li>
-                Étude de marché</br>
-                <span class="details"> Nous consulter</span>
-              </li>
-              <li>
-                Recherche de financement</br>
-                <span class="details"> Nous consulter</span>
-              </li>
-              <li>
-                Montage de dossier de subvention</br>
-                <span class="details"> Nous consulter</span>
-              </li>
-              <li>
-                Accompagnement de projets</br>
-                <span class="details"></span></br>
-              </li>
-              <li>
-                Intelligeance économique</br>
-                <span class="details"></span></br>
-              </li>
-              <li>
-                Assistance au développemet commercial</br>
-                <span class="details"></span></br>
-              </li>
-            </ul>
-          </div>
-          <div class="service-contact">
-            <p> Contact</p>
-            <%= image_tag 'karine.jpg', class:'avatar-middle' %>
-            <div class="service-contact-email">
-              <p></p></br>
-             <p> k.pietrzak@agroe.fr </p>
-            </div>
-          </div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accompagnement des entreprises
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+              <div class="service-element-prestations">
+                <ul>
+                  <li>
+                    Visit Planner de salons </br>
+                    <span class="details">500 &euro;</span>
+                  </li>
+                  <li>
+                    Étude de marché</br>
+                    <span class="details"> Nous consulter</span>
+                  </li>
+                  <li>
+                    Recherche de financement</br>
+                    <span class="details"> Nous consulter</span>
+                  </li>
+                  <li>
+                    Montage de dossier de subvention</br>
+                    <span class="details"> Nous consulter</span>
+                  </li>
+                  <li>
+                    Accompagnement de projets</br>
+                    <span class="details"></span></br>
+                  </li>
+                  <li>
+                    Intelligeance économique</br>
+                    <span class="details"></span></br>
+                  </li>
+                  <li>
+                    Assistance au développemet commercial</br>
+                    <span class="details"></span></br>
+                  </li>
+                </ul>
+              </div>
+              <div class="service-contact">
+                <p> Contact</p>
+                <%= image_tag 'karine.jpg', class:'avatar-middle' %>
+                <div class="service-contact-email">
+                  <p></p></br>
+                 <p> k.pietrzak@agroe.fr </p>
+                </div>
+              </div>
+              <div class="service-subscription">
+                <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
+              </div>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="service-element">
-          <div class="service-title"> Développement commerciale et digital </div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
-          </div>
-          <div class="service-element-prestations">
-            <ul>
-              <li>
-                Sensibilisation au digital </br>
-                <span class="details"> 2h / 200 &euro;</span>
-              </li>
-              <li>
-                Formation au digital </br>
-                <span class="details">(2 * 1/2j) / 700 &euro;</span>
-              </li>
-              <li>
-                Audit de votre siteweb</br>
-                <span class="details"> 400 &euro;</span>
-              </li>
-              <li>
-                Réalisation d'un siteweb</br>
-                <span class="details"> Nous consulter</span>
-              </li>
-              <li>
-                </br>
-                <span class="details"> </span></br>
-              </li>
-
-              <li>
-                </br>
-                <span class="details"> </span></br>
-              </li>
-            </ul>
-          </div>
-          <div class="service-contact">
-            <p> Contact</p>
-            <%= image_tag 'http://www.agroe.fr/img/photo-julien-mottet.jpg', class:'avatar-middle' %>
-            <div class="service-contact-email">
-            <p><a href="https://www.linkedin.com/in/julienmottet/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.linkedin.com/in/julienmottet/"><i class="fab fa-twitter"></i></a></p>
-             <p> j.mottet@agroe.fr </p>
-            </div>
-          </div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
-          </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Développement Durable et Digital
+            </a>
+          </h4>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="service-element">
-          <div class="service-title"> Open Bar</div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
-          </div>
-          <div class="service-element-prestations">
-            <ul>
-              <li>
-                Appel à Projets</br>
-                <span class="details">Nous consulter</span>
-              </li>
-              <li>
-                Étude filière </br>
-                <span class="details"> Nous consulter</span>
-              </li>
-              <li>
-                Evaluation de Business Model</br>
-                <span class="details"> Nous consulter</span>
-              </li>
-              <li>
-                </br>
-                <span class="details"> Nous consulter</span>
-              </li>
-              <li>
-                </br>
-                <span class="details"></span></br>
-              </li>
-              <li>
-                </br>
-                <span class="details"></span></br>
-              </li>
-            </ul>
-          </div>
-          <div class="service-contact">
-            <p> Contact</p>
-            <%= image_tag 'AT.jpg', class:'avatar-middle' %>
-            <div class="service-contact-email">
-            <a href="https://www.linkedin.com/in/audrey-terlynck-674660119/"><i class="fab fa-linkedin"></i></a>
-             <p> a.terlynck@agroe.fr </p>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <div class="service-element-prestations">
+              <ul>
+                <li>
+                  Sensibilisation RSE </br>
+                  <span class="details">En 2h découvrez les grands principes et des exemples issus d'entreprises agroalimentaires. Le package pour se rassurer de l'intérêt business de la RSE.</span>
+                </li>
+                <li>
+                  Formation RSE </br>
+                  <span class="details">Sur 2 demi-journées, découvrez les grands principes, des exemples détaillés et des outils. Le package idéal pour passer à l'action </span>
+                </li>
+                <li>
+                  Diagnostic RSE </br>
+                  <span class="details">Quelle action RSE mettre en place ? Pour répondre à cette question, nous vous proposons des diagnostics sur 3 demi-journées. Il vaut mieux avoir fait la formation avant.  </span>
+                </li>
+                <li>
+                  Aide à la rédaction d'un DPEF</br>
+                  <span class="details">La réglementation se durcit. Nous vous accompagnement dans la rédaction de ce document réglementaire pour les entreprises de plus de 500 salariés et 100 M de CA ou de total bilan. Ce document doit figurer sur votre siteweb. </span>
+                </li>
+                <li>
+                  Développer l'audience vis à vis de vos informations RSE</br>
+                  <span class="details">Diffuser un rapport RSE de plusieurs pages à toutes vos parties prenantes est inefficace. L'enjeux est de diffuser les bonnes informations aux bonnes personnes. Nous vous aidons. </span>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="service-subscription">
-            <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
+            <div class="service-contact">
+              <p> Contact</p>
+              <%= image_tag 'http://www.agroe.fr/img/photo-julien-mottet.jpg', class:'avatar-middle' %>
+              <div class="service-contact-email">
+              <p><a href="https://www.linkedin.com/in/julienmottet/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/julienmottet/"><i class="fab fa-twitter"></i></a></p>
+               <p> j.mottet@agroe.fr </p>
+              </div>
+            </div>
+            <div class="service-subscription">
+              <p><a href="https://my.sendinblue.com/users/subscribe/js_id/2w9ek/id/6" class="btn color-agroe"> + de renseignements </a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -402,12 +389,10 @@
 </div>
 <div id="partenaires">
   <h1><strong>Nos soutiens</strong></h1>
-  <div class="services-content">
     <%= image_tag 'logo_hdf.jpg', class:'logos-soutiens-resize' %>
     <%= image_tag 'logo_ADT.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'logo_arras.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'logo_cac.jpg', class:'logos-soutiens-resize' %>
-  </div>
 </div>
 <div class="questions-container">
 <h1><strong>Encore des questions ?</strong> </h1>
@@ -425,4 +410,18 @@
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="text/javascript">
+  $('#myNavTabs a').click(function (evt) {
+  evt.preventDefault();
+  $(this).tab('show');
+});
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  //new tab
+  console.log(e.target);
+
+  //previous tab
+  console.log(e.relatedTarget);
+})
+</script>
 

@@ -278,14 +278,16 @@ text-decoration: none;
 #services{
   background-color: rgb(240,240,240);
   padding: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
+  h1{
+    padding-bottom: 40px;
+  }
 }
 
 .services-content{
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 95%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 
@@ -310,11 +312,9 @@ text-decoration: none;
 }
 
 .service-title{
-  border-bottom-style: solid;
-  width: 250px;
   padding-top: 10px;
   font-size: 24px;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .service-description{
@@ -323,7 +323,6 @@ text-decoration: none;
 
 .service-element-prestations-content{
   text-align: center;
-  margin: 10px;
   padding: 5px;
   font-size: 14px;
 }
@@ -336,6 +335,7 @@ text-decoration: none;
 }
 
 .service-element-prestations{
+  background-color: white;
       ul{
         list-style-type: none;
         padding-left : 5px;
@@ -345,9 +345,9 @@ text-decoration: none;
         font-size: 18px;
         font-style: bolder;
       }
-text-align: left;
+text-align: center;
   .details{
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(100,100,100);
 }
 }
@@ -415,55 +415,49 @@ text-align: left;
     color: black;
   }
   background-color: rgb(270,270,270);
-  width: 90%;
-  max-width: 500px;
+  width: 98%;
+  max-width: 600px;
   border-radius: 1px;
   text-align: center;
 }
 
 
  .service-offer{
- }
-
-  .service-offer-content{
-    padding: 40px auto;
     border-top-style: none;
     border-left-style: solid;
     border-right-style: solid;
     border-bottom-style: solid;
     border-color: rgb(200,200,200);
     border-width: 1px;
+    a{
+      color : grey;
+      font-size: calc(2.7px + 1vw);
+    }
+ }
+
+  .service-offer-content{
+    border-top-style: none;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(200,200,200);
+    border-width: 1px;
+    p{
+      font-size: calc(7px + 0.3vw);
+      padding: 20px 5px 20px 5px;
+      font-style: italic
+    }
+    h4{
+      margin: 0px;
+      padding: 10px 5px 30px 5px;
+    }
     h5{
-      font-size: calc(7px + 0.9vw);
       margin: 0px 5px;
     }
     a{
-      margin: 70px 0px;
+      margin: 30px 5px;
     }
-    table{
-      width: 100% ;
-      margin: 0px 5px calc(30px + 2vw) 5px;
-      font-size: calc(7px + 1.2vw);
-      max-font-size: 10px;
-      th{
-        width: 20% ;
-        padding: 5px 0px;
-        text-align: center;
-      }
-      tbody{
-        td{
-        text-align: center;
-        padding: 5px 0px;
-        font-size: calc(7px + 0.5vw);
-       }
-      }
-      tfoot{
-        td{
-        padding: 5px 0px;
-        text-align: center;
-      }
-      }
-    }
+
  }
 
 
