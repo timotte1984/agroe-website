@@ -1,7 +1,4 @@
-<div id="urgence-contact">
-  <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a> - <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a>
-</div>
-<div class="banner">
+<div class="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,0.8) 60%, rgba(180,180,180,0.8) 100%), url(<%= asset_path 'bg_logos.png'%>);">
   <div class="banner-content">
     <%= image_tag 'agroe.png' %>
     <h2> Accompagne les entreprises agroalimentaires </br><span class="engage"> engagées </span> et <span class="visionnary"> visionnaires </span>. </h2>
@@ -70,6 +67,7 @@
       <div class="team-job">
         Chargée de mission
       </div>
+      <%= link_to '<i class="fab fa-linkedin"></i>'.html_safe, 'https://www.linkedin.com/in/karine-pietrzak-84aba6131/' %>
     </div>
     <div class="team-element">
       <%= image_tag 'http://www.agroe.fr/img/photo-delphine-josset.jpg', class:' avatar-big' %>
@@ -79,6 +77,7 @@
       <div class="team-job">
         Assistante de direction
       </div>
+      <%= link_to '<i class="fab fa-linkedin"></i>'.html_safe, 'https://www.linkedin.com/in/delphine-josset-523225173/' %>
     </div>
     <div class="team-element">
       <%= image_tag 'AT.jpg', class:' avatar-big' %>
@@ -88,6 +87,7 @@
       <div class="team-job">
         Chef de Projet
       </div>
+      <%= link_to '<i class="fab fa-linkedin"></i>'.html_safe, 'https://www.linkedin.com/in/audrey-terlynck-674660119/' %>
     </div>
   </div>
   <div class="team-elements">
@@ -99,6 +99,8 @@
       <div class="team-job">
         Chargé de mission
       </div>
+      <%= link_to '<i class="fab fa-linkedin"></i>'.html_safe, 'https://www.linkedin.com/in/julienmottet/' %>
+            <%= link_to '<i class="fab fa-twitter-square"></i>'.html_safe, 'https://twitter.com/JuMottet' %>
     </div>
     <div class="team-element">
       <%= image_tag 'http://www.agroe.fr/img/photo-fabrice-hoschede.jpg', class:' avatar-big' %>
@@ -108,6 +110,7 @@
       <div class="team-job">
         Délégué Général
       </div>
+      <%= link_to '<i class="fab fa-linkedin"></i>'.html_safe, 'https://www.linkedin.com/in/fabrice-hoschede-88207852/' %>
     </div>
   </div>
   <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a> - <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a>
@@ -117,16 +120,25 @@
   <div class="services-content">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
+        <div class="panel-heading  service-button-bg" role="tab" id="headingOne" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path 'ing.jpg'%>);">
           <h4 class="panel-title">
             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Ingénierie de Projets
+              <span class="service-button">Ingénierie de Projets</span>
             </a>
           </h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
             <div class="service-element-prestations">
+              <div class="service-contact">
+                 <p>
+                  contacts : </br>
+                  <strong> a.terlynck@agroe.fr </strong></br>
+                  <strong> k.pietrzak@agroe.fr </strong></br>
+                  <strong> 03.27.70.15.80 </strong>
+                  </br>
+                </p>
+            </div>
               <ul>
                 <li>
                   Business Model</br>
@@ -145,27 +157,27 @@
                 </li>
               </ul>
             </div>
-            <div class="service-contact">
-                 <p>
-                  contact : </br>
-                  <strong> k.pietrzak@agroe.fr </strong></br>
-                  <strong> 03.27.70.15.80 </strong>
-                </p>
-            </div>
           </div>
         </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
+        <div class="panel-heading service-button-bg" role="tab" id="headingTwo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path 'export2.jpg'%>);">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Export
+              <span class="service-button">Export</span>
             </a>
           </h4>
         </div>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body">
             <div class="service-element-prestations">
+              <div class="service-contact">
+                 <p>
+                  contact : </br>
+                  <strong> k.pietrzak@agroe.fr </strong></br>
+                  <strong> 03.27.70.15.80 </strong>
+                </p>
+            </div>
               <ul>
                 <li>
                   Visit Planner de salons internationaux </br>
@@ -175,36 +187,36 @@
                 </li>
               </ul>
             </div>
-            <div class="service-contact">
-                 <p>
-                  contact : </br>
-                  <strong> k.pietrzak@agroe.fr </strong></br>
-                  <strong> 03.27.70.15.80 </strong>
-                </p>
-            </div>
           </div>
         </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
+        <div class="panel-heading service-button-bg" role="tab" id="headingThree" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path 'planet.jpg'%>);">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Développement Durable
+              <span class="service-button">Développement Durable</span>
             </a>
           </h4>
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
             <div class="service-element-prestations">
+              <div class="service-contact">
+                 <p>
+                  contact : </br>
+                  <strong> j.mottet@agroe.fr </strong></br>
+                  <strong> 03.27.70.15.80 </strong>
+                </p>
+                </div>
               <ul>
                 <li>
-                  Formation / Sensibilisation à la RSE et/ou à l'écoconception </br>
+                  Sensibilisation (2h) / Formation (8h)  à la RSE et/ou à l'écoconception </br>
                 </li>
                 <li>
                   Diagnostic RSE </br>
                 </li>
                 <li>
-                  Aide à la rédaction d'un DPEF</br>
+                  Aide à la rédaction d'une Déclaration de Performece Extra-Financière</br>
                 </li>
                 <li>
                   Accompagnement dans les échanges avec les parties prenantes.
@@ -212,42 +224,20 @@
                 </li>
               </ul>
             </div>
-              <div class="service-contact">
-                 <p>
-                  contact : </br>
-                  <strong> j.mottet@agroe.fr </strong></br>
-                  <strong> 03.27.70.15.80 </strong>
-                </p>
-                </div>
             </div>
           </div>
         </div>
         <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFour">
+        <div class="panel-heading service-button-bg" role="tab" id="headingFour" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path 'digital.jpg'%>);">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFOur">
-              Stratégie Digital
+              <span class="service-button">Stratégie Digital </span>
             </a>
           </h4>
         </div>
         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
           <div class="panel-body">
             <div class="service-element-prestations">
-              <ul>
-                <li>
-                  Audit de votre siteweb en 20 points.</br>
-                </li>
-                <li>
-                  Analyse du profil sociologique de vos fans</br>
-                </li>
-                <li>
-                  Avant de concevoir un nouveau produit, testez un nouveau concept de produit sur les consommateurs grâce au numérique. </br>
-                </li>
-                <li>
-                  Création d'un canal d'acquisition de clients automatisé. </br>
-                </li>
-              </ul>
-            </div>
               <div class="service-contact">
                  <p>
                   contact : </br>
@@ -255,10 +245,173 @@
                   <strong> 03.27.70.15.80 </strong>
                 </p>
                 </div>
+              <ul>
+                <li>
+                  Dévelloper une audience sur les réseaux sociaux </br>
+                </li>
+                <li>
+                  Optimiser votre site pour mieux engager les visiteurs </br>
+                </li>
+                <li>
+                  Analyser le profil sociologique de vos fans pour leur parler plus efficacement</br>
+                </li>
+                <li>
+                  testez un nouveau concept sur les consommateurs avant même de créer le produit grâce au numérique. </br>
+                </li>
+              </ul>
+            </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="adhesion" style="background-image: linear-gradient(to right,rgba(270,270,270,0.9),rgba(270,270,270,0.9),rgba(270,270,270,0.9), rgba(270,270,270,0.9)), url(<%= asset_path 'bg_logos.png'%>);">
+  <h1> <strong> Rejoignez-nous </strong></h1>
+  <div class="adhesion-content">
+    <div class="adhesion-title">
+      Vous êtes ?
+    </div>
+    <!-- using href attribue of a tag to define tab content that based on content id-->
+    <ul class="nav nav-tabs service-offer nav nav-pills" id="myNavTabs">
+      <li><a href="#navtabs1" data-toggle="tab"><strong>Entreprises</strong></a></li>
+      <li><a href="#navtabs2" data-toggle="tab"><strong>Institutionnels</strong></a></li>
+      <li><a href="#navtabs3" data-toggle="tab"><strong>Ecoles / Universités</strong></a></li>
+      <li><a href="#navtabs4" data-toggle="tab"><strong>Prestataires</strong></a></li>
+      <li class="active"><a href="#navtabs0" data-toggle="tab"><strong>X</strong></a></li>
+    </ul>
+
+    <!-- using fade to define fade effect -->
+    <!-- using active class to define the first actived tab and content -->
+
+    <div class="tab-content service-offer-content">
+      <div class="tab-pane fade in" id="navtabs1">
+        <ul class="nav nav-tabs service-offer nav nav-pills" id="myNavTabs">
+          <li><a href="#navtabs5" data-toggle="tab"><strong>Jeune Pousse</strong></br>< 3 ans </a></li>
+          <li><a href="#navtabs6" data-toggle="tab"><strong>TPE</strong></br> < 20</a>
+          <li><a href="#navtabs7" data-toggle="tab"><strong>PME</strong></br> < 50</a>
+          <li><a href="#navtabs8" data-toggle="tab"><strong>PME</strong></br> < 250</a>
+          <li><a href="#navtabs9" data-toggle="tab"><strong>ETI / GG</strong></br> > 250</a>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="navtabs2">
+        <h4> Adhésion Agroé "Institutionnels" </h4>
+        <h5><i class="fas fa-check"></i>Création de Partenariats</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion</a>
+      </div>
+      <div class="tab-pane fade" id="navtabs3">
+        <h4> Adhésion Agroé "Ecoles / Universités" </h4>
+        <h5><i class="fas fa-check"></i>Création de Partenariats</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion</a>
+        </div>
+      <div class="tab-pane fade" id="navtabs4">
+        <h4> Adhésion Agroé "Prestataires" </h4>
+        <h5><i class="fas fa-check"></i>Création de Partenariats</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion Agroé</a>
+      </div>
+      <div class="tab-pane fade" id="navtabs5">
+        <h4> Adhésion Agroé + AgroClubRSE "Jeune Pousse"</h4>
+        <h5> <strong>pour 1 personne :</strong> </h5>
+        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
+        <h2>100 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion à l'AgroClubRSE</a>
+        </br>
+        <h4>ou</h4>
+        </br>
+        <h4> Adhésion Agroé "Jeune Pousse" </h4>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion Agroé</a>
+
+      </div>
+      <div class="tab-pane fade" id="navtabs6">
+        <h4> Adhésion Agroé + AgroClubRSE "TPE"</h4>
+        <h4> pour 1 personne : </h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
+        <h2>200 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion à l'AgroClubRSE</a>
+                </br>
+        <h4>ou</h4>
+        </br>
+        <h4> Adhésion Agroé "TPE" </h4>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion Agroé</a>
+      </div>
+      <div class="tab-pane fade" id="navtabs7">
+        <h4> Adhésion Agroé + AgroClubRSE "PME < 50" </h4>
+        <h4> pour 2 personnes : </h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
+        <h2>300 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion à l'AgroClubRSE</a>
+      </br>
+        <h4>ou</h4>
+        </br>
+        <h4> Adhésion Agroé "PME < 50" </h4>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion Agroé</a>
+        </div>
+      <div class="tab-pane fade" id="navtabs8">
+        <h4> Adhésion Agroé + AgroClubRSE "PME < 250"</h4>
+        <h4> pour 4 personnes : </h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
+        <h2>600 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion à l'AgroClubRSE</a>
+        </br>
+        <h4>ou</h4>
+        </br>
+        <h4> Adhésion Agroé "PME < 250" </h4>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion Agroé</a>
+      </div>
+      <div class="tab-pane fade" id="navtabs9">
+        <h4> Adhésion Agroé + AgroClubRSE "ETI / GG"</h4>
+        <h4> pour un nombre illimité de personnes</h4>
+        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé.</h5>
+        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
+        <h2>1 000 &euro;</h2>
+        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion à l'AgroClubRSE</a>
+        </br>
+        <h4>ou</h4>
+        </br>
+        <h4> Adhésion Agroé ETI / GG </h4>
+        <h5><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h5>
+        <h4>100 &euro;</h4>
+        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion Agroé</a>
       </div>
     </div>
   </div>
@@ -295,119 +448,6 @@
     </div>
   </div>
 </div>
-<div class="adhesion" style="background-image: linear-gradient(to right,rgba(270,270,270,1),rgba(270,270,270,1),rgba(270,270,270,1), rgba(270,270,270,0.8)), url(<%= asset_path 'agroe.png'%>);">
-  <h1> <strong> Nous rejoindre </strong></h1>
-  <div class="adhesion-content">
-    <div class="adhesion-title">
-      Offre Adhésion Agroé
-    </div>
-    <!-- using href attribue of a tag to define tab content that based on content id-->
-    <ul class="nav nav-tabs service-offer" id="myNavTabs">
-      <li class="active"><a href="#navtabs1" data-toggle="tab"><strong>Entreprises</strong></a>
-      <li><a href="#navtabs2" data-toggle="tab"><strong>Institutionnels</strong></a>
-      <li><a href="#navtabs3" data-toggle="tab"><strong>Ecoles / Universités</strong></a>
-      <li><a href="#navtabs4" data-toggle="tab"><strong>Prestataires</strong></a>
-    </ul>
-
-    <!-- using fade to define fade effect -->
-    <!-- using active class to define the first actived tab and content -->
-
-    <div class="tab-content service-offer-content">
-      <div class="tab-pane fade in active" id="navtabs1">
-        <h4><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h4>
-        <h2>100 &euro;</h2>
-        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion</a>
-      </div>
-      <div class="tab-pane fade" id="navtabs2">
-        <h4><i class="fas fa-check"></i>Création de Partenariats</h4>
-        <h4><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h4>
-        <h2>100 &euro;</h2>
-        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion</a>
-      </div>
-      <div class="tab-pane fade" id="navtabs3">
-        <h4><i class="fas fa-check"></i>Création de Partenariats</h4>
-        <h4><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h4>
-        <h2>100 &euro;</h2>
-        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion</a>
-        </div>
-      <div class="tab-pane fade" id="navtabs4">
-        <h4><i class="fas fa-check"></i>Création de Partenariats</h4>
-        <h4><i class="fas fa-check"></i>Accès aux prestations de service d'Agroé</h4>
-        <h2>100 &euro;</h2>
-        <a href="mailto:contact@agroe.fr.com" class="btn color-agroe"> Demander la fiche d'adhésion</a>
-      </div>
-    </div>
-  </div>
-  <div class="adhesion-content">
-    <div class="adhesion-title">
-      Adhésion AgroClubRSE + Agroé
-    </div>
-    <!-- using href attribue of a tag to define tab content that based on content id-->
-    <ul class="nav nav-tabs service-offer" id="myNavTabs">
-      <li class="active"><a href="#navtabs1" data-toggle="tab"><strong>Jeune Pousse</strong></br>< 3 ans </a>
-      <li><a href="#navtabs2" data-toggle="tab"><strong>TPE</strong></br>< 20 jobs</a>
-      <li><a href="#navtabs3" data-toggle="tab"><strong>PME</strong></br>< 50 jobs </a>
-      <li><a href="#navtabs4" data-toggle="tab"><strong>PME</strong></br>< 250 jobs</a>
-      <li><a href="#navtabs5" data-toggle="tab"><strong>ETI / GG</strong> </br> :) </a>
-    </ul>
-
-    <!-- using fade to define fade effect -->
-    <!-- using active class to define the first actived tab and content -->
-
-    <div class="tab-content service-offer-content">
-      <div class="tab-pane fade in active" id="navtabs1">
-        <h4> pour 1 personne : </h4>
-        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
-        <h2>100 &euro;</h2>
-        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
-      </div>
-      <div class="tab-pane fade" id="navtabs2">
-        <h4> pour 1 personne : </h4>
-        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
-        <h2>200 &euro;</h2>
-        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
-      </div>
-      <div class="tab-pane fade" id="navtabs3">
-        <h4> pour 2 personnes : </h4>
-        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
-        <h2>300 &euro;</h2>
-        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
-        </div>
-      <div class="tab-pane fade" id="navtabs4">
-        <h4> pour 4 personnes : </h4>
-        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
-        <h2>300 &euro;</h2>
-        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
-      </div>
-      <div class="tab-pane fade" id="navtabs5">
-        <h4> pour un nombre illimité de personnes</h4>
-        <h5><i class="fas fa-check"></i>Accès aux clubs RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux visites RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à des webinaires RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès à la plateforme de veille RSE.</h5>
-        <h5><i class="fas fa-check"></i>Accès aux compétences des autres adhérents du Club RSE.</h5>
-        <h2>300 &euro;</h2>
-        <a href="https://res.cloudinary.com/julienmottet/image/upload/v1549470116/Adh%C3%A9sion_2019_AgroClubRSE-Fev2019.pdf" class="btn color-agroe"> Télécharger la fiche d'adhésion</a>
-      </div>
-    </div>
-  </div>
-</div>
 <div id="partenaires">
   <h1><strong>Nos soutiens</strong></h1>
     <%= image_tag 'logo_hdf.jpg', class:'logos-soutiens-resize' %>
@@ -418,11 +458,19 @@
 <div class="questions-container">
 <h4>Vous n'avez pas trouver l'information que vous cherchiez ? </h4>
  <h5> Échangeons sur les réseaux
-
   <span class="reseaux">
-            <%= link_to '<i class="fab fa-twitter-square fa-2x"></i>'.html_safe, 'https://twitter.com/agroe_i' %>
-            <%= link_to '<i class="fab fa-linkedin fa-2x"></i>'.html_safe, 'https://www.linkedin.com/company/18518876/admin/' %>
-            <%= link_to '<i class="fab fa-facebook fa-2x"></i>'.html_safe, 'https://www.facebook.com/poleagroe/' %>
+    <span class="reseaux-link">
+       <%= link_to '<i class="fab fa-twitter-square fa-2x"></i>'.html_safe, 'https://twitter.com/agroe_i' %>
+    </span>
+    <span class="reseaux-link">
+      <%= link_to '<i class="fab fa-linkedin fa-2x"></i>'.html_safe, 'https://www.linkedin.com/company/18518876/admin/' %>
+    </span>
+
+    <span class="reseaux-link">
+      <%= link_to '<i class="fab fa-facebook fa-2x"></i>'.html_safe, 'https://www.facebook.com/poleagroe/' %>
+    </span>
+
+
     </span> <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a> - <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a> </h5>
 </div>
 

@@ -58,9 +58,10 @@ letter-spacing: 1px;
 // BANNER
 
 .banner{
-  background: linear-gradient(to bottom, white 60%, rgba(180,180,180,0.8) 100%);
-  height: 100%;
-  padding: 60px 10px;
+  background-size: cover;
+  background-repeat: none;
+  height: 110%;
+  padding: 40px 10px 100px 10px;
   border-bottom-style: solid;
   border-color: rgb(240,240,240)
 }
@@ -199,6 +200,7 @@ text-decoration: none;
   h1{
     margin-bottom: 60px;
   }
+  background-color: white;
 }
 
 .events-content{
@@ -274,7 +276,7 @@ text-decoration: none;
  }
 
 #services{
-  background-color: rgb(240,240,240);
+  background-color: white;
   padding: 50px;
   padding-bottom: 100px;
   h1{
@@ -319,6 +321,31 @@ text-decoration: none;
 
 }
 
+.service-button{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 70px 100px;
+  margin: 0px;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(240,240,240)
+}
+
+
+
+.service-button-bg{
+  padding: 0px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.service-button:hover{
+  font-size: 25px;
+  transition: 0.1s ease;
+}
+
 .service-element-prestations-content{
   text-align: center;
   padding: 5px;
@@ -355,7 +382,8 @@ text-align: center;
 }
 
 .service-contact{
-  margin-top: 50px;
+  margin-top: 20px;
+  border-bottom-style: solid;
   }
 
 .service-subscription{
@@ -400,11 +428,7 @@ text-align: center;
 }
 
 .adhesion-title{
-  background-color: rgba(102,155,47,0.2);
-  padding: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(200,200,200);
+  padding-bottom: 40px;
   font-size: 24px;
 }
 
@@ -412,22 +436,13 @@ text-align: center;
    p{
     color: black;
   }
-  background-color: rgb(270,270,270);
-  width: 98%;
   max-width: 700px;
-  border-radius: 1px;
   text-align: center;
   margin-top: 50px;
 }
 
 
  .service-offer{
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-color: rgb(200,200,200);
-    border-width: 1px;
     a{
       color : grey;
       font-size: calc(2.7px + 1vw);
@@ -435,12 +450,7 @@ text-align: center;
  }
 
   .service-offer-content{
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-color: rgb(200,200,200);
-    border-width: 1px;
+
     p{
       font-size: calc(7px + 0.3vw);
       padding: 20px 5px 20px 5px;
@@ -448,13 +458,12 @@ text-align: center;
     }
     h4{
       margin: 0px;
-      padding: 10px 5px 30px 5px;
+      padding: 30px 5px 30px 5px;
     }
     h5{
       margin: 0px 5px;
     }
     a{
-      margin: 30px 5px;
     }
 
  }
@@ -474,7 +483,6 @@ text-align: center;
 }
 
 .questions-container{
-  background-color: white;
   h4{
     color: #808080;
   }
@@ -489,11 +497,17 @@ text-align: center;
 }
 
 #partenaires{
+  background-color: white;
   h1{
     margin: 40px 0px;
   }
     padding: 50px 0px 50px 0px;
 }
+
+.reseaux-link{
+    a:hover{color: white;}
+  }
+
 
 
 
