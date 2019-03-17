@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'ecosystem', to: 'pages#ecosystem'
   get 'temp_page', to: 'pages#temp_page'
   get 'rse', to: 'pages#rse'
+  get 'mention_legal', to: 'pages#mention_legal'
+    get 'credits', to: 'pages#credits'
   get 'commerce', to: 'pages#commerce'
   get 'web', to: 'pages#web'
   resources 'users', only: [:new, :edit, :show, :index]

@@ -51,8 +51,11 @@
 
 // President CSS
 #president-container{
-  text-align: center;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   h1{
     margin: 20px 0px;
   }
@@ -61,13 +64,7 @@
 
 .president-elements{
   padding: 20px;
-}
 
-.president-profil{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 .president-profil-container{
@@ -75,22 +72,21 @@
 }
 
 .president-discours {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  width: 95%;
+  max-width: 700px;
+  background-color: #9E9E9E;
+  border-radius: 4px;
+  padding: 20px;
 }
 
 .president-discours-container{
-  font-style: italic;
-  position : relative;
-  padding: 5% 5%;
-  border-radius: 4px;
-  background-color: #9E9E9E;
   p{
  font-size: 15px;
  text-align: justify;
  line-height: 1.5em;
  color: rgb(220,220,220);
+  font-style: italic;
   }
 }
 
@@ -98,11 +94,13 @@
   color: white;
 }
 
-.president-profil{
+.president-profil-container{
+  justify: center;
   p{
     padding-top: 5px;
     font-size: 15px;
   }
+  margin: 20px;
 }
 
 // .president-discours:before {

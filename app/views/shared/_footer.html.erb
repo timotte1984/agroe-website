@@ -10,10 +10,11 @@
   </div>
   <div class="down-footer">
     <div class="legal-mention first-element-down-footer space-elements-down-footer">
-      Mentions Légales
-    </div> I
+      <%= link_to "Mention legal", @mention_legal, {:style=>'color:#333333;'} %>
+    </div>
+    -
     <div class="credits space-elements-down-footer">
-      Credits
+      <%= link_to "Credits", @credits, {:style=>'color:#333333;'} %>
     </div> I
     <div class="realisation last-element-down-footer space-elements-down-footer">
       fait avec <i class="far fa-heart"></i> par l'équipe d'Agroé <i class="far fa-copyright"></i>
