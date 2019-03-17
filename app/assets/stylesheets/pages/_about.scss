@@ -51,7 +51,6 @@
 
 // President CSS
 #president-container{
-  background-color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -67,31 +66,19 @@
 
 }
 
-.president-profil-container{
-
-}
-
 .president-discours {
-
   width: 95%;
   max-width: 700px;
-  background-color: #9E9E9E;
-  border-radius: 4px;
   padding: 20px;
 }
 
 .president-discours-container{
   p{
- font-size: 15px;
+ font-size: 20px;
  text-align: justify;
  line-height: 1.5em;
- color: rgb(220,220,220);
   font-style: italic;
   }
-}
-
-.highlight{
-  color: white;
 }
 
 .president-profil-container{
@@ -101,6 +88,7 @@
     font-size: 15px;
   }
   margin: 20px;
+  margin-bottom: 30px;
 }
 
 // .president-discours:before {
