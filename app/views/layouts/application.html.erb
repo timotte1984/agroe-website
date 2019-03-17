@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Agroé</title>
+    <meta property="og:title" content="Agroé : RSE, Export, Digital pour les entreprises agroalimentaires des Hauts-de-France " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="www.agroe.fr" />
+    <meta property="og:image" content=url(<%= asset_path 'agroe.png'%>) />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:description" content="Agroé accompagne les entreprises agroalimentaires
+engagées et visionnaires de la région Hauts-de-France. Les thématiques d'intervention sont le développement durable, l'export, le digital et l'ingénierie de projet">
+    <meta property="og:keywords" content="agroalimentaire, Hauts-de-France, développement durable, rse, PME">
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
