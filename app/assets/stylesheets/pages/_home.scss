@@ -72,28 +72,15 @@ letter-spacing: 1px;
 .banner{
   background-size: cover;
   background-repeat: none;
-  height: 110%;
+  background-position: top;
+  height: 114vh;
   padding: 40px 10px 100px 10px;
-  border-bottom-style: solid;
-  border-color: rgb(240,240,240)
 }
-
-.banner-text{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(90vh - 100px);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-
 
 .banner-content {
   text-align: center;
   h2{
-    padding-top: 50px;
+    padding-top: 20px;
     color: rgb(40,40,40);
     font-size: 36px;
   }
@@ -207,7 +194,7 @@ text-decoration: none;
 
 // // LOCALISTION
 
-.events{
+#events{
   padding: 50px 0px 100px 0px; ;
   h1{
   }
@@ -443,7 +430,8 @@ text-align: center;
   font-weight: bolder;
 }
 
-.adhesion{
+#adhesion-agroe{
+  height: 100%;
   background-color: #6B9F31;
   display: flex;
   justify-content: center;

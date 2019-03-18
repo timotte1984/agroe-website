@@ -4,7 +4,6 @@
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
   <%= image_tag "agroe.png", height: 50 %>
   <% end %>
-  <%= link_to "Qui sommes-nous ?", "about.html", class: "navbar-about" %>
   </div>
 
 
@@ -42,8 +41,12 @@
         </div>
       </div>
     <% else %>
+    <%= link_to "Nos évènements", "#events", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Nos Services", "#services", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Adhérer", "#adhesion-agroe", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "connexion"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t(".sign_in", default: ""), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
 
@@ -52,9 +55,9 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><a href="#events">Nos évènements</a></li>
+        <li><a href="#services">Nos Services</a></li>
+        <li><a href="#adhesion-agroe">Adhérer</a></li>
       </ul>
     </div>
   </div>
