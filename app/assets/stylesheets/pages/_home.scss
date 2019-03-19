@@ -278,6 +278,30 @@ text-decoration: none;
    right : 10px;
  }
 
+#info-contact{
+  height: 50vh;
+  background-color: #6B9F31;
+  padding-bottom: 70px;
+  a{
+    color: black;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3{
+    background-color: white;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 5px;
+    opacity: 0.8;
+    padding-bottom: 10px;
+  }
+  h3:hover{
+    opacity: 1;
+  }
+}
+
 #services{
   background-size: cover;
   background-position: center;
