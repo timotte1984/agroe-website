@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta property="og:title" content="Agroé : RSE, Export, Digital pour les entreprises agroalimentaires des Hauts-de-France " />
-    <meta property="og:type" content="@agroe_i" />
-    <meta property="og:url" content="www.agroe.fr" />
-    <meta property="og:image" content="https://res.cloudinary.com/julienmottet/image/upload/v1552833565/agroe.png" />
-    <meta property="og:locale:alternate" content="fr_FR" />
-    <meta property="og:description" content="Agroé accompagne les entreprises agroalimentaires
-engagées et visionnaires de la région Hauts-de-France. Les thématiques d'intervention sont le développement durable, l'export, le digital et l'ingénierie de projet" />
-    <meta property="og:keywords" content="agroalimentaire, Hauts-de-France, développement durable, rse, PME" />
-
-
-<meta name=”twitter:card” content=”summary_large_image” />
-<meta name=”twitter:site” content=”"website" />
-<meta name=”twitter:title” content="Agroé : RSE, Export, Digital pour les entreprises agroalimentaires des Hauts-de-France " />
-<meta name=”twitter:description” content="Agroé accompagne les entreprises agroalimentaires
-engagées et visionnaires de la région Hauts-de-France. Les thématiques d'intervention sont le développement durable, l'export, le digital et l'ingénierie de projet" />
-<meta name=”twitter:image” content="https://res.cloudinary.com/julienmottet/image/upload/v1552833565/agroe.png" />
+  <meta property="og:title" content="Agroé : RSE, Export, Digital pour les entreprises agroalimentaires des Hauts-de-France " />
+  <meta property="og:type" content="@agroe_i" />
+  <meta property="og:url" content="www.agroe.fr" />
+  <meta property="og:image" content="https://res.cloudinary.com/julienmottet/image/upload/v1552833565/agroe.png" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:description" content="Agroé accompagne les entreprises agroalimentaires
+  engagées et visionnaires de la région Hauts-de-France. Les thématiques d'intervention sont le développement durable, l'export, le digital et l'ingénierie de projet" />
+  <meta property="og:keywords" content="agroalimentaire, Hauts-de-France, développement durable, rse, PME" />
 
 
-<meta name="Description" content="Agroé accompagne les entreprises agroalimentaires
-engagées et visionnaires de la région Hauts-de-France. Les thématiques d'intervention sont le développement durable, l'export, le digital et l'ingénierie de projet" />
-<meta name="title" content="Agroé : RSE, Export, Digital pour les entreprises agroalimentaires des Hauts-de-France" />
-<meta name="image" content="https://res.cloudinary.com/julienmottet/image/upload/v1552833565/agroe.png" />
+  <meta name=”twitter:card” content=”summary_large_image” />
+  <meta name=”twitter:site” content=”website />
+  <meta name=”twitter:title” content="Agroé : RSE, Export, Digital pour les entreprises agroalimentaires des Hauts-de-France " />
+  <meta name=”twitter:description” content="Agroé accompagne les entreprises agroalimentaires
+  engagées et visionnaires de la région Hauts-de-France. Les thématiques d'intervention sont le développement durable, l'export, le digital et l'ingénierie de projet" />
+  <meta name=”twitter:image” content="https://res.cloudinary.com/julienmottet/image/upload/v1552833565/agroe.png" />
 
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-  </head>
+
+  <meta name="Description" content="Agroé accompagne les entreprises agroalimentaires
+  engagées et visionnaires de la région Hauts-de-France. Les thématiques d'intervention sont le développement durable, l'export, le digital et l'ingénierie de projet" />
+  <meta name="title" content="Agroé : RSE, Export, Digital pour les entreprises agroalimentaires des Hauts-de-France" />
+  <meta name="image" content="https://res.cloudinary.com/julienmottet/image/upload/v1552833565/agroe.png" />
+
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
-    <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

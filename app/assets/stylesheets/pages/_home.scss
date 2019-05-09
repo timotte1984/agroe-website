@@ -195,7 +195,6 @@ text-decoration: none;
 // // LOCALISTION
 
 #events{
-  padding: 50px 0px 100px 0px; ;
   h1{
   }
   background-color: white;
@@ -204,6 +203,9 @@ text-decoration: none;
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  h3{
+    padding: 100px 0px 20px 0px;
+  }
 }
 
 .events-content{
@@ -216,7 +218,6 @@ text-decoration: none;
   position: relative;
   background-position: cover;
   background-size: 100% 100%;
-  background-color: rgb(220,220,220);
   padding: 20px;
   margin: 10px auto;
   border-radius: 4px;
@@ -526,6 +527,7 @@ text-align: center;
 }
 
 .questions-container{
+background-color: white;
   h4{
     color: #808080;
   }
