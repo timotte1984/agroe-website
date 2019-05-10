@@ -8,7 +8,6 @@
 
 tags_agroe = ActiveSupport::JSON.encode({:tags => ['RSE','Digital']})
 
-
 agroe = Association.create(
   name: 'Agroé',
      address: '14 rue Neuve BP 70175 59403 CAMBRAI Cedex',
@@ -54,5 +53,6 @@ adrianor = Association.create(
      facebook_name: '',
      img_url: 'http://www.adrianor.com/images/logo.gif',
      structure_type: 'accompagnement d"entreprises')
+
 
 

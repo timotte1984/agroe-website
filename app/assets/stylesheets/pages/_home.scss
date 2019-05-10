@@ -549,6 +549,15 @@ text-align: center;
  .card-process-text{
  font-size: 16px;
 }
+#medium-widget{
+  text-align: left;
+  a:hover{
+    color: grey;
+  }
+  #description{
+    font-size: 30px;
+  }
+}
 
 #questions-container{
 background-color: white;
