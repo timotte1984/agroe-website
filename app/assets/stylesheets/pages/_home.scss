@@ -73,8 +73,8 @@ letter-spacing: 1px;
   background-size: cover;
   background-repeat: none;
   background-position: top;
-  height: 100vh;
-  padding: 40px 10px 100px 10px;
+  height: 70vh;
+  padding: 40px 10px 50px 10px;
 }
 
 .banner-content {
@@ -82,11 +82,11 @@ letter-spacing: 1px;
   h2{
     padding-top: 20px;
     color: rgb(40,40,40);
-    font-size: 36px;
+    font-size: calc(10px + 1.5vw);
   }
   h4{
     color: rgb(20,20,20);
-    font-size: 22px;
+    font-size: calc(10px + 0.5vw);
     font-weight: lighter;
     padding-bottom: 10px;
     text-shadow: 1px 1px 1px rgb(200,200,200);
@@ -173,7 +173,7 @@ text-decoration: none;
   }
 
 .color-commerce{
-  background-color: #BCA371;
+  background-color: #C97064;
 }
 
 .color-agroe{
@@ -195,9 +195,25 @@ text-decoration: none;
 // // LOCALISTION
 
 #events{
+  padding-bottom: 100px;
   h1{
   }
   background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  h3{
+    padding: 100px 0px 20px 0px;
+  }
+}
+
+#actu{
+  padding-bottom: 50px;
+  h1{
+  }
+  background-color: rgb(200,200,200);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -280,27 +296,35 @@ text-decoration: none;
  }
 
 #info-contact{
-  height: 50vh;
-  background-color: #6B9F31;
-  padding-bottom: 70px;
-  a{
+  .join{
+    padding: 30px;
+     a{
     color: black;
-  }
+    }
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  h3{
-    background-color: white;
+  h4{
+    background-color: #6A9F31;
     border-style: solid;
     border-radius: 4px;
-    padding: 5px;
     opacity: 0.8;
-    padding-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    margin-top: 80px 200px;
+
   }
-  h3:hover{
+  h4:hover{
     opacity: 1;
   }
+  }
+  background-color: white;
+  padding: 50px 0px 50px 0px;
+  h3{
+    margin-bottom: 0px;
+  }
+
 }
 
 #services{
@@ -519,14 +543,14 @@ text-align: center;
 .logos-soutiens-resize{
   max-height: 70px;
   height: 7vw;
-  margin: 3vw 3vw;
+  margin: 2vw 3vw;
 }
 
  .card-process-text{
  font-size: 16px;
 }
 
-.questions-container{
+#questions-container{
 background-color: white;
   h4{
     color: #808080;
@@ -547,6 +571,10 @@ background-color: white;
     margin: 40px 0px;
   }
     padding: 50px 0px 50px 0px;
+  a{
+    margin: 5vw 5vw;
+    font-size: 30px;
+    }
 }
 
 .reseaux-link{
