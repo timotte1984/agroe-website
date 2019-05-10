@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { invitations: 'users/invitations' }
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'ecosystem', to: 'pages#ecosystem'
