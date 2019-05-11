@@ -1,20 +1,20 @@
-<div class="">
-<%= simple_form_for(@event) do |f| %>
-  <div class="form-group">
-    <%= f.label :Nom_de_lévenement %>
-    <%= f.text_field :name, class: 'form-control'%>
-  </div>
-  <div class="form-group">
-    <%= f.label :date_yy %>
-    <%= f.text_field :date, class: 'form-control' %>
-  </div>
+<div id="form-container">
+  <div class="form-element">
+    <%= simple_form_for(@event) do |f| %>
+      <%= f.input :name, label: "Nom de l'évènement" %>
+      <%= f.input :date, label: 'date jour et heure de début' %>
+      <%= f.input :description, label: 'Description en 1 ligne de event' %>
+      <%= f.input :price_w_adhesion, label: 'Prix pour les adhérents Agroé (euros)' %>
+      <%= f.input :price_ext, label: 'Prix pour les extérieurs (euros)' %>
+      <%= f.input :address, label: 'Lieu' %>
+      <%= f.input :registration_link, label: 'lien vers la page helloasso de event' %>
+      <%= f.input :event_type, label: 'Thématique [DD / Digital / Retail]' %>
+      <%= f.input :photo, label: 'Photo pour le fond' %>
+      <%= f.input :photo_cache, as: :hidden %>
 
-  <div class="form-group">
-    <%= f.label :date_yy %>
-    <%= f.input :photo  class: 'form-control-file' %>
-    <%= f.input :photo_cache, as: :hidden %>
-
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
+      <%= f.submit class: 'btn btn-primary' %>
+    <% end %>
+  </div>
 
 </div>
+

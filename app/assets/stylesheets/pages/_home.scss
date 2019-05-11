@@ -194,20 +194,7 @@ text-decoration: none;
 
 // // LOCALISTION
 
-#events{
-  padding-bottom: 100px;
-  h1{
-  }
-  background-color: white;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  h3{
-    padding: 100px 0px 20px 0px;
-  }
-}
+
 
 #actu{
   padding-bottom: 50px;
@@ -236,76 +223,7 @@ text-decoration: none;
   }
 }
 
-invite.events-content{
-}
 
- .event{
-  text-shadow: 0 1px 3px rgba(200,200,200,0.6);
-  height: 270px;
-  width: 350px;
-  position: relative;
-  background-position: cover;
-  background-size: 100% 100%;
-  padding: 20px;
-  margin: 10px auto;
-  border-radius: 4px;
-  color: rgb(260,260,260);
- }
-
-.event-date{
-  position: absolute;
-  top: 10px;
-  left : 10px;
-  font-size: 15px;
-  font-weight: lighter;
-}
-
- .event-type{
-  position: absolute;
-  top: 85px;
-  left : 10px;
-  font-size: 16px;
-  text-transform: uppercase;
-  background-size: contain;
- }
-
-.event-title{
-  position: absolute;
-  top: 115px;
-  left : 10px;
-  font-size: 24px;
-}
-
-.event-title2{
-  position: absolute;
-  top: 145px;
-  left : 10px;
-  font-size: 16px;
-  font-weight: lighter;
-  opacity: 0.7;
-  text-align: left;
-}
-
-.event-organiser{
-  position: absolute;
-  top : 10px;
-  right : 10px;
-  font-size: 16px;
-}
-
-.event-address{
-  position: absolute;
-  top : 30px;
-  right : 10px;
-  font-size: 15px;
-  font-weight: lighter;
-}
-
- .event-registration-button{
-   position: absolute;
-   bottom: 10px;
-   right : 10px;
- }
 
 #info-contact{
   .join{

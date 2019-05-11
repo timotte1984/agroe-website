@@ -3,13 +3,13 @@
     <div class="event-date">
       <%= event.name %>
     </div>
-    <div class="event-type salon">AgroClubRSE #7</div>
-    <div class="event-title">PLV et Développement durable</div>
-    <div class="event-title2">Présence de Impact PLV, POPAI, Coopérative MU...</div>
-    <div class=event-organiser>Org: Agroé / Fizzy Distribution </div>
-    <div class="event-address">Sars-et-Rosières (59)</div>
+    <div class="event-type salon"><%= event.event_type %></div>
+    <div class="event-title"><%= event.name %></div>
+    <div class="event-title2"><%= event.description %></div>
+    <div class=event-price-adhesion><%= event.price_w_adhesion %></div>
+    <div class="event-address"><%= event.address %></div>
     <div class="event-registration-button">
-      <a href="https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043" class="btn color-commerce"> Inscription </a>
+    <%= link_to('Inscription', event.registration_link, class: "btn btn-success") %>
     </div>
   </div>
 </div>

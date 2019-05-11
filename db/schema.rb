@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2019_05_11_184943) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "active"
+    t.boolean "active", default: true
     t.string "event_type"
     t.string "photo"
   end
