@@ -6,7 +6,21 @@
   </div>
 </div>
 <div id="events">
-  <h3><strong>Nos Évènements </strong></h3>
+  <h3><strong>Nos Prochains Évènements </strong></h3>
+
+
+
+
+<div class="events-content">
+  <div class="row">
+    <% @events.each do |e| %>
+      <%= render 'shared/event_card', event: e %>
+    <% end %>
+  </div>
+</div>
+
+
+
   <div class="events-content">
     <div class="row">
       <div class="col-xs-12 col-md-4">

@@ -1,3 +1,4 @@
+require 'date'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -53,6 +54,27 @@
 #      facebook_name: '',
 #      img_url: 'http://www.adrianor.com/images/logo.gif',
 #      structure_type: 'accompagnement d"entreprises')
+event = Event.create(
+      name: 'Test',
+      event_type: 'Visite',
+      description: 'Super Visite',
+      price_w_adhesion: 0,
+      price_ext: 500,
+      address: 'Cambrai',
+      registration_link: 'https://www.helloasso.com/associations/agroe/adhesions/adhesion-agroe',
+      image: 'TEST'
+      )
 
-User.new('mottet.julien123@gmail.com')
+
+event2 = Event.create(
+      name: 'Test2',
+      date: Date.strptime("18/05/2019", '%d/%m/%Y'),
+      event_type: 'Visite',
+      description: 'Super Visite',
+      price_w_adhesion: 0,
+      price_ext: 500,
+      address: 'Cambrai',
+      registration_link: 'https://www.helloasso.com/associations/agroe/adhesions/adhesion-agroe',
+      image: 'TEST'
+      )
 

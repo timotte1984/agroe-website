@@ -6,11 +6,12 @@ Rails.application.routes.draw do
   get 'temp_page', to: 'pages#temp_page'
   get 'rse', to: 'pages#rse'
   get 'mention_legal', to: 'pages#mention_legal'
-    get 'credits', to: 'pages#credits'
+  get 'credits', to: 'pages#credits'
   get 'commerce', to: 'pages#commerce'
   get 'web', to: 'pages#web'
-  resources 'users', only: [:new, :edit, :show, :index]
+  resources 'users', only: [:new, :edit, :create, :update, :index]
   resources 'associations', only: [:new, :create, :show, :index]
+  resources 'events', only: [:new, :edit, :create, :update, :index, :show]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,0 +1,7 @@
+<div class="events-content">
+  <div class="row">
+    <% @events.each do |e| %>
+      <%= render 'shared/event_card', event: e %>
+    <% end %>
+  </div>
+</div>
