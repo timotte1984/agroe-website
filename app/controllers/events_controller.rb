@@ -48,6 +48,7 @@ class EventsController < ApplicationController
       :address,
       :registration_link,
       :image,
+      :photo
       )
   end
 
