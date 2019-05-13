@@ -3,16 +3,28 @@
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
   transition: all 0.3s ease;
-  height: 100px;
+  height: 80px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s height ease;
+}
+
+.navbar-wagon-scroll{
+  color: #808080;
+  height: 40px;
+  font-weight: bolder;
+  transition: 0.3s height ease;
 }
 
 /* Logo */
 .navbar-wagon-brand img {
-  height: 90px;
+  height: 45px;
+}
+
+.navbar-wagon-brand-scroll img {
+  height: 30px;
 }
 
 .navbar-wagon-brand:hover {
@@ -57,8 +69,14 @@
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: #6A9F31;
   text-decoration: none;
+}
+
+.navbar-wagon-item-special{
+  border-style: solid;
+  border-radius: 2px;
+  padding: 7px;
 }
 
 /* Dropdown menu */

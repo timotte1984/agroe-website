@@ -1,15 +1,31 @@
 <div class="col-xs-12 col-md-4">
-  <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= asset_path 'planet.jpg'%>);">
+  <% if !event.photo.nil? %>
+    <%  image = event.photo %>
+  <% else %>
+    <%  image = "agroe.png" %>
+  <% end %>
+  <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= image %>);">
+
     <div class="event-date">
-      <%= event.name %>
+      <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
     </div>
-    <div class="event-type salon"><%= event.event_type %></div>
     <div class="event-title"><%= event.name %></div>
-    <div class="event-title2"><%= event.description %></div>
-    <div class=event-price-adhesion><%= event.price_w_adhesion %></div>
+    <div class="event-description"><%= event.description %></div>
+    <div class=event-price-ext>non adhérent : <%= event.price_ext %> &#8364</div>
+    <% if event.price_w_adhesion === 0 %>
+      <div class=event-price-adhesion>adhérent : Gratuit </div>
+    <% else %>
+      <div class=event-price-adhesion>adhérent : <%= event.price_w_adhesion %> &#8364</div>
+    <% end %>
     <div class="event-address"><%= event.address %></div>
     <div class="event-registration-button">
-    <%= link_to('Inscription', event.registration_link, class: "btn btn-success") %>
+      <% if event.registration_link === "" %>
+          INDISPONIBLE
+        <% else %>
+          <%= link_to('Inscription', event.registration_link, class: "btn btn-success") %>
+        <% end %>
     </div>
   </div>
 </div>
+
+

@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:new,:create,:edit,:update,:show,:index]
+  skip_before_action :authenticate_user!, only: [:show,:edit,:update,:index]
 
   def new
     @event=Event.new

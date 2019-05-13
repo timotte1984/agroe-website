@@ -1,7 +1,25 @@
-<%= @event.name %>
-<%= @event.date %>
-<%= @event.description %>
-<%= cl_image_tag(@event.photo,width: 400, height: 300) %>
+<div>
+    <div class="">
+      <%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %>
+    </div>
+    <div class=""><%= @event.event_type %></div>
+    <div class=""><%= @event.name %></div>
+    <div class=""><%= @event.description %></div>
+    <div class=><%= @event.price_w_adhesion %></div>
+    <div class=""><%= @event.address %></div>
+    <div class="">
+    <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
+</div>
+<%= cl_image_tag(@event.photo) %>
 
 
+<div>
+  <%= link_to "Edit", event_path(@event), method: :edit, class: "btn btn-info" %>
+</div>
+<div>
+<%= link_to "Destroy", event_path(@event),
+      method: :delete,
+      data: { confirm: "Are you sure?" },
+      class: "btn btn-danger" %>
+</div>
 

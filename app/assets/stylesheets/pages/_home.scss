@@ -5,84 +5,51 @@ body {
   text-align: center;
 }
 
-a {
-color: white;
-text-decoration: none;
-letter-spacing: 1px;
- }
+ a {
+   text-decoration: none;
+   letter-spacing: 1px;
+   color:rgb(220,220,220);
+  }
 
  a:hover {
-color: rgb(200,200,200);
-text-decoration: none;
-letter-spacing: 1px;
- }
-
- .containers-description{
-  a{
-  color: #114373;
+   color: rgb(200,200,200);
+   text-decoration: none;
+//   letter-spacing: 1px;
   }
-  a:hover{
-    font-weight: bold;
+
+h3{
+    padding: 30px 0px 30px 0px;
   }
-  width: 90%;
-  max-width: 800px;
-  font-size: 20px;
-  margin-bottom: 50px;
-  font-weight: lighter;
- }
 
-  .reseaux i{
-  color: grey;
- }
-
-
- .avatar-middle{
-  border-radius: 50%;
-  object-fit: cover;
-  width: 70px;
-  height: 70px;
+.btn-register{
+  background-color: #6A9F31;
+  border-style: solid;
+  border-radius: 4px;
+  opacity: 0.8;
+  padding: 10px 20px;
+  font-size: 30px;
+  margin-top: 80px 200px;
+  color: white;
 }
 
- .avatar-big{
-  border-radius: 50%;
-  object-fit: cover;
-  width: 20vw ;
-  height: 20vw;
-  max-width: 140px;
-  max-height: 140px;
-  margin: 5px
- }
-
-
-
-
- #urgence-contact{
-  background-color: rgb(240,240,240);
-  color: rgb(200,200,200);
-  a{
-    color:rgb(200,200,200);
-  }
-  a:hover{
-    color:rgb(100,100,100);
-  }
- }
+.btn-register:hover{
+  opacity: 1;
+  color: white;
+}
 
 // BANNER
 
-.banner{
-  background-size: cover;
-  background-repeat: none;
-  background-position: top;
-  height: 70vh;
-  padding: 40px 10px 50px 10px;
+#banner{
+  height: 100vh;
 }
 
-.banner-content {
+#banner-content {
   text-align: center;
+  padding: 50px 10px;
   h2{
     padding-top: 20px;
     color: rgb(40,40,40);
-    font-size: calc(25px + 1.2vw);
+    font-size: calc(25px + 0.7vw);
   }
   h4{
     color: rgb(20,20,20);
@@ -97,93 +64,6 @@ letter-spacing: 1px;
   }
 }
 
-.banner-img-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(130vh - 100px);
-}
-
-.banner-img{
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: top;
-  height: 650px;
-  width: 400px;
-  border-radius: 4px;
-  box-shadow: 1px 1px 5px rgb(50,50,50);
-}
-
-
-//SERVICES SECTION
-// .services-container{
-//   padding : 50px;
-//   color: rgb(40,40,40);
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   h2{
-//     font-size: 24px;
-//     padding-bottom: 30px;
-//   }
-//   margin: auto;
-// }
-
-// .services-element{
-//   box-shadow: 1px 1px 3px rgb(200,200,200) ;
-//   height: 300px;
-//   width: 300px;
-//   margin: auto;
-//   position : relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-bottom: 30px;
-//   background-color: rgb(260,260,260);
-//   h4{
-//     color : rgb(40,40,40);
-//     position: absolute;
-//     bottom: 40px;
-//     left: 40px;
-//     font-size: 90px;
-//     font-weight: lighter;
-//     text-shadow: 1px 1px 3px rgba(200,200,200,0.6);
-//     transition: 0.4s;
-//   }
-//   background-size: 300px 50px;
-//   background-position: top;
-//   background-repeat: no-repeat;
-// }
-
-// .services-element:hover{
-//     margin-bottom: 30px;
-//   h4{
-//     position: absolute;
-//     bottom: 30px;
-//     left: 40px;
-//     transition: 0.4s;
-//   }
-// }
-
-
-
-a:hover {
-text-decoration: none;
-  }
-
-.color-commerce{
-  background-color: #C97064;
-}
-
-.color-agroe{
-    background-color: #6A9F31;
-}
-
-.color-web{
-    background-color: #C97064;
-}
-
 .engage{
   color: #6A9F31;
 }
@@ -192,304 +72,74 @@ text-decoration: none;
   color: #C97064;
 }
 
-// // LOCALISTION
+// events
 
 
 
-#actu{
-  padding-bottom: 50px;
+// partenaires
+#partenaires{
+  background-color: white;
   h1{
+    margin: 40px 0px;
   }
-  background-color: rgb(200,200,200);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  h3{
-    padding: 100px 0px 20px 0px;
-  }
-  #medium-widget{
-   a{
-  font-size: 20px;
-  }
-}
+    padding: 50px 0px 50px 0px;
   a{
-  font-size: 15px;
-  color : rgb(40,40,40);
-  }
-  a:hover{
-    color : rgb(40,40,40);
-  }
-}
-
-
-
-#info-contact{
-  .join{
-    padding: 30px;
-     a{
-    color: black;
-    }
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  h4{
-    background-color: #6A9F31;
-    border-style: solid;
-    border-radius: 4px;
-    opacity: 0.8;
-    padding: 10px 20px;
+    margin: 5vw 5vw;
     font-size: 30px;
-    margin-top: 80px 200px;
-
-  }
-  h4:hover{
-    opacity: 1;
-  }
-  }
-  background-color: white;
-  padding: 50px 0px 50px 0px;
-  h3{
-    margin-bottom: 0px;
-  }
-
-}
-
-#services{
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
-  padding-bottom: 100px;
-  h1{
-  }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-}
-
-.services-content{
-  width: 95%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
-.service-element{
-  display: flex;
-  flex-direction : column;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  background-color: white;
-  border-radius: 4px;
-  padding: 5px;
-  margin: 30px auto;
-  box-shadow: 1px 1px 3px rgb(105,105,105);
-  transition: box-shadow margin-top 0.2s;
-}
-
-.service-element:hover{
-  margin-top: 27px;
-  box-shadow: 2px 2px 6px rgb(10,10,10);
-  transition: box-shadow margin-top 0.2s;
-}
-
-.service-title{
-  padding-top: 10px;
-  font-size: 24px;
-  text-align: center;
-}
-
-.service-description{
-
-}
-
-.service-button{
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  padding: 70px 100px;
-  margin: 0px;
-  color: white;
-  text-shadow: 1px 1px 1px rgb(240,240,240)
-}
-
-
-
-.service-button-bg{
-  padding: 0px;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.service-button:hover{
-  font-size: 25px;
-  transition: 0.1s ease;
-}
-
-.service-element-prestations-content{
-  text-align: center;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.service-element-events-content{
-  text-align: center;
-  margin: 10px;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.service-element-prestations{
-  background-color: white;
-      ul{
-        list-style-type: none;
-        padding-left : 5px;
-      }
-      li{
-        margin: 25px 0px;
-        font-size: 18px;
-        font-style: bolder;
-      }
-text-align: center;
-  .details{
-    font-size: 12px;
-    color: rgb(100,100,100);
-}
-  .commencer-formation-rse{
-    font-weight: bolder;
-  a{
-    color: #6B9F31;
-    font-size: 1.1em;
-
-  }
-
-}
-}
-
-.service-element-events{
-  margin-top: 30px;
-}
-
-.service-contact{
-  margin-top: 20px;
-  border-bottom-style: solid;
-  }
-
-.service-subscription{
-  margin-top: 30px;
-  }
-
-.service-contact-email{
-  a{
-    color: rgb(200,200,200)
-  }
-}
-
-.event-element{
-  margin: 10px 0px;
-  .event-date{
-    font-weight: bolder;
-  }
-  .event-inscription p{
-    font-style: italic;
     }
-  .event-inscription a{
-    color: rgb(200,200,200);
-    }
-}
-
-.prestation-element{
-  margin: 10px 0px;
-  font-weight: bolder;
-}
-
-#adhesion-agroe{
-  height: 100%;
-  background-color: #6B9F31;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  h1{
-  }
-}
-
-.adhesion-container{
-  background-color: white;
-  width: 95%;
-  max-width: 800px;
-  border-style: solid;
-  padding: 50px;
-  margin: 50px;
-}
-
-.adhesion-title{
-  padding-bottom: 20px;
-  font-size: 24px;
-}
-
-.adhesion-content{
-   p{
-    color: black;
-  }
-  max-width: 700px;
-  text-align: center;
-}
-
-
- .service-offer{
-    a{
-      color : grey;
-      font-size: calc(2.7px + 1vw);
-    }
- }
-
-  .service-offer-content{
-
-    p{
-      font-size: calc(7px + 0.3vw);
-      padding: 20px 5px 20px 5px;
-      font-style: italic
-    }
-    h4{
-      margin: 0px;
-      padding: 30px 5px 30px 5px;
-    }
-    h5{
-      margin: 0px 5px;
-    }
-    a{
-    }
-
- }
-
-
-.logos-soutiens-resize{
+  .logos-soutiens-resize {
   max-height: 70px;
   height: 7vw;
   margin: 2vw 3vw;
-}
-
- .card-process-text{
- font-size: 16px;
-}
-#medium-widget{
-  text-align: left;
-  a:hover{
-    color: grey;
-  }
-  #description{
-    font-size: 30px;
   }
 }
 
-#questions-container{
+// Actu
+#actu{
+  padding: 50px 10px;
+  background-color: rgb(200,200,200);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  a{
+    color: rgb(80,80,80);
+    font-size: 15px;
+  }
+  #medium-widget{
+    text-align: left;
+    max-width: 800px;
+     a{
+      font-size: 20px;
+      color : rgb(80,80,80);
+      line-height: 1;
+      }
+      a:hover{
+        color : rgb(40,40,40);
+      }
+    }
+  }
+
+//adhesion
+#adhesion-agroe{
+  background-color: white;
+  padding: 50px 10px;
+  .join{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a{
+          font-size: 22px;
+    }
+  }
+
+}
+
+//contact
+#contact-info{
 background-color: white;
   h4{
     color: #808080;
@@ -502,23 +152,146 @@ background-color: white;
     padding-bottom: 30px;
     color: #808080;
   }
+
+
 }
 
-#partenaires{
-  background-color: white;
-  h1{
-    margin: 40px 0px;
-  }
-    padding: 50px 0px 50px 0px;
-  a{
-    margin: 5vw 5vw;
-    font-size: 30px;
-    }
-}
 
-.reseaux-link{
-    a:hover{color: white;}
-  }
+
+  // NOT USE
+//   #services{
+//   background-size: cover;
+//   background-position: center;
+//   padding: 50px;
+//   padding-bottom: 100px;
+//   h1{
+//   }
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items:center;
+// }
+
+// .services-content{
+//   width: 95%;
+//   max-width: 800px;
+//   margin: 0 auto;
+// }
+
+
+// .service-element{
+//   display: flex;
+//   flex-direction : column;
+//   align-items: center;
+//   justify-content: center;
+//   width: 270px;
+//   background-color: white;
+//   border-radius: 4px;
+//   padding: 5px;
+//   margin: 30px auto;
+//   box-shadow: 1px 1px 3px rgb(105,105,105);
+//   transition: box-shadow margin-top 0.2s;
+// }
+
+// .service-element:hover{
+//   margin-top: 27px;
+//   box-shadow: 2px 2px 6px rgb(10,10,10);
+//   transition: box-shadow margin-top 0.2s;
+// }
+
+// .service-title{
+//   padding-top: 10px;
+//   font-size: 24px;
+//   text-align: center;
+// }
+
+// .service-description{
+
+// }
+
+// .service-button{
+//   height: 150px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 24px;
+//   padding: 70px 100px;
+//   margin: 0px;
+//   color: white;
+//   text-shadow: 1px 1px 1px rgb(240,240,240)
+// }
+
+
+
+// .service-button-bg{
+//   padding: 0px;
+//   background-size: cover;
+//   background-position: bottom;
+// }
+
+// .service-button:hover{
+//   font-size: 25px;
+//   transition: 0.1s ease;
+// }
+
+// .service-element-prestations-content{
+//   text-align: center;
+//   padding: 5px;
+//   font-size: 14px;
+// }
+
+// .service-element-events-content{
+//   text-align: center;
+//   margin: 10px;
+//   padding: 5px;
+//   font-size: 14px;
+// }
+
+// .service-element-prestations{
+//   background-color: white;
+//       ul{
+//         list-style-type: none;
+//         padding-left : 5px;
+//       }
+//       li{
+//         margin: 25px 0px;
+//         font-size: 18px;
+//         font-style: bolder;
+//       }
+// text-align: center;
+//   .details{
+//     font-size: 12px;
+//     color: rgb(100,100,100);
+// }
+//   .commencer-formation-rse{
+//     font-weight: bolder;
+//   a{
+//     color: #6B9F31;
+//     font-size: 1.1em;
+
+//   }
+
+// }
+// }
+
+// .service-element-events{
+//   margin-top: 30px;
+// }
+
+// .service-contact{
+//   margin-top: 20px;
+//   border-bottom-style: solid;
+//   }
+
+// .service-subscription{
+//   margin-top: 30px;
+//   }
+
+// .service-contact-email{
+//   a{
+//     color: rgb(200,200,200)
+//   }
+// }
 
 
 

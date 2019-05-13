@@ -1,121 +1,27 @@
-<div class="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,1) 60%, rgba(270,270,270,1) 100%), url(<%= asset_path ''%>);">
-  <div class="banner-content">
+<div id="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,1) 60%, rgba(270,270,270,1) 100%), url(<%= asset_path ''%>);">
+  <div id="banner-content">
     <%= image_tag 'agroe.png' %>
-    <h2> Anime une communauté d'acteurs agroalimentaires </br><span class="engage"> engagées </span> et <span class="visionnary">visionnaires</span>. </h2>
-    <h4> Développement Durable | Digital | Retail | Ingénierie de Projets </h4>
-  </div>
+    <h2> Une communauté d'acteurs agroalimentaires </br><span class="engage"> engagées </span> et <span class="visionnary">visionnaires</span>. </h2>
+    <h4> RSE | Digital | Commerce </h4>
+    <a href="https://www.helloasso.com/associations/agroe/adhesions/adhesion-agroe" class="btn btn-register"> Adhérer</a>
 </div>
+
+
+
 <div id="events">
-  <h3><strong>Nos Prochains Évènements </strong></h3>
-
-
-
-
-<div class="events-content">
-  <div class="row">
-    <% @events.each do |e| %>
-      <%= render 'shared/event_card', event: e %>
-    <% end %>
-  </div>
-</div>
-
-
-
+  <h3><strong>Nos Évènements </strong></h3>
   <div class="events-content">
     <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= asset_path 'planet.jpg'%>);">
-          <div class="event-date">23/05/2019</div>
-          <div class="event-type salon">AgroClubRSE #7</div>
-          <div class="event-title">PLV et Développement durable</div>
-          <div class="event-title2">Présence de Impact PLV, POPAI, Coopérative MU...</div>
-          <div class=event-organiser>Org: Agroé / Fizzy Distribution </div>
-          <div class="event-address">Sars-et-Rosières (59)</div>
-          <div class="event-registration-button">
-            <a href="https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043" class="btn color-commerce"> Inscription </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= asset_path 'courtrai.jpg'%>);">
-          <div class="event-date">23/05/2019</div>
-          <div class="event-type salon">Visite</div>
-          <div class="event-title">Retail tour à Bruxelles </div>
-          <div class="event-title2">Partez à la découverte des enseignes belges</div>
-          <div class=event-organiser>Org: Interreg</div>
-          <div class="event-address">Bruxelles (BEL)</div>
-          <div class="event-registration-button">
-             COMPLET
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= asset_path 'meeting.jpg'%>);">
-          <div class="event-date">23/05/2019</div>
-          <div class="event-type salon">Assemblée Générale</div>
-          <div class="event-title">AG Agroé chez Fleury Michon </div>
-          <div class="event-title2"> Intervention de Christian Gourlay, directeur d'usine Fleury Michon </div>
-          <div class=event-organiser>Org: Agroé</div>
-          <div class="event-address">Cambrai (59)</div>
-          <div class="event-registration-button">
-             <a href="https://www.helloasso.com/associations/agroe/evenements/assemblee-generale-agroe-chez-fleury-michon" class="btn color-commerce"> Inscription </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= asset_path 'symevad.png'%>);">
-          <div class="event-date">18/06/2019</div>
-          <div class="event-type club">Rencontre</div>
-          <div class="event-title">L'emballage en Belgique </div>
-          <div class="event-title2">
-              Réglementation Belge, tendances, écoconception et Atelier "consigne"
-          </div>
-          <div class=event-organiser>Org: Agroé / Wagralim</div>
-          <div class="event-address">Charleroi (BEL)</div>
-          <div class="event-registration-button">
-            A venir
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= asset_path 'portdunkerque.jpg'%>);">
-          <div class="event-date">14/09/2019</div>
-          <div class="event-type salon">Visites et conférences</div>
-          <div class="event-title">Export et Port de Dunkerque</div>
-          <div class="event-title2">Venez rencontrer les experts du port de dunkerque pour affiner votre stratégie à l'export</div>
-          <div class=event-organiser>Org: Agroé / Port de Dunkerque</div>
-          <div class="event-address">Dunkerque (59)</div>
-          <div class="event-registration-button">
-            <a href="https://www.helloasso.com/associations/agroe/evenements/reussir-sa-strategie-a-l-export-avec-le-port-de-dunkerque" class="btn color-commerce"> Inscription </a>
-          </div>
-        </div>
-      </div>
+      <% evenements = @events.order(:date) %>
+      <% evenements.each do |e| %>
+        <%= render 'shared/event_card', event: e %>
+      <% end %>
     </div>
   </div>
-</div>
-
-<div id="actu">
-  <h3><strong> Dernières publications </strong></h3>
-<div id="medium-widget"></div>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@poledexcellenceagroe","postsPerLine":1,"limit":4,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"square"}})</script>
-    <a href="https://medium.com/@poledexcellenceagroe">+ de publications...</a>
-</div>
-
-<div id="info-contact">
-  <h3><strong> Adhésion </strong></h3>
-  <div class="join">
-    <i class="fas fa-smile-beam fa-4x"></i>
-    <h5><i class="fas fa-check"></i>Accès aux évènements à des tarifs préférentiels.</h5>
-    <h5><i class="fas fa-check"></i>Accès gratuit aux newsletters thématiques (AgroNoteRSE...)</h5>
-      <h5> <i class="fas fa-check"></i>Accès aux services experts des différents clubs (RSE, Retail...).</h5>
-      <h5> <i class="fas fa-check"></i>Essai gratuit pour un RDV de l'AgroClubRSE pour rencontrer la communauté.</h5>
-      <h4><a href="https://www.helloasso.com/associations/agroe/adhesions/adhesion-agroe" class="btn"> Adhérer</a></h4>
-    </div>
 </div>
 
 <div id="partenaires">
-  <h3><strong> Notre communauté </strong></h3>
+  <h3><strong> Nos adhérents </strong></h3>
     <%= image_tag 'fizzy.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'daudruy.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'coopfrance.png', class:'logos-soutiens-resize' %>
@@ -130,7 +36,7 @@
     <%= image_tag 'assemandeprez.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'davigel.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'fleurymichon.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'holder.png', class:'logos-soutiens-resize' %>
+    <%= image_tag 'holder.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'Ingredia.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'jcdavid.png', class:'logos-soutiens-resize' %>
     <%= image_tag 'lepetitcuisinier.png', class:'logos-soutiens-resize' %>
@@ -142,8 +48,33 @@
 </div>
 
 
-<div id="questions-container">
-<h3><strong> Contact</strong> </h3>
+<div id="actu">
+  <h3><strong> Nos publications </strong></h3>
+  <div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@poledexcellenceagroe","postsPerLine":1,"limit":5,"picture":"small","fields":["description"],"ratio":"square"}})</script>
+    <a href="https://medium.com/@poledexcellenceagroe">+ de publications...</a>
+</div>
+
+
+<div id="adhesion-agroe">
+  <h3><strong> Offre d'adhésion </strong></h3>
+  <div class="join">
+    <h5><i class="fas fa-check"></i>Les Évènements à des tarifs préférentiels.</h5>
+    <h5><i class="fas fa-check"></i> Les newsletters thématiques (AgroNoteRSE...)</h5>
+      <h5> <i class="fas fa-check"></i> Accès aux services experts des différents clubs (RSE, Retail...).</h5>
+      <h5> <i class="fas fa-check"></i> 1 invitation à un RDV de l'AgroClubRSE pour rencontrer la communauté.</h5>
+    </br>
+      <a href="https://www.helloasso.com/associations/agroe/adhesions/adhesion-agroe" class="btn btn-register"> Adhérer</a>
+    </div>
+</div>
+
+
+
+
+
+<div id="contact-info">
+<h3><strong> Contacts </strong> </h3>
  <h5> <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a> - <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a>
 </h5>
 
