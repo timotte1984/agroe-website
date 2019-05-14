@@ -119,16 +119,31 @@ h3{
 
 //adhesion
 #adhesion-agroe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
   background-color: white;
   padding: 50px 10px;
   .join{
+    width: 400px;
+    border-style: solid;
+    border-radius: 4px;
+    margin: 10px;
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     a{
-          font-size: 22px;
+          font-size: 16px;
+          margin: 50px 10px;
+    }
+    .minilien a{
+      color : grey;
+    }
+      .minilien a:hover{
+      color : black;
     }
   }
 

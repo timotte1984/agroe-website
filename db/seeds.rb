@@ -13,7 +13,6 @@ e1 = Event.create(
   address: "Bruxelles (BEL)",
   registration_link: "",
   event_type: "Retail",
-  photo: "image/upload/v1557779127/ibxozgdwjp1qypre5efm.jpg"
   )
 url1 = "https://res.cloudinary.com/julienmottet/image/upload/v1557779127/ibxozgdwjp1qypre5efm.jpg"
 e1.remote_photo_url = url1
@@ -26,7 +25,7 @@ e2 = Event.create(
   price_w_adhesion: 0,
   price_ext: 100,
   address: "Tilloy-lez-Cambrai (59)",
-  registration_link: "https://www.helloasso.com/associations/agroe/evenements/assemblee-generale-agroe-chez-fleury-michon",
+  registration_link: "https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/evenements/assemblee-generale-agroe-chez-fleury-michon",
   )
 url2 = "https://res.cloudinary.com/julienmottet/image/upload/v1557860784/errxbxf9ve9he6xepqvu.jpg"
 e2.remote_photo_url = url2
@@ -51,7 +50,7 @@ e4 = Event.create(
   price_w_adhesion: 100,
   price_ext: 180,
   address: "Dunkerque (59)",
-  registration_link: "https://www.helloasso.com/associations/agroe/evenements/reussir-sa-strategie-a-l-export-avec-le-port-de-dunkerque",
+  registration_link: "https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/evenements/reussir-sa-strategie-a-l-export-avec-le-port-de-dunkerque",
   )
 url4 = "https://res.cloudinary.com/julienmottet/image/upload/v1557782858/hndjtetg3etczxeb0hum.jpg"
 e4.remote_photo_url = url4
