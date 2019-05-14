@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :about, :rse, :web, :commerce, :mention_legal, :credits]
+  skip_before_action :authenticate_user!, only: :home
 
   def home
     @events = Event.all

@@ -15,21 +15,6 @@ ActiveRecord::Schema.define(version: 2019_05_14_100556) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "associations", force: :cascade do |t|
-    t.string "name"
-    t.string "address"
-    t.string "website_url"
-    t.string "agenda_url"
-    t.string "twitter_name"
-    t.string "linkedin_name"
-    t.string "facebook_name"
-    t.string "img_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "tags"
-    t.string "structure_type"
-  end
-
   create_table "events", force: :cascade do |t|
     t.string "name"
     t.datetime "date"
@@ -41,7 +26,7 @@ ActiveRecord::Schema.define(version: 2019_05_14_100556) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "active", default: true
+    t.boolean "active"
     t.string "event_type"
     t.string "photo"
   end
@@ -54,29 +39,16 @@ ActiveRecord::Schema.define(version: 2019_05_14_100556) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
-    t.string "address"
-    t.string "website_url"
-    t.string "twitter_name"
-    t.string "linkedin_name"
-    t.string "facebook_name"
-    t.string "img_url"
-    t.string "tags"
-    t.string "structure_type"
     t.string "invitation_token"
     t.datetime "invitation_created_at"
     t.datetime "invitation_sent_at"
     t.datetime "invitation_accepted_at"
     t.integer "invitation_limit"
+    t.integer "invited_by_id"
     t.string "invited_by_type"
-    t.bigint "invited_by_id"
-    t.integer "invitations_count", default: 0
     t.boolean "admin"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["invitation_token"], name: "index_users_on_invitation_token", unique: true
-    t.index ["invitations_count"], name: "index_users_on_invitations_count"
-    t.index ["invited_by_id"], name: "index_users_on_invited_by_id"
-    t.index ["invited_by_type", "invited_by_id"], name: "index_users_on_invited_by_type_and_invited_by_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
