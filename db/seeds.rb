@@ -4,7 +4,7 @@ require 'open-uri'
 
 
 
-Event.create(
+e1 = Event.create(
   name: "Retail Tour à Bruxelles",
   date: "23-05-2019".to_datetime,
   description: "Partez à la découverte des enseignes Belges",
@@ -15,8 +15,11 @@ Event.create(
   event_type: "Retail",
   photo: "image/upload/v1557779127/ibxozgdwjp1qypre5efm.jpg"
   )
+url1 = "https://res.cloudinary.com/julienmottet/image/upload/v1557779127/ibxozgdwjp1qypre5efm.jpg"
+e1.remote_photo_url = url1
+e1.save
 
-Event.create(
+e2 = Event.create(
   name: "AG d'Agroé chez Fleury Michon",
   date: "28-05-2019".to_datetime,
   description: "Présentation des comptes d'Agroé et intervention de Christian Gourlay",
@@ -24,20 +27,24 @@ Event.create(
   price_ext: 100,
   address: "Tilloy-lez-Cambrai (59)",
   registration_link: "https://www.helloasso.com/associations/agroe/evenements/assemblee-generale-agroe-chez-fleury-michon",
-  photo: "image/upload/v1557780953/pjcfpskpnpearofl3qbb.jpg"
   )
+url2 = "https://res.cloudinary.com/julienmottet/image/upload/v1557860784/errxbxf9ve9he6xepqvu.jpg"
+e2.remote_photo_url = url2
+e2.save
 
-Event.create(
+e3 = Event.create(
   name: "L'emballage en Belgique",
   date: "18-06-2019".to_datetime,
   description: "Venez découvrir les enjeux de l'emballage en Belgique",
   price_w_adhesion: 0,
   price_ext: 100,
   address: "Charleroi (BEL)",
-  photo: "image/upload/v1557782256/qcxhfy1ddidwe4ypmi2v.jpg"
   )
+url3 = "https://res.cloudinary.com/julienmottet/image/upload/v1557782256/qcxhfy1ddidwe4ypmi2v.jpg"
+e3.remote_photo_url = url3
+e3.save
 
-Event.create(
+e4 = Event.create(
   name: "Export au Port de Dunkerque",
   date: "17-09-2019".to_datetime,
   description: "Venez rencontrer les experts du port de dunkerque pour affiner votre stratégie à l'export",
@@ -45,10 +52,13 @@ Event.create(
   price_ext: 180,
   address: "Dunkerque (59)",
   registration_link: "https://www.helloasso.com/associations/agroe/evenements/reussir-sa-strategie-a-l-export-avec-le-port-de-dunkerque",
-  photo: "image/upload/v1557782858/hndjtetg3etczxeb0hum.jpg"
   )
+url4 = "https://res.cloudinary.com/julienmottet/image/upload/v1557782858/hndjtetg3etczxeb0hum.jpg"
+e4.remote_photo_url = url4
+e4.save
 
-Event.create(
+
+e5 = Event.create(
   name: "PLV et Développement Durable",
   date: "23-05-2019".to_datetime,
   description: "Découvrez l'entreprise Fizzy Distribution et venez rencontrer Impact PLV, POPAI, Coopérative MU...",
@@ -57,8 +67,10 @@ Event.create(
   address: "Sars-et-Rosières (59)",
   registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
   event_type: "DD",
-  photo: "image/upload/v1557610695/kw4vn2x43eq43z8a6xdn.jpg"
   )
+url5 = "https://res.cloudinary.com/julienmottet/image/upload/v1557610695/kw4vn2x43eq43z8a6xdn.jpg"
+e5.remote_photo_url = url5
+e5.save
 
 
 # This file should contain all the record creation needed to seed the database with its default values.
