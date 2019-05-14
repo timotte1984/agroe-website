@@ -11,7 +11,6 @@
    position: absolute;
    bottom: 10px;
    right : 10px;
-   opacity: 0;
   }
   .event-price-ext{
   position: absolute;
@@ -38,11 +37,6 @@
  }
 
 .event:hover{
-  border-radius: 4px;
-  .event-registration-button{
-   opacity: 1;
-   transition: ease opacity 0.3s
-  }
   .event-description{
   opacity: 0.7;
    transition: ease opacity 0.3s
