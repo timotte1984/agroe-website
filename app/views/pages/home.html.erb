@@ -8,11 +8,11 @@
 
 <div id="events">
   <h3><strong>Nos Évènements </strong></h3>
-    <div class="row">
-      <div class="events-content">
-      <% @events.order(:date).each do |e| %>
-        <%= render 'shared/event_card', event: e %>
-      <% end %>
+    <div class="events-content">
+      <div class="row">
+        <% @events.order(:date).each do |e| %>
+          <%= render 'shared/event_card', event: e %>
+        <% end %>
     </div>
   </div>
 </div>
