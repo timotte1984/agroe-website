@@ -1,9 +1,6 @@
 require 'date'
 require 'open-uri'
 
-User.create(email: "j.mottet@agroe.fr",
-            encrypted_password: "123456" )
-
 
 
 
