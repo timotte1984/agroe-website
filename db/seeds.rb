@@ -6,7 +6,7 @@ User.create(email: "j.mottet@agroe.fr",
 
 Event.create(
   name: "Retail Tour à Bruxelles",
-  date: Thu, 23 May 2019 10:00:00 UTC +00:00,
+  date: datetime.strptime("23/05/2019", "dd/mm/yyyy")
   description: "Partez à la découverte des enseignes Belges",
   price_w_adhesion: 0,
   price_ext: 100,
@@ -18,7 +18,7 @@ Event.create(
 
 Event.create(
   name: "AG d'Agroé chez Fleury Michon",
-  date: Tue, 28 May 2019 10:00:00 UTC +00:00,
+  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
   description: "Présentation des comptes d'Agroé et intervention de Christian Gourlay",
   price_w_adhesion: 0,
   price_ext: 100,
@@ -29,7 +29,7 @@ Event.create(
 
 Event.create(
   name: "L'emballage en Belgique",
-  date: Tue, 18 Jun 2019 09:10:00 UTC +00:00,
+  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
   description: "Venez découvrir les enjeux de l'emballage en Belgique",
   price_w_adhesion: 0,
   price_ext: 100,
@@ -39,7 +39,7 @@ Event.create(
 
 Event.create(
   name: "Export au Port de Dunkerque",
-  date: Sat, 14 Sep 2019 09:24:00 UTC +00:00,
+  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
   description: "Venez rencontrer les experts du port de dunkerque pour affiner votre stratégie à l'export",
   price_w_adhesion: 100,
   price_ext: 180,
@@ -50,7 +50,7 @@ Event.create(
 
 Event.create(
   name: "PLV et Développement Durable",
-  date: Thu, 23 May 2019 13:30:00 UTC +00:00,
+  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
   description: "Découvrez l'entreprise Fizzy Distribution et venez rencontrer Impact PLV, POPAI, Coopérative MU...",
   price_w_adhesion: 0,
   price_ext: 100,
