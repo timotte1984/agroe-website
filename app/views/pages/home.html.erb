@@ -12,7 +12,7 @@
   <h3><strong>Nos Évènements </strong></h3>
   <div class="events-content">
     <div class="row">
-      <% Event.all.order(:date).each do |e| %>
+      <% @events.order(:date).each do |e| %>
         <%= render 'shared/event_card', event: e %>
       <% end %>
     </div>
