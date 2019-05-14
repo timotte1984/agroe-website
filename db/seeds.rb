@@ -4,9 +4,12 @@ require 'open-uri'
 User.create(email: "j.mottet@agroe.fr",
             encrypted_password: "123456" )
 
+
+
+
 Event.create(
   name: "Retail Tour à Bruxelles",
-  date: datetime.strptime("23/05/2019", "dd/mm/yyyy")
+  date: "23-05-2019".to_datetime,
   description: "Partez à la découverte des enseignes Belges",
   price_w_adhesion: 0,
   price_ext: 100,
@@ -18,18 +21,18 @@ Event.create(
 
 Event.create(
   name: "AG d'Agroé chez Fleury Michon",
-  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
+  date: "28-05-2019".to_datetime,
   description: "Présentation des comptes d'Agroé et intervention de Christian Gourlay",
   price_w_adhesion: 0,
   price_ext: 100,
   address: "Tilloy-lez-Cambrai (59)",
-  registration_link: "https://www.helloasso.com/associations/agroe/evenements/assemblee-generale-agroe-chez-fleury-michon"
+  registration_link: "https://www.helloasso.com/associations/agroe/evenements/assemblee-generale-agroe-chez-fleury-michon",
   photo: "image/upload/v1557780953/pjcfpskpnpearofl3qbb.jpg"
   )
 
 Event.create(
   name: "L'emballage en Belgique",
-  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
+  date: "18-06-2019".to_datetime,
   description: "Venez découvrir les enjeux de l'emballage en Belgique",
   price_w_adhesion: 0,
   price_ext: 100,
@@ -39,7 +42,7 @@ Event.create(
 
 Event.create(
   name: "Export au Port de Dunkerque",
-  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
+  date: "17-09-2019".to_datetime,
   description: "Venez rencontrer les experts du port de dunkerque pour affiner votre stratégie à l'export",
   price_w_adhesion: 100,
   price_ext: 180,
@@ -50,7 +53,7 @@ Event.create(
 
 Event.create(
   name: "PLV et Développement Durable",
-  date: datetime.strptime("23/05/2019", "dd/mm/yyyy"),
+  date: "23-05-2019".to_datetime,
   description: "Découvrez l'entreprise Fizzy Distribution et venez rencontrer Impact PLV, POPAI, Coopérative MU...",
   price_w_adhesion: 0,
   price_ext: 100,
