@@ -5,10 +5,10 @@
     <%  image = "agroe.png" %>
   <% end %>
   <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= image %>);">
-
     <div class="event-date">
       <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
     </div>
+    <div class="event-liencard"><a href=<%= event.registration_link%> ></a></div>
     <div class="event-title"><%= event.name %></div>
     <div class="event-description"><%= event.description %></div>
     <div class=event-price-ext>non adhérent : <%= event.price_ext %> &#8364</div>
