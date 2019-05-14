@@ -38,6 +38,7 @@ e3 = Event.create(
   price_w_adhesion: 0,
   price_ext: 100,
   address: "Charleroi (BEL)",
+  registration_link: "",
   )
 url3 = "https://res.cloudinary.com/julienmottet/image/upload/v1557782256/qcxhfy1ddidwe4ypmi2v.jpg"
 e3.remote_photo_url = url3
@@ -47,7 +48,7 @@ e4 = Event.create(
   name: "Export au Port de Dunkerque",
   date: "17-09-2019".to_datetime,
   description: "Venez rencontrer les experts du port de dunkerque pour affiner votre stratégie à l'export",
-  price_w_adhesion: 100,
+  price_w_adhesion: 50,
   price_ext: 180,
   address: "Dunkerque (59)",
   registration_link: "https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/evenements/reussir-sa-strategie-a-l-export-avec-le-port-de-dunkerque",
