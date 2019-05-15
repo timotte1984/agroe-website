@@ -25,7 +25,7 @@ h3{
   background-color: #6A9F31;
   border-style: solid;
   border-radius: 4px;
-  opacity: 0.8;
+  opacity: 0.7;
   padding: 10px 20px;
   font-size: 30px;
   margin-top: 80px 200px;
@@ -35,6 +35,18 @@ h3{
 .btn-register:hover{
   opacity: 1;
   color: white;
+}
+
+#sib-container input:-ms-input-placeholder {
+  text-align: left;
+  font-family: "Helvetica", sans-serif;
+  color: #c0ccda;
+}
+
+#sib-container input::placeholder {
+  text-align: left;
+  font-family: "Helvetica", sans-serif;
+  color: #c0ccda;
 }
 
 // BANNER
@@ -67,8 +79,31 @@ h3{
   color: #6A9F31;
 }
 
+.engage-back{
+  background-color : #6A9F31;
+  opacity: 0.7;
+  color: white;
+}
+
+.engage-back:hover{
+  opacity: 1;
+  color: white;
+}
+
+
 .visionnary{
   color: #C97064;
+}
+
+.visionnary-back{
+  background-color : #C97064;
+  color: white;
+  opacity: 0.7;
+}
+
+.visionnary-back:hover{
+  opacity: 1;
+  color: white;
 }
 
 // events
@@ -78,6 +113,17 @@ h3{
 
 #events-content{
   margin: 0 auto;
+}
+
+.sib-form-block button{
+  font-size:16px;
+  text-align:center;
+  font-weight:700;
+  color: rgb(40,40,40);
+  background-color:#FFFFFF;
+  border-radius:3px;
+  border-style: solid;
+  border-color: #e2e2e2;
 }
 
 
@@ -134,6 +180,8 @@ h3{
     width:390px;
     border-style: solid;
     border-radius: 4px;
+    border-width: 0.5px;
+    border-color: rgb(200,200,200);
     margin: 10px;
     padding: 30px;
     display: flex;
