@@ -25,11 +25,12 @@ h3{
   background-color: #6A9F31;
   border-style: solid;
   border-radius: 4px;
-  opacity: 0.7;
+  opacity: 0.9;
   padding: 10px 20px;
   font-size: 30px;
   margin-top: 80px 200px;
   color: white;
+  box-shadow: 1px 1px 3px rgb(200,200,200);
 }
 
 .btn-register:hover{
@@ -52,6 +53,7 @@ h3{
 // BANNER
 
 #banner{
+  background-color: white;
   padding: 50px 10px;
 }
 
@@ -81,7 +83,7 @@ h3{
 
 .engage-back{
   background-color : #6A9F31;
-  opacity: 0.7;
+  opacity: 0.9;
   color: white;
 }
 
@@ -98,7 +100,7 @@ h3{
 .visionnary-back{
   background-color : #C97064;
   color: white;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .visionnary-back:hover{
@@ -109,6 +111,7 @@ h3{
 // events
 #events{
   margin: 50px auto;
+  background-color: white;
 }
 
 #events-content{
@@ -131,6 +134,7 @@ h3{
 
 // partenaires
 #partenaires{
+  background-color: white;
   padding: 50px 10px;
   a{
     margin: 5vw 5vw;
@@ -175,15 +179,22 @@ h3{
   justify-content: center;
   align-items:center;
   background-color: white;
-  padding: 50px 10px;
+  .offer1{
+    background-color: rgb(240,240,240);
+  }
+  .offer2{
+    background-color: rgb(240,240,240);
+  }
   .join{
+    p{
+      font-size: 13px;
+      font-style: italic;
+    }
+    box-shadow: 2px 1px 3px rgb(150,150,150);
     width:390px;
-    border-style: solid;
     border-radius: 4px;
-    border-width: 0.5px;
-    border-color: rgb(200,200,200);
     margin: 10px;
-    padding: 30px;
+    padding: 40px 10px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -68,7 +68,7 @@ e5 = Event.create(
   registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
   event_type: "DD",
   )
-url5 = "https://res.cloudinary.com/julienmottet/image/upload/v1557610695/kw4vn2x43eq43z8a6xdn.jpg"
+url5 = "https://res.cloudinary.com/julienmottet/image/upload/v1558046741/dd.jpg"
 e5.remote_photo_url = url5
 e5.save
 
