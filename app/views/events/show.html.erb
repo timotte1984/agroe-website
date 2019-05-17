@@ -1,26 +1,53 @@
-<div>
-    <div class="">
-      <%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %>
-    </div>
-    <div class=""><%= @event.event_type %></div>
-    <div class=""><%= @event.name %></div>
-    <div class=""><%= @event.description %></div>
-    <div class=><%= @event.price_w_adhesion %></div>
-    <div class=""><%= @event.address %></div>
-    <div class="">
-    <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
-</div>
-<% if !@event.photo.nil? %>
-  <%= cl_image_tag(@event.photo) %>
-<% end %>
 
-<div>
+
+
+<div class="event-show">
+  <p>
+    Date : <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
+  </p>
+  <p>
+    <%= @event.event_type %>
+  </p>
+  <p>
+    Thématique : <strong><%= @event.name %></strong>
+  </p>
+  <p>
+    Description de l'évènement : <strong><%= @event.description %></strong>
+  </p>
+
+ <p>
+   <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
+ </p>
+
+  <p>
+    Prix pour les adhérents : <strong><%= @event.price_w_adhesion %> &#8364</strong>
+  </p>
+  <p>
+    Prix pour les non adhérents : <strong><%= @event.price_ext %> &#8364</strong>
+  </p>
+  <p>
+    Lieu de l'évènement : <strong><%= @event.address %></strong>
+  </p>
+
+   <% if user_signed_in? %>
+
+<p>
   <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
-</div>
-<div>
+</p>
+
+
+<p>
 <%= link_to("Destroy", event_path(@event),
       method: :delete,
       data: { confirm: "Are you sure?" },
       class: "btn btn-danger") %>
+</p>
+
+<% end %>
+    <% if !@event.photo.nil? %>
+    <div class="img-thumbnail">
+      <%= cl_image_tag(@event.photo) %>
+    </div>
+  <% end %>
 </div>
 

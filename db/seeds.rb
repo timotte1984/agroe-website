@@ -32,9 +32,9 @@ e2.remote_photo_url = url2
 e2.save
 
 e3 = Event.create(
-  name: "L'emballage en Belgique",
+  name: "Rencontre Fr/Bel -> bière consigné",
   date: "18-06-2019".to_datetime,
-  description: "Venez découvrir les enjeux de l'emballage en Belgique",
+  description: "Rencontre entre les acteurs belges et français intéressés par la consigne dans la filière brassicole",
   price_w_adhesion: 0,
   price_ext: 100,
   address: "Charleroi (BEL)",
