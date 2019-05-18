@@ -43,7 +43,7 @@
     </p>
 
 
-     <% if user_signed_in? %>
+     <% if user_signed_in? && current_user.admin === true %>
 
   <p>
     <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>

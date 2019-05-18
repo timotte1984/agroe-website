@@ -17,3 +17,19 @@
 #content{
   margin-top: 80px;
 }
+
+.devise-form-container{
+  padding: 20px;
+  flex :display;
+  justify-content: center;
+  align-items: center;
+  .devise-form{
+    background-color: white;
+    margin: 50px 300px;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgb(200,200,200);
+    padding: 20px;
+  }
+
+}
