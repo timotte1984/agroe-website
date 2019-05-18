@@ -32,12 +32,12 @@ e2.remote_photo_url = url2
 e2.save
 
 e3 = Event.create(
-  name: "Rencontre Fr/Bel -> bière consigné",
+  name: "Rencontre Fr/Bel - bière consigné",
   date: "18-06-2019".to_datetime,
   description: "Rencontre entre les acteurs belges et français intéressés par la consigne dans la filière brassicole",
   price_w_adhesion: 0,
   price_ext: 100,
-  address: "Charleroi (BEL)",
+  address: "???",
   registration_link: "",
   )
 url3 = "https://res.cloudinary.com/julienmottet/image/upload/v1557782256/qcxhfy1ddidwe4ypmi2v.jpg"
