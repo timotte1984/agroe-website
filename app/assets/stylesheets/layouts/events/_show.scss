@@ -1,12 +1,21 @@
-.event-show{
-  padding: 50px;
-  p{
-  text-align: left;
-  }
+.event-show-container{
   img{
-  height: 200px;
+    height: 200px;
+  }
+  .event-show-information{
+    padding: 50px;
+    p{
+    text-align: left;
   }
 }
+}
+
+.retour{
+  margin: 30px;
+  text-align: left;
+}
+
+
 
 
 

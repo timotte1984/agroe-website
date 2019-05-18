@@ -12,7 +12,7 @@
 
     <%= f.input :password,
                 hint: "leave it blank if you don't want to change it",
-                required: false
+                required: false,
                 input_html: { autocomplete: "new-password" } %>
     <%= f.input :password_confirmation,
                 required: false,
@@ -21,6 +21,18 @@
                 hint: "we need your current password to confirm your changes",
                 required: true,
                 input_html: { autocomplete: "current-password" } %>
+    <%= f.input :first_name, label: 'Prénom :' %>
+    <%= f.input :last_name, label: 'Nom :' %>
+    <%= f.input :job_position, label: 'Poste :' %>
+    <%= f.input :phone_number, label: 'Numéro de téléphone (06.XX.XX.XX.XX) :' %>
+    <%= f.input :company_name, label: 'Nom de votre entreprise' %>
+    <%= f.input :company_img, label: 'Logo entreprise' %>
+    <%= f.input :company_img_cache, as: :hidden %>
+    <%= f.input :person_img, label: 'photo de profil' %>
+    <%= f.input :person_img_cache, as: :hidden %>
+    <%= f.input :address, label: 'Adresse : ' %>
+    <%= f.input :siret, label: 'SIRET : ' %>
+
   </div>
 
   <div class="form-actions">

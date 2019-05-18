@@ -1,53 +1,65 @@
 
+<div class="retour">
+   <%= link_to('Retour', root_path(anchor: "events"), class: "btn btn-default") %>
+</div>
 
+<div class="event-show-container">
 
-<div class="event-show">
-  <p>
-    Date : <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
-  </p>
-  <p>
-    <%= @event.event_type %>
-  </p>
-  <p>
-    Thématique : <strong><%= @event.name %></strong>
-  </p>
-  <p>
-    Description de l'évènement : <strong><%= @event.description %></strong>
-  </p>
-
- <p>
-   <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
- </p>
-
-  <p>
-    Prix pour les adhérents : <strong><%= @event.price_w_adhesion %> &#8364</strong>
-  </p>
-  <p>
-    Prix pour les non adhérents : <strong><%= @event.price_ext %> &#8364</strong>
-  </p>
-  <p>
-    Lieu de l'évènement : <strong><%= @event.address %></strong>
-  </p>
-
-   <% if user_signed_in? %>
-
-<p>
-  <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
-</p>
-
-
-<p>
-<%= link_to("Destroy", event_path(@event),
-      method: :delete,
-      data: { confirm: "Are you sure?" },
-      class: "btn btn-danger") %>
-</p>
-
-<% end %>
-    <% if !@event.photo.nil? %>
+    <h1>
+      <strong><%= @event.name %></strong>
+    </h1>
+    <h5>
+      <strong><%= @event.description %></strong>
+    </h5>
+      <% if !@event.photo.nil? %>
     <div class="img-thumbnail">
       <%= cl_image_tag(@event.photo) %>
     </div>
+    <% end %>
+  <div class="event-show-information">
+    <p>
+      Date : <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
+    </p>
+     <p>
+      Lieu de l'évènement : <strong><%= @event.address %></strong>
+    </p>
+
+
+    <p>
+      Détail : </br><%= @event.descriptionlong %>
+    </p>
+
+    <p>
+      Prix pour les adhérents : <strong><%= @event.price_w_adhesion %> &#8364</strong>
+    </p>
+    <p>
+      Prix pour les non adhérents : <strong><%= @event.price_ext %> &#8364</strong>
+    </p>
+    <p>
+      <% if @event.registration_link === "" %>
+      <% else %>
+        <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
+      <% end %>
+    </p>
+
+
+     <% if user_signed_in? %>
+
+  <p>
+    <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
+  </p>
+
+
+  <p>
+  <%= link_to("Destroy", event_path(@event),
+        method: :delete,
+        data: { confirm: "Are you sure?" },
+        class: "btn btn-danger") %>
+  </p>
+
   <% end %>
+  </div>
+
+
 </div>
 

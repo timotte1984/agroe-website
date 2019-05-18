@@ -22,6 +22,7 @@ e2 = Event.create(
   name: "AG d'Agroé chez Fleury Michon",
   date: "28-05-2019".to_datetime,
   description: "Présentation des comptes d'Agroé et intervention de Christian Gourlay",
+  descriptionlong: "Au programme de l'AG, La présentation et la validation des comptes d'Agroé ainsi que la présentation de la nouvelle stratégie RSE de Fleury Michon par Christian Gourlay",
   price_w_adhesion: 0,
   price_ext: 100,
   address: "Tilloy-lez-Cambrai (59)",

@@ -11,21 +11,24 @@
     <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
     <div class="event-title"><%= event.name %></div>
     <div class="event-description"><%= event.description %></div>
-    <div class=event-price-ext>non adhérent : <%= event.price_ext %> &#8364</div>
-    <% if event.price_w_adhesion === 0 %>
-      <div class=event-price-adhesion>adhérent : Gratuit </div>
-    <% else %>
-      <div class=event-price-adhesion>adhérent : <%= event.price_w_adhesion %> &#8364</div>
-    <% end %>
     <div class="event-address"><%= event.address %></div>
-    <div class="event-registration-button">
-      <% if event.registration_link === "" %>
-          INDISPONIBLE
-        <% else %>
-          <%= link_to('Inscription', event.registration_link, class: "btn visionnary-back") %>
-        <% end %>
-    </div>
+    <% if event.registration_link === "" %>
+      <div class="event-registration-button">
+        <p>non disponible </p>
+      </div>
+    <% else %>
+      <div class=event-price-ext>non adhérent : <%= event.price_ext %> &#8364</div>
+      <% if event.price_w_adhesion === 0 %>
+        <div class=event-price-adhesion>adhérent : Gratuit </div>
+      <% else %>
+        <div class=event-price-adhesion>adhérent : <%= event.price_w_adhesion %> &#8364</div>
+      <% end %>
+      <div class="event-registration-button">
+        <%= link_to('Inscription', event.registration_link, class: "btn visionnary-back") %>
+      </div>
+    <% end %>
   </div>
 </div>
+
 
 

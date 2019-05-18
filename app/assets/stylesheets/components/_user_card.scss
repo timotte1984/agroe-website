@@ -1,4 +1,4 @@
- .event{
+ .user{
   text-shadow: 0 1px 3px rgba(200,200,200,0.6);
   height: 300px;
   position: relative;
@@ -8,7 +8,7 @@
   border-radius: 4px;
   color: rgb(260,260,260);
   box-shadow: 1px 1px 3px rgb(200,200,200);
-  .event-registration-button{
+  .user-registration-button{
    position: absolute;
    bottom: 10px;
    right : 10px;
@@ -17,21 +17,21 @@
     font-weight: lighter;
     }
   }
-  .event-price-ext{
+  .user-price-ext{
   position: absolute;
   bottom : 30px;
   left : 10px;
   font-size: 13px;
   font-weight: lighter;
   }
-.event-price-adhesion{
+.user-price-adhesion{
   position: absolute;
   bottom : 10px;
   left : 10px;
   font-weight: bolder;
   font-size: 17px;
   }
-  .event-description{
+  .user-description{
   position: absolute;
   top: 145px;
   left : 10px;
@@ -42,14 +42,14 @@
 }
  }
 
-.event:hover{
-  .event-description{
+.user:hover{
+  .user-description{
   opacity: 0.7;
    transition: ease opacity 0.3s;
   }
 }
 
-.event-liencard a{
+.user-liencard a{
   position: absolute;
   width:100%;
   height:100%;
@@ -59,14 +59,14 @@
 
 
 
-.event-date{
+.user-date{
   position: absolute;
   top: 10px;
   left : 10px;
   font-size: 20px;
 }
 
- .event-type{
+ .user-type{
   position: absolute;
   top: 85px;
   left : 10px;
@@ -75,14 +75,17 @@
   background-size: contain;
  }
 
-.event-title{
+.user-title{
   position: absolute;
   top: 115px;
   left : 10px;
   font-size: 24px;
+  img{
+    height: 50px;
+  }
 }
 
-.event-description{
+.user-description{
   position: absolute;
   top: 145px;
   left : 10px;
@@ -94,7 +97,7 @@
 
 
 
-.event-address{
+.user-address{
   position: absolute;
   top : 10px;
   right : 10px;
