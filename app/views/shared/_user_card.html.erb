@@ -9,7 +9,12 @@
      <p><%= user.first_name %></p>
      <p> <%= user.last_name %></p>
     </div>
-    <div class="user-title"><%= cl_image_tag(user.person_img) %></div>
+    <% if current_user.person_img.present? %>
+      <div class="user-title"><%= cl_image_tag(user.person_img) %></div>
+    <% else %>
+      <div class="user-title"><%= image_tag("profil.png") %></div>
+   <% end %>
+
     <div class="user-liencard"><a href=<%= user_path(user) %> ></a></div>
     <div class="user-description"><%= user.job_position %></div>
     <div class="user-address">

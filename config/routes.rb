@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show]
   root to: 'pages#home'
   get 'ressources', to: 'pages#ressources', as: :ressources
+   get 'news', to: 'pages#news', as: :news
   resources 'associations', only: [:new, :create, :show, :index]
   resources 'events', only: [:new, :edit, :create, :update, :index, :show, :destroy]
   resources 'users', only: [:show,:index]
