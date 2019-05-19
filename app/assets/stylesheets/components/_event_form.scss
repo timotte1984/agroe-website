@@ -1,9 +1,11 @@
-#form-element{
-  width: 500px;
-}
-
-#form-container{
+.form-elements{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#form-container{
+  max-width: 700px;
+  margin: 10px auto;
 }

@@ -130,6 +130,12 @@ h3{
   border-color: #e2e2e2;
 }
 
+#form_email{
+  max-width: 400px;
+  height: 300px;
+  margin: -10px auto;
+}
+
 
 
 
@@ -171,7 +177,7 @@ h3{
     box-shadow: 2px 1px 3px rgb(150,150,150);
     width:390px;
     border-radius: 4px;
-    margin: 10px;
+    margin: 5px auto;
     padding: 40px 10px;
     display: flex;
     justify-content: center;
@@ -193,20 +199,36 @@ h3{
 
 //contact
 #contact-info{
-background-color: white;
-  h4{
-    color: #808080;
-  }
-  padding: 50px 0px 50px 0px;
-  a{
-    color: #808080;
-  }
-  h5{
-    padding-bottom: 30px;
-    color: #808080;
-  }
+  padding-top: 30px;
+  background-color: white;
+  #contact-info-container{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    #contact-info-tel{
+      a{
+        color: #6A9F31;
+      }
+          a:hover{
+      color: black;
+      }
+      margin: 10px auto;
+      width: 200px;
+    }
+    #contact-info-email{
 
+      margin: 10px auto;
+      width: 200px;
+      a{
+        color: #C97064;
+      }
+          a:hover{
+      color: black;
+      }
+    }
 
+  }
 }
 
 
