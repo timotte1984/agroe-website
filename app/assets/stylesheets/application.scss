@@ -18,6 +18,9 @@
   margin-top: 80px;
 }
 
+// Devise css
+
+// Devise form
 .devise-form-container{
   padding: 20px;
   flex :display;
@@ -31,5 +34,25 @@
     box-shadow: 2px 2px 4px rgb(200,200,200);
     padding: 20px;
   }
-
 }
+
+// Devise User-show
+.user-show-container{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-show-content{
+}
+.user-show-edit-button{
+  margin: 5px;
+}
+
+// Devise User-Index
+.users-index-container{
+  padding: 50px;
+}
+.users-index-content{
+}
+

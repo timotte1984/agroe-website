@@ -1,5 +1,13 @@
+<div class="users-index-container">
+  <div class="users-index-content">
+    <div class="row">
+      <% @users.where(admin: nil).each do |u| %>
+        <div class="col-xs-12 col-md-3">
+          <%= render 'shared/user_card', user: u %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-<% @users.where(admin: nil).each do |u| %>
-  <%= render 'shared/user_card', user: u %>
-<% end %>
 

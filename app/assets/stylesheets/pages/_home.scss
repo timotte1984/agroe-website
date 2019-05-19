@@ -109,13 +109,14 @@ h3{
 }
 
 // events
-#events{
-  margin: 50px auto;
+.events{
+  padding: 10px;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
-
-#events-content{
-  margin: 0 auto;
+.events-content{
+  width: 100%;
 }
 
 .sib-form-block button{

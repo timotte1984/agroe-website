@@ -1,0 +1,19 @@
+<div id="dashboard">
+  <h1>Bienvenue <%= user.first_name %></h1>
+    <div class="dashscores">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="dash-card">
+            <h3>Nombre d'Adhérents</h3>
+          <h5><%= User.where(admin: nil).count %></h5>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="dash-card">
+            <h3>Nombre d'évènements</h3>
+          <h5><%= Event.where('date > ?', Date.today.to_s).count %></h5>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
