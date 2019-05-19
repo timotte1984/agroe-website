@@ -10,7 +10,7 @@
       <div class="events-content">
         <h3><strong>Nos Évènements </strong></h3>
         <div class="row">
-          <% @events.order(:date).each do |e| %>
+          <% @events.where('date > ?', Date.today.to_s).order(:date).each do |e| %>
             <%= render 'shared/event_card', event: e %>
           <% end %>
           <%= render '/shared/form_email' %>
