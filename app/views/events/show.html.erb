@@ -29,18 +29,24 @@
       Détail : </br><%= @event.descriptionlong %>
     </p>
 
-    <p>
-      Prix pour les adhérents : <strong><%= @event.price_w_adhesion %> &#8364</strong>
-    </p>
-    <p>
-      Prix pour les non adhérents : <strong><%= @event.price_ext %> &#8364</strong>
-    </p>
-    <p>
+
+
       <% if @event.registration_link === "" %>
       <% else %>
-        <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
+        <% if @event.date < Date.today %>
+        <% else %>
+          <p>
+            Prix pour les adhérents : <strong><%= @event.price_w_adhesion %> &#8364</strong>
+          </p>
+          <p>
+            Prix pour les non adhérents : <strong><%= @event.price_ext %> &#8364</strong>
+          </p>
+          <p>
+            <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
+          </p>
+        <% end %>
       <% end %>
-    </p>
+
 
 
      <% if user_signed_in? && current_user.admin === true %>

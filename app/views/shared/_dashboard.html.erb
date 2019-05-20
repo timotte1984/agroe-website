@@ -1,19 +1,35 @@
-<div id="dashboard">
-  <h1>Bienvenue <%= user.first_name %></h1>
-    <div class="dashscores">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="dash-card">
-            <h3>Nombre d'Adhérents</h3>
-          <h5><%= User.where(admin: nil).count %></h5>
-        </div>
-        </div>
-        <div class="col-md-6">
-          <div class="dash-card">
-            <h3>Nombre d'évènements</h3>
-          <h5><%= Event.where('date > ?', Date.today.to_s).count %></h5>
-        </div>
-        </div>
-      </div>
-    </div>
+<div class="user-space-introduction-container">
+  <div class="user-space-introduction-content">
+    <p>
+      Bonjour <%= current_user.first_name %>,
+    </p>
+    <p>
+      Bienvenue sur ton espace personnel. Cet espace est en cours de construction. Il contient actuellement 4 onglets.
+    </p>
+    <ul>
+      <li><strong> Infos </strong>
+        <ul>
+          <li>Il contient actuellement notre flux twitter.</li>
+        </ul>
+      </li>
+      <li> Évènements
+        <ul>
+          <li>La liste des évènements à venir.</li>
+          <li>La liste des évènements passés.</li>
+        </ul>
+      </li>
+      <li> Adhérents
+        <ul>
+          <li>Un fichier excel avec tous les contacts des entreprises du club.</li>
+          <li>La vignette des personnes ayant déjà créé un profil sur l'espace "AgroClub".</li>
+        </ul>
+      </li>
+      <li> Ressources
+        <ul>
+          <li>Un fichier excel avec tous les ressources issues des AgroNotes.</li>
+          <li>Notre Blog</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>

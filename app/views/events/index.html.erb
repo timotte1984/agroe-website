@@ -2,7 +2,7 @@
   <div class="events-list-content">
       <h3>Évènements à venir </h3>
     <div class="row">
-      <% @events.where('date > ?', Date.today.to_s).each do |e| %>
+      <% @events.where('date > ?', Date.today.to_s).order(:date).each do |e| %>
         <%= render 'shared/event_card', event: e %>
       <% end %>
     </div>
@@ -10,7 +10,7 @@
   <h3>Évènements passés </h3>
   <div class="events-content">
     <div class="row">
-      <% @events.where('date < ?', Date.today.to_s).each do |e| %>
+      <% @events.where('date < ?', Date.today.to_s).order(:date).each do |e| %>
         <%= render 'shared/event_card', event: e %>
       <% end %>
     </div>

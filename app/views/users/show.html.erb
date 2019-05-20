@@ -1,6 +1,6 @@
 <div class="user-show-container">
   <div class="user-show-content">
-      <%= render 'shared/user_card', user: @user %>
+    <%= render 'shared/user_card', user: @user %>
     <div class="user-show-edit-button">
       <% if current_user === @user || current_user.admin === true %>
         <p>
