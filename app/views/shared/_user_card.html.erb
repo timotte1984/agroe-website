@@ -8,19 +8,20 @@
     <div class="avatar-big"><%= image_tag("profil.png") %></div>
   <% end %>
   <h5>
-    <a href="tel:" + <%= current_user.phone_number %>><i class="fas fa-phone"></i> <%= current_user.phone_number %> </a>
+    <a href="tel:" + <%= user.phone_number %>><i class="fas fa-phone"></i> <%= user.phone_number %> </a>
   </h5>
   <h5>
-    <a href="mailto:" + current_user.email , class=""><i class="fas fa-envelope"></i> <%=current_user.email %> </a>
+    <a href="mailto:" + current_user.email , class=""><i class="fas fa-envelope"></i> <%=user.email %> </a>
   </h5>
    <p> <%= user.company_name %></p>
    <p> <%= user.address %></p>
    <p> <%= user.siret %></p>
-
+   <% if user_signed_in? %>
     <% if current_user.admin === true %>
       <%= link_to user_path(user) do %>
         <i class="fas fa-pen"></i><%= t(".edit", default: "edit") %>
       <% end %>
+   <% end %>
    <% end %>
 </div>
 
