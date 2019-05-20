@@ -161,16 +161,18 @@ h3{
   background-color: white;
   .offer1{
     background-color: rgb(240,240,240);
+    box-shadow: 1px 1px 3px rgb(100,100,100);
   }
   .offer2{
     background-color: rgb(240,240,240);
+    box-shadow: 1px 1px 3px rgb(100,100,100);
   }
   .join{
     p{
       font-size: 13px;
       font-style: italic;
     }
-    box-shadow: 2px 1px 3px rgb(150,150,150);
+
     width:390px;
     border-radius: 4px;
     margin: 5px auto;
