@@ -13,8 +13,12 @@
       <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
     </div>
     <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
-    <div class="event-title"><%= event.name %></div>
-    <div class="event-description"><%= event.description %></div>
+    <div class="event-title">
+      <%= event.name %>
+      <div class="event-description">
+        <%= event.description %>
+      </div>
+    </div>
     <div class="event-address"><%= event.address %></div>
     <% if event.registration_link === "" %>
       <div class="event-registration-button">

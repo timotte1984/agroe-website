@@ -8,7 +8,7 @@ class User < ApplicationRecord
                                       "j.mottet@agroe.fr",
                                       "m.viot@perledunord.com",
                                       "a.terlynck@agroe.fr",
-                                      "cecile.goutte@lucullus.fr",
+                                      "k.pietrzak@agroe.fr",
                                       "cecile.goutte@lucullus.fr",
                                       "acierpka@cgf-charcuterie.com",
                                       "matthieu.grimaux@davigel.fr",
