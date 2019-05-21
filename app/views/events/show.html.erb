@@ -1,6 +1,11 @@
 
 <div class="retour">
-   <%= link_to('Retour', root_path(anchor: "events"), class: "btn btn-default") %>
+  <% if user_signed_in? %>
+   <% route =  events_path %>
+    <% else %>
+    <% route = root_path(anchor: "events") %>
+  <% end %>
+   <%= link_to('Retour', route, class: "btn btn-default") %>
 </div>
 
 <div class="event-show-container">
