@@ -8,7 +8,7 @@
     </div>
     <div id="events">
       <div class="events-content">
-        <h3><strong>Nos Évènements </strong></h3>
+        <h3><strong>Nos Prochains Évènements </strong></h3>
         <div class="row">
           <% @events.where('date > ?', Date.today.to_s).order(:date).each do |e| %>
             <%= render 'shared/event_card', event: e %>
@@ -45,79 +45,10 @@
         <%= image_tag 'biscuit_mad.jpg', class:'logos-soutiens-resize' %>
     </div>
 
-<div class="img-events">
-  <h3><strong> Quelques images</strong></h3>
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag 'IMG_20160510_101456.jpg', class:'images-events-resize' %>
-      <div class="carousel-caption">
-        Les Brasseurs font de l'écoconception !
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag 'AgroClubRSE_Group.jpg', class:'images-events-resize' %>
-      <div class="carousel-caption">
-        AgroClubRSE #2 à Arras.
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag 'atelier-eau3.jpg', class:'images-events-resize' %>
-      <div class="carousel-caption">
-        Atelier sur la Performence "Eau"
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag 'agroe_club_davigel.JPG', class:'images-events-resize' %>
-      <div class="carousel-caption">
-        AgroClubRSE #3 chez Davigel
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag 'Heineken_Grouo.jpg', class:'images-events-resize' %>
-      <div class="carousel-caption">
-        Visite de l'usine Heineken
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag '20161013_144128.jpg', class:'images-events-resize' %>
-      <div class="carousel-caption">
-        Formation Ecoconception pendant le World Forum
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag 'MARCHE2.jpg', class:'images-events-resize' %>
-      <div class="carousel-caption">
-        AgroClubRSE #6 chez Novial sur l'énergie
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<div class="imgs-wall">
+   <%= image_tag 'imgs-wall.png'%>
 </div>
-
-</div>
-
-
 
     <div id="adhesion-agroe">
       <h3><strong> Rejoignez-nous </strong></h3>
