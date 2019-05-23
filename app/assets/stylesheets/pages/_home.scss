@@ -135,11 +135,12 @@ h3{
 
 .imgs-wall{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding: 50px 5px;
   img{
-    height: 380px;
+    position: left;
+    height: 375px;
     transition: height ease 0.3s;
   }
 }
