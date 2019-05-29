@@ -143,17 +143,17 @@ h3{
 }
 
 #message-pourquoi-pas-gratuit-content{
-  max-width: 700px;
   padding: 100px 10px;
   p{
     padding: 5px;
-    color: rgb(100,100,100)
+    color: rgb(100,100,100);
+    max-width: 700px;
   }
   p strong{
     color: rgb(50,50,50);
   }
-  h4{
-    padding: 30px
+  h3{
+    padding-bottom: 30px
   }
   a{
     color: #6A9F31;
