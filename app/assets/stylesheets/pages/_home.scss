@@ -61,7 +61,7 @@ h3{
   text-align: center;
   h2{
     padding-top: 20px;
-    color: rgb(40,40,40);
+    color: rgb(150,150,150);
     font-size: calc(25px + 0.7vw);
   }
   h4{
@@ -97,6 +97,10 @@ h3{
   color: #C97064;
 }
 
+.experts{
+  color: rgb(100,100,100);
+}
+
 .visionnary-back{
   background-color : #C97064;
   color: white;
@@ -110,7 +114,7 @@ h3{
 
 // events
 #events{
-  padding: 10px;
+  padding: 100px 10px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -129,6 +133,39 @@ h3{
   border-style: solid;
   border-color: #e2e2e2;
 }
+
+// pas gratuit
+#message-pourquoi-pas-gratuit-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(240,240,240);
+}
+
+#message-pourquoi-pas-gratuit-content{
+  max-width: 700px;
+  padding: 100px 10px;
+  p{
+    padding: 5px;
+    color: rgb(100,100,100)
+  }
+  p strong{
+    color: rgb(50,50,50);
+  }
+  h4{
+    padding: 30px
+  }
+  a{
+    color: #6A9F31;
+  }
+  a:hover{
+    color: rgb(105,105,105);
+  }
+  #message-mission{
+    font-style: italic;
+  }
+}
+
 
 
 //imgs-wall
@@ -149,7 +186,7 @@ h3{
 // partenaires
 #partenaires{
   background-color: white;
-  padding: 50px 10px;
+  padding: 100px 10px;
   a{
     margin: 5vw 5vw;
     font-size: 30px;
@@ -178,6 +215,7 @@ h3{
   justify-content: center;
   align-items:center;
   background-color: white;
+  padding: 100px 10px;
   .offer1{
     background-color: rgb(240,240,240);
     box-shadow: 1px 1px 3px rgb(100,100,100);
@@ -215,13 +253,21 @@ h3{
 
 //contact
 #contact-info{
-  padding-top: 30px;
-  background-color: white;
+  padding: 100px 10px;
+  background-color: rgb(240,240,240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
   #contact-info-container{
-    padding: 30px;
     display: flex;
     justify-content: center;
-    margin: 10px;
+
     #contact-info-tel{
       a{
         color: #6A9F31;
@@ -233,7 +279,6 @@ h3{
       width: 200px;
     }
     #contact-info-email{
-
       margin: 10px auto;
       width: 200px;
       a{

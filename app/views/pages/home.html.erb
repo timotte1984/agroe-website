@@ -4,7 +4,11 @@
     <div id="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,1) 60%, rgba(270,270,270,1) 100%), url(<%= asset_path ''%>);">
       <div id="banner-content">
         <%= image_tag 'agroe.png' %>
-        <h2> Des évènements <span class="visionnary">originaux.</span> </br>Un réseau d'entreprises agroalimentaires <span class="engage"> engagées.</span></h2>
+        <h2>
+          Des évènements <span class="visionnary">originaux</span> </br>
+          Un réseau d'entreprises <span class="engage"> engagées</span></br>
+          Des contacts <span class="experts">experts</span></br>
+       </h2>
     </div>
     <div id="events">
       <div class="events-content">
@@ -15,6 +19,16 @@
           <% end %>
           <%= render '/shared/form_email' %>
         </div>
+      </div>
+    </div>
+    <div id="message-pourquoi-pas-gratuit-container">
+      <div id="message-pourquoi-pas-gratuit-content">
+        <h4><strong> Pourquoi nos évènements ne sont pas gratuits ? </strong></h4>
+        <p>
+          Nous souhaitons travailler avec des partenaires engagés qui ont <strong>confiance</strong> dans notre capacité à créer des espaces de discussions en phase avec vos besoins et les enjeux émergeants dans le secteur agroalimentaire.</p>
+          <p> <strong>Le signe de cette confiance est la prise d'une <a href="#adhesion-agroe">adhésion</a>.</strong></p>
+          <p> C'est aussi une façon de <strong>valider la pertinence de nos actions</strong> ou de changer nos services si nous n'arrivons pas à mobiliser.
+          </p>
       </div>
     </div>
 
