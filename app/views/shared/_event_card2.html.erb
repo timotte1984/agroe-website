@@ -1,23 +1,25 @@
 
+
     <% if !event.photo.nil? %>
       <%  image = event.photo %>
     <% else %>
       <%  image = "agroe.png" %>
     <% end %>
+
   <div class="event">
     <div class="event-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(<%= image %>);"></div>
     <div class="event-date">
       <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
     </div>
-
     <div class="event-title">
       <%= event.name %>
       <div class="event-description hidden">
         <%= event.description %>
       </div>
     </div>
-    <div class="event-address"><%= event.address %></div>
-
+    <div class="event-address">
+      <%= event.address %>
+    </div>
     <% if event.registration_link === "" %>
       <div class="event-registration-button hidden">
         <p>non disponible </p>
