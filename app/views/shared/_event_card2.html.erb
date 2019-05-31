@@ -24,15 +24,13 @@
       <div class="event-registration-button hidden">
         <p>non disponible </p>
       </div>
+      <div class="event-price-adhesion event-indisponible-message"> Indisponible </div>
     <% else %>
       <% if event.date < Date.today %>
         <div class="event-registration-button hidden">
           <p>évènement terminé </p>
         </div>
       <% else %>
-        <% if event.registration_link === "" %>
-          <div class="event-price-adhesion"> Indisponible </div>
-        <% else %>
         <div class="event-price-ext hidden" >Non-adhérent : <%= event.price_ext %> &#8364</div>
         <% if event.price_w_adhesion === 0 %>
           <div class="event-price-adhesion">Adhérent : Gratuit </div>
@@ -43,7 +41,7 @@
           <%= link_to('Inscription', event.registration_link, class: "btn visionnary-back") %>
         </div>
       <% end %>
-      <% end %>
+
     <% end %>
     <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
   </div>

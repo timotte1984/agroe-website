@@ -21,7 +21,10 @@
   text-transform: uppercase;
   background-size: contain;
  }
-
+.event-indisponible-message{
+  font-style: italic;
+  font-weight: lighter;
+}
 .event-title{
   position: absolute;
   top: 24px;
@@ -62,7 +65,7 @@
   }
 .event-price-adhesion{
   position: absolute;
-  bottom : 5px;
+  top : 5px;
   right : 5px;
   font-size: 13px;
   opacity: 0.7;
