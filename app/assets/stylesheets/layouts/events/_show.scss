@@ -9,12 +9,11 @@
   }
 }
 
-.event-show-information{
+.event-show-links{
     border-style: solid;
     border-radius: 4px;
     padding: 30px;
     margin: 10px auto;
-    height: 185px;
     width: 400px;
     p{
     text-align: center;
@@ -26,6 +25,7 @@
 }
 
 .img-event-profil img{
+  height: 250px;
   width: 400px;
   margin: 10px auto;
 }
@@ -34,7 +34,7 @@
   display: flex;
   align-items:center;
   justify-content: center;
-  height: 230px;
+  height: 250px;
 }
 
 .event-main-info-content{
