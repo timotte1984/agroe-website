@@ -59,11 +59,11 @@
             Prix pour les adhérents : <strong><%= @event.price_w_adhesion %> &#8364</strong>
           </p>
           <p>
-            Prix pour les non adhérents : <strong><%= @event.price_ext %> &#8364</strong>
+            Prix pour les non adhérents : <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
           </p>
-          <p>
+          <div class='sub-btn'>
             <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
-          </p>
+          </div>
         <% end %>
       <% end %>
      <% if user_signed_in? && current_user.admin === true %>

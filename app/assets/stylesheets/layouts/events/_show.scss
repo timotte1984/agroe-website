@@ -3,20 +3,31 @@
   background-color: rgb(220,220,220);
   border-width: 1px;
   margin: 10px;
-  height: 185px;
   p{
     text-align: left;
+    font-size: calc(10px + 0.4vw)
   }
 }
 
 .event-show-links{
     border-style: solid;
     border-radius: 4px;
-    padding: 30px;
+    padding: 20px 10px;
     margin: 10px auto;
     width: 400px;
     p{
-    text-align: center;
+    text-align: left;
+    font-size: 16px;
+    }
+    a{
+      font-size: 11px;
+      padding: 5px;
+    }
+    .sub-btn{
+      text-align: center;
+      a{
+        font-size: 20px;
+      }
     }
 }
 .retour{
@@ -35,6 +46,7 @@
   align-items:center;
   justify-content: center;
   height: 250px;
+  margin: 0px 10px;
 }
 
 .event-main-info-content{
