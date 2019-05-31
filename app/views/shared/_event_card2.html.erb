@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-4">
+
   <% if event.date < Date.today %>
     <%  image = "" %>
   <% else %>
@@ -8,7 +8,8 @@
       <%  image = "agroe.png" %>
     <% end %>
   <% end %>
-  <div class="event" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(<%= image %>);">
+  <div class="event">
+    <div class="event-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(<%= image %>);"></div>
     <div class="event-date">
       <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
     </div>
@@ -42,7 +43,3 @@
       <% end %>
     <% end %>
   </div>
-</div>
-
-
-
