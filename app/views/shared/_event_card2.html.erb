@@ -12,7 +12,7 @@
       <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
     </div>
     <div class="event-title">
-      <%= event.name %>
+      <p><%= event.name %></p>
       <div class="event-description hidden">
         <%= event.description %>
       </div>
@@ -32,9 +32,9 @@
       <% else %>
         <div class="event-price-ext hidden" >non adhérent : <%= event.price_ext %> &#8364</div>
         <% if event.price_w_adhesion === 0 %>
-          <div class="event-price-adhesion hidden">adhérent : Gratuit </div>
+          <div class="event-price-adhesion">adhérent : Gratuit </div>
         <% else %>
-          <div class="event-price-adhesion hidden">adhérent : <%= event.price_w_adhesion %> &#8364</div>
+          <div class="event-price-adhesion">adhérent : <%= event.price_w_adhesion %> &#8364</div>
         <% end %>
         <div class="event-registration-button hidden">
           <%= link_to('Inscription', event.registration_link, class: "btn visionnary-back") %>

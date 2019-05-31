@@ -6,7 +6,6 @@
   background-color: rgb(250,250,250);
   box-shadow: 1px 1px 3px rgb(200,200,200);
   position: relative;
-  text-align: left;
   .event-date{
   position: absolute;
   top: 5px;
@@ -27,8 +26,14 @@
   position: absolute;
   top: 24px;
   left : 105px;
-  text-align: left;
-  font-size: 16px;
+  display: flex;
+  height: 62px;
+  align-items: center;
+  p{
+    text-align: left;
+    font-size: calc(16px + 0.3vw);
+    line-height: 17px;
+  }
 }
 .event-address{
   position: absolute;
@@ -37,6 +42,7 @@
   font-size: 12px;
   opacity: 0.7;
   height: 13px;
+  text-align: left;
 }
   .event-registration-button{
    position: absolute;
@@ -56,10 +62,11 @@
   }
 .event-price-adhesion{
   position: absolute;
-  bottom : 10px;
-  left : 10px;
-  font-weight: bolder;
-  font-size: 17px;
+  bottom : 5px;
+  right : 5px;
+  font-size: 13px;
+  opacity: 0.7;
+  text-align: right;
   }
   .event-description{
   position: absolute;
