@@ -7,38 +7,53 @@
   <% end %>
    <%= link_to('Retour', route, class: "btn btn-default") %>
 </div>
-
-<div class="event-show-container">
-
-    <h1>
-      <strong><%= @event.name %></strong>
-    </h1>
-    <h5>
-      <strong><%= @event.description %></strong>
-    </h5>
-      <% if !@event.photo.nil? %>
-    <div class="img-thumbnail">
-      <%= cl_image_tag(@event.photo) %>
+<div class="row">
+  <div class="col-md-8">
+    <div class="event-main-info-container">
+      <div class="event-main-info-content">
+        <h4>
+          <strong><%= @event.name %></strong>
+        </h4>
+        <h5>
+          <%= @event.description %>
+        </h5>
+        <p>
+          <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
+        </p>
+        <p>
+          <strong><%= @event.address %></strong>
+        </p>
+      </div>
     </div>
+  </div>
+  <div class="col-md-4">
+    <% if !@event.photo.nil? %>
+      <div class="img-event-profil">
+        <%= cl_image_tag(@event.photo) %>
+      </div>
     <% end %>
-  <div class="event-show-information">
-    <p>
-      Date : <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
-    </p>
-     <p>
-      Lieu de l'évènement : <strong><%= @event.address %></strong>
-    </p>
+  </div>
+</div>
 
 
-    <p>
-      Détail : </br><%= @event.descriptionlong %>
-    </p>
+      </div>
+    </div>
 
-
-
+<div class="row">
+  <div class="col-md-8">
+    <div class="event-show-container">
+      <p>
+        Détail : </br><%= @event.descriptionlong %>
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="event-show-information">
       <% if @event.registration_link === "" %>
+        <p> Indisponible</p>
       <% else %>
         <% if @event.date < Date.today %>
+          <p> Évènement Terminée </p>
         <% else %>
           <p>
             Prix pour les adhérents : <strong><%= @event.price_w_adhesion %> &#8364</strong>
@@ -51,26 +66,18 @@
           </p>
         <% end %>
       <% end %>
-
-
-
      <% if user_signed_in? && current_user.admin === true %>
-
-  <p>
-    <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
-  </p>
-
-
-  <p>
-  <%= link_to("Destroy", event_path(@event),
-        method: :delete,
-        data: { confirm: "Are you sure?" },
-        class: "btn btn-danger") %>
-  </p>
-
-  <% end %>
+      <p>
+        <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
+      </p>
+      <p>
+        <%= link_to("Destroy", event_path(@event),
+            method: :delete,
+            data: { confirm: "Are you sure?" },
+            class: "btn btn-danger") %>
+      </p>
+      <% end %>
+    </div>
   </div>
-
-
 </div>
 
