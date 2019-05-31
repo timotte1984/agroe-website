@@ -54,12 +54,12 @@ h3{
 
 #banner{
   background-color: white;
-  padding: 100px 10px;
+  padding: 60px 10px;
 }
 
 #banner-content {
   text-align: center;
-  h2{
+  h1{
     padding-top: 20px;
     color: rgb(150,150,150);
     font-size: calc(25px + 0.7vw);
@@ -175,6 +175,7 @@ h3{
   justify-content: center;
   align-items: center;
   padding: 50px 5px;
+  background-color: white;
   img{
     position: center;
     height: 375px;

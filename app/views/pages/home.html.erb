@@ -4,26 +4,15 @@
     <div id="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,1) 60%, rgba(270,270,270,1) 100%), url(<%= asset_path ''%>);">
       <div id="banner-content">
         <%= image_tag 'agroe.png' %>
-        <h2>
+        <h1>
           Des évènements et projets <span class="visionnary">originaux</span> </br>
           pour le secteur <span class="engage"> agroalimentaire</span></br>
           en <span class="experts">Hauts-de-France</span></br>
-       </h2>
-    </div>
-    <div id="events">
-      <div class="events-content">
-        <h3><strong>Nos Prochains Évènements </strong></h3>
-        <div class="row">
-          <% @events.where('date > ?', Date.today.to_s).order(:date).first(5).each do |e| %>
-            <%= render 'shared/event_card', event: e %>
-          <% end %>
-          <%= render '/shared/form_email' %>
-        </div>
-        <%= link_to "+ d'évènements", events_path(), class: 'btn btn-link' %>
+       </h1>
       </div>
     </div>
 
-<div id="events">
+    <div id="events">
       <div class="events-content">
         <h3><strong>Nos Prochains Évènements </strong></h3>
           <% @events.where('date > ?', Date.today.to_s).order(:date).first(5).each do |e| %>
@@ -32,9 +21,9 @@
           <%= link_to "+ d'évènements", events_path(), class: 'btn btn-link' %>
           <%= render '/shared/form_email2' %>
 
-        </div>
       </div>
     </div>
+
 
 
     <div id="message-pourquoi-pas-gratuit-container">
