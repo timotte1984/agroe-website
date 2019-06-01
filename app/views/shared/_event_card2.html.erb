@@ -25,18 +25,17 @@
 
     <% if event.date < Date.today %>
       <div class="event-registration-button hidden">
-        <p>évènement terminé </p>
+        <p> évènement terminé </p>
       </div>
       <% if !event.affluence.nil? %>
         <div class="event-price-ext experts event-indisponible-message">
           <%= event.affluence %> pers. présentes
         </div>
       <% end %>
-
     <% else %>
       <% if event.registration_link === "" %>
       <div class="event-price-ext visionnary event-indisponible-message">
-         Indisponible
+         Non ouvert
       </div>
       <% else %>
       <% if user_signed_in? %>
