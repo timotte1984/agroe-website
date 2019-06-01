@@ -223,7 +223,6 @@ h3{
     height: 200px;
     object-fit: cover;
     width: 360px;
-    opacity: 0.9;
   }
 }
 
@@ -245,6 +244,7 @@ h3{
     box-shadow: 1px 1px 3px rgb(100,100,100);
   }
   .join{
+    opacity: 0.8;
     h4{
       padding-top: 40px;
     }
@@ -285,7 +285,10 @@ h3{
       color : black;
     }
   }
-
+  .join:hover{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
 }
 
 //contact
