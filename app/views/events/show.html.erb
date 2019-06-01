@@ -15,7 +15,7 @@
             <strong><%= @event.name %></strong>
           </h4>
           <h5>
-            <%= @event.description.html_safe %>
+            <%= @event.description %>
           </h5>
           <p>
             <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
@@ -43,7 +43,7 @@
     <div class="col-md-8 col-centered">
       <div class="event-show-details">
         <p>
-          Détail : </br><%= @event.descriptionlong %>
+          Détail : </br><%= @event.descriptionlong.html_safe %>
         </p>
       </div>
     </div>
@@ -54,6 +54,7 @@
         <% else %>
           <% if @event.date < Date.today %>
             <p> Évènement terminée </p>
+            <p> <strong> <%= @event.affluence %> personnes </strong> étaient présentes. </p>
           <% else %>
             <p>
               Prix pour les adhérents : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
