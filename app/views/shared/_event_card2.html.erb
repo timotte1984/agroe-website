@@ -22,19 +22,22 @@
     <div class="event-address">
       <%= event.address %>
     </div>
-    <% if event.registration_link === "" %>
+
+    <% if event.date < Date.today %>
       <div class="event-registration-button hidden">
-        <p>non disponible </p>
+        <p>évènement terminé </p>
       </div>
-      <div class="event-price-ext visionnary event-indisponible-message"> Indisponible </div>
-    <% else %>
-      <% if event.date < Date.today %>
-        <div class="event-registration-button hidden">
-          <p>évènement terminé </p>
+      <% if !event.affluence.nil? %>
+        <div class="event-price-ext experts event-indisponible-message">
+          <%= event.affluence %> pers. présentes
         </div>
-        <% if !event.affluence.nil? %>
-        <div class="event-price-ext experts event-indisponible-message"> <%= event.affluence %> pers. présentes </div>
-        <% end %>
+      <% end %>
+
+    <% else %>
+      <% if event.registration_link === "" %>
+      <div class="event-price-ext visionnary event-indisponible-message">
+         Indisponible
+      </div>
       <% else %>
         <div class="event-price-ext engage" ><%= event.price_ext %> &#8364</div>
         <% if event.price_w_adhesion === 0 %>
