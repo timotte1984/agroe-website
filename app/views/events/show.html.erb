@@ -42,9 +42,11 @@
   <div class="row">
     <div class="col-md-8 col-centered">
       <div class="event-show-details">
+        <% if !@event.descriptionlong.nil? %>
         <p>
           <%= @event.descriptionlong.html_safe %>
         </p>
+        <% end %>
       </div>
     </div>
     <div class="col-md-4 col-centered">
@@ -58,15 +60,16 @@
             <p> <strong> <%= @event.affluence %> personnes </strong> étaient présentes. </p>
             <% end %>
           <% else %>
+            <div class='sub-btn'>
+              <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
+            </div>
             <p>
               Prix pour les adhérents : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
             </p>
             <p>
               Prix pour les non adhérents : </br> <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
             </p>
-            <div class='sub-btn'>
-              <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
-            </div>
+
           <% end %>
         <% end %>
        <% if user_signed_in? && current_user.admin === true %>
