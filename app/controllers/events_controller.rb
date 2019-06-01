@@ -49,7 +49,8 @@ class EventsController < ApplicationController
       :registration_link,
       :image,
       :photo,
-      :descriptionlong
+      :descriptionlong,
+      :affluence
       )
   end
 

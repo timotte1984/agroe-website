@@ -15,7 +15,7 @@
             <strong><%= @event.name %></strong>
           </h4>
           <h5>
-            <%= @event.description %>
+            <%= @event.description.html_safe %>
           </h5>
           <p>
             <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
