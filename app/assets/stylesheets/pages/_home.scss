@@ -19,6 +19,7 @@ body {
 
 h3{
     padding: 30px 0px 30px 0px;
+    color: rgb(150,150,150);
   }
 
 .btn-register{
@@ -54,6 +55,7 @@ h3{
 
 #banner{
   background-color: white;
+  height: 90vh;
   padding: 60px 10px;
 }
 
@@ -114,10 +116,16 @@ h3{
 
 // events
 #events{
-  padding: 100px 10px;
-  background-color: white;
+  padding: 10px 10px 70px 10px;
+  background-color: rgb(100,100,100);
   display: flex;
   justify-content: center;
+  a{
+    color: rgb(200,200,200);
+  }
+  h3{
+    color: white;
+  }
 }
 .events-content{
   width: 100%;
@@ -168,26 +176,11 @@ h3{
 
 
 
-//imgs-wall
-
-.imgs-wall{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 5px;
-  background-color: white;
-  img{
-    position: center;
-    height: 375px;
-    transition: height ease 0.3s;
-  }
-}
-
 
 // partenaires
 #partenaires{
   background-color: white;
-  padding: 100px 10px;
+  padding: 10px 10px 70px 10px;
   a{
     margin: 5vw 5vw;
     font-size: 30px;
@@ -209,6 +202,32 @@ h3{
 }
 
 
+
+#garde-contact{
+  padding: 20px 10px 90px 10px;
+  background-color: #6A9F31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3{
+  color: white;
+}
+}
+
+
+//imgs-wall
+
+.imgs-wall{
+  img{
+    height: 200px;
+    object-fit: cover;
+    width: 360px;
+    opacity: 0.9;
+  }
+}
+
+
 //adhesion
 #adhesion-agroe{
   display: flex;
@@ -216,7 +235,7 @@ h3{
   justify-content: center;
   align-items:center;
   background-color: white;
-  padding: 100px 5px;
+  padding: 30px 5px 100px 5px;
   .offer1{
     background-color: rgb(240,240,240);
     box-shadow: 1px 1px 3px rgb(100,100,100);
@@ -226,18 +245,20 @@ h3{
     box-shadow: 1px 1px 3px rgb(100,100,100);
   }
   .join{
+    h4{
+      padding-top: 40px;
+    }
     p{
       font-size: 13px;
       font-style: italic;
     }
-    width: 380px;
-    border-radius: 4px;
-    margin: 5px auto;
-    padding: 40px 5px;
+    margin: 0px auto;
+    width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
     .offer-buttons{
       border-top-style: solid;
       border-bottom-style: solid;
@@ -247,6 +268,7 @@ h3{
       width: 300px;
       p{
         margin: 10px 0px;
+        color: rgb(150,150,150);
       }
       a{
         font-size: 14px;
@@ -268,16 +290,18 @@ h3{
 
 //contact
 #contact-info{
-  padding: 100px 10px;
-  background-color: rgb(240,240,240);
+  padding: 80px 10px 90px 10px;
+  background-color: #C97064;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   h3{
     margin: 0px;
     padding: 0px;
     padding-bottom: 20px;
+    color: white;
   }
   #contact-info-container{
     display: flex;
@@ -285,7 +309,7 @@ h3{
 
     #contact-info-tel{
       a{
-        color: #6A9F31;
+        color: white;
       }
           a:hover{
       color: black;
@@ -297,7 +321,7 @@ h3{
       margin: 10px auto;
       width: 200px;
       a{
-        color: #C97064;
+        color: white;
       }
           a:hover{
       color: black;
