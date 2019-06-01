@@ -47,8 +47,8 @@
     <%= link_to "Communauté", root_path(anchor: 'partenaires'), class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Nous Contacter", root_path(anchor: 'contact-info'), class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Nous Rejoindre", root_path(anchor: 'adhesion-agroe'), class: "navbar-wagon-item navbar-wagon-link navbar-wagon-item-special" %>
-     <%= link_to new_user_session_path, class: "navbar-wagon-item navbar-wagon-link hidden" do %>
-      <i class="fas fa-user-shield fa-2x"> </i>
+     <%= link_to new_user_session_path, class: "navbar-wagon-item navbar-wagon-link-secret" do %>
+      <i class="fas fa-user-shield"> </i>
      <% end %>
       <!-- Login link (when logged out) -->
 
