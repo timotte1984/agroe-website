@@ -36,11 +36,11 @@
         <div class="event-price-adhesion experts event-indisponible-message"> <%= event.affluence %> pers. présentes </div>
         <% end %>
       <% else %>
-        <div class="event-price-ext hidden" >Non-adhérent : <%= event.price_ext %> &#8364</div>
+        <div class="event-price-ext engage" ><%= event.price_ext %> &#8364</div>
         <% if event.price_w_adhesion === 0 %>
-          <div class="event-price-adhesion engage">Adhérent : Gratuit </div>
+          <div class="event-price-adhesion engage">Tarif Adhérent : Gratuit </div>
         <% else %>
-          <div class="event-price-adhesion engage">Adhérent : <%= event.price_w_adhesion %> &#8364</div>
+          <div class="event-price-adhesion engage"> Tarif Adhérent : <%= event.price_w_adhesion %> &#8364</div>
         <% end %>
         <div class="event-registration-button hidden">
           <%= link_to('Inscription', event.registration_link, class: "btn visionnary-back") %>

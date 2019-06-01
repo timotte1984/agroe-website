@@ -58,17 +58,17 @@
   }
   .event-price-ext{
   position: absolute;
-  bottom : 30px;
-  left : 10px;
-  font-size: 13px;
-  font-weight: lighter;
-  }
-.event-price-adhesion{
-  position: absolute;
   top : 5px;
   right : 5px;
   font-size: 13px;
-  opacity: 0.7;
+  font-weight: lighter;
+  text-align: right;
+  }
+  .event-price-adhesion{
+  position: absolute;
+  top : 19px;
+  right : 5px;
+  font-size: 13px;
   text-align: right;
   }
   .event-description{
