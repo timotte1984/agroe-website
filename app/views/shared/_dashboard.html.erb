@@ -4,12 +4,14 @@
       Bonjour <%= current_user.first_name %>,
     </p>
     <p>
-      Bienvenue sur ton espace personnel. Cet espace est en cours de construction. Il contient actuellement 4 onglets.
+      Si ce n'est pas fait, merci de remplir votre <strong><%= link_to "profil", user_path(current_user) %></strong>.
     </p>
+    </br>
     <ul>
-      <li><strong> Infos </strong>
+      <li>Dans la section <strong> <%= link_to "évènements", events_path() %> </strong> permet de
         <ul>
-          <li>Il contient actuellement notre flux twitter.</li>
+          <li>s'inscrire aux futures évènements.</li>
+          <li>commenter sur les évènements déjà passés.</li>
         </ul>
       </li>
       <li> Évènements

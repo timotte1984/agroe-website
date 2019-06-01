@@ -19,7 +19,8 @@ class User < ApplicationRecord
                                       "mcarriere@brasseriecastelain.com",
                                       "mdubocage@novial-sa.com",
                                       "lbouchart@mphalempin.com",
-                                      "a.preuvot@lesfruitsrouges.com"
+                                      "a.preuvot@lesfruitsrouges.com",
+                                      "gaetan.savary@jbviande.com"
                                     ] }
 
   mount_uploader :company_img, PhotoUploader
