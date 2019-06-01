@@ -1,9 +1,10 @@
 .event-show-details{
   padding: 5px 25px ;
   background-color: white;
-  p{
+  text-align: left;
+  font-size: calc(10px + 0.4vw);
+  li{
     text-align: left;
-    font-size: calc(10px + 0.4vw)
   }
 }
 
