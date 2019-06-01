@@ -39,6 +39,13 @@
          Indisponible
       </div>
       <% else %>
+      <% if user_signed_in? %>
+        <% if event.price_w_adhesion === 0 %>
+          <div class="event-price-ext engage">Gratuit </div>
+        <% else %>
+          <div class="event-price-ext engage"><%= event.price_w_adhesion %> &#8364</div>
+        <% end %>
+      <% else %>
         <div class="event-price-ext engage" ><%= event.price_ext %> &#8364</div>
         <% if event.price_w_adhesion === 0 %>
           <div class="event-price-adhesion engage">Tarif Adhérent : Gratuit </div>
@@ -48,6 +55,7 @@
         <div class="event-registration-button hidden">
           <%= link_to('Inscription', event.registration_link, class: "btn visionnary-back") %>
         </div>
+      <% end %>
       <% end %>
 
     <% end %>
