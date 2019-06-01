@@ -216,7 +216,7 @@ h3{
   justify-content: center;
   align-items:center;
   background-color: white;
-  padding: 100px 10px;
+  padding: 100px 5px;
   .offer1{
     background-color: rgb(240,240,240);
     box-shadow: 1px 1px 3px rgb(100,100,100);
@@ -233,15 +233,29 @@ h3{
     width: 380px;
     border-radius: 4px;
     margin: 5px auto;
-    padding: 40px 10px;
+    padding: 40px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    a{
-          font-size: 16px;
-          margin: 50px 10px;
+    .offer-buttons{
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-width: 1px;
+      margin: 30px 0px;
+      padding: 30px 0px;
+      width: 300px;
+      p{
+        margin: 10px 0px;
+      }
+      a{
+        font-size: 14px;
+        margin: 10px 0px;
+      }
     }
+    a{
+        font-size: 10px;
+      }
     .minilien a{
       color : grey;
     }
