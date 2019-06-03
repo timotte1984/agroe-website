@@ -1,33 +1,42 @@
 // Actu
+.ressources-container{
+    h3{color: white;}
+}
+
 #actu{
+  h3{
+    color: white;
+  }
   padding: 50px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   a{
-    color: rgb(80,80,80);
+    color: rgb(180,180,180);
     font-size: 15px;
   }
   #medium-widget{
 
      a{
       font-size: 20px;
-      color : rgb(80,80,80);
+      color : rgb(180,180,180);
       line-height: 1;
       }
       a:hover{
-        color : rgb(40,40,40);
+        color : rgb(140,140,140);
       }
     }
   }
 
   // Actu
 #network{
+  h3{
+  }
   padding: 50px 10px;
   width: 500px;
   a{
-    color: rgb(80,80,80);
+    color: rgb(180,180,180);
     font-size: 15px;
   }
   #medium-widget{
@@ -35,11 +44,11 @@
     max-width: 800px;
      a{
       font-size: 20px;
-      color : rgb(80,80,80);
+      color : rgb(180,180,180);
       line-height: 1;
       }
       a:hover{
-        color : rgb(40,40,40);
+        color : rgb(140,140,140);
       }
     }
   }
