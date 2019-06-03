@@ -117,7 +117,7 @@ h3{
 // events
 #events{
   padding: 10px 10px 70px 10px;
-  background-color: rgb(100,100,100);
+  background-color: grey;
   display: flex;
   justify-content: center;
   a{
@@ -287,7 +287,7 @@ h3{
   }
   .join:hover{
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.1s ease;
   }
 }
 
