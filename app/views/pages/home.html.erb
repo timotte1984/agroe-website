@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
   <%= render '/shared/dashboard', user: current_user %>
 <% else %>
-    <div id="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,1) 60%, rgba(270,270,270,1) 100%), url(<%= asset_path ''%>);">
+    <div id="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,1) 60%, rgba(150,150,150,1) 100%), url(<%= asset_path ''%>);">
       <div id="banner-content">
         <%= image_tag 'agroe.png' %>
         <h1>
