@@ -45,7 +45,11 @@
           <div class="event-price-ext engage"><%= event.price_w_adhesion %> &#8364</div>
         <% end %>
       <% else %>
+      <% if @event.event_type === "DD" %>
+      <div class="event-price-ext engage" >AgroClub</div>
+                <% else %>
         <div class="event-price-ext engage" ><%= event.price_ext %> &#8364</div>
+        <% end %>
         <% if event.price_w_adhesion === 0 %>
           <div class="event-price-adhesion engage">Tarif Adhérent : Gratuit </div>
         <% else %>
