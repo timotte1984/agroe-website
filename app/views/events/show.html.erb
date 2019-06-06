@@ -63,8 +63,8 @@
               <div class='sub-btn-prim'>
                 <%= link_to('Télécharger le Bulletin Inscription', @event.registerdoclink, class: "btn btn-success") %>
               </div>
-              <% end %>
               <p> ou </p>
+              <% end %>
               <div class='sub-btn-sec'>
                 <%= link_to('Inscription en ligne', @event.registration_link, class: "btn btn-default") %>
               </div>
@@ -76,9 +76,14 @@
               <p>
                 Prix pour les adhérents : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
               </p>
-              <p>
-                Prix pour les non adhérents : </br> <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
+
+                <% if @event.type === "DD" %>
+                <% else %>
+                Prix pour les
+                <p>
+                 non adhérents : </br> <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
               </p>
+              <% end %>
               <% end %>
             <% end %>
           <% end %>
