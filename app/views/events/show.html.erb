@@ -16,6 +16,9 @@
             </h4>
             <h5>
               <%= @event.description %>
+              <% if @event.event_type === "DD" %>
+              <span class="agroclub-alert">Évènement réservé aux adhérents "AgroClub"</span>
+              <% end %>
             </h5>
             <p>
               <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
@@ -74,14 +77,14 @@
               </p>
               <% else %>
               <p>
-                Prix pour les adhérents : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
+                Prix adhérents : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
               </p>
 
                 <% if @event.event_type === "DD" %>
                 <% else %>
-                Prix pour les
+
                 <p>
-                 non adhérents : </br> <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
+                Prix non adhérents : </br> <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
               </p>
               <% end %>
               <% end %>
