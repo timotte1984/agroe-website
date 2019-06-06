@@ -15,12 +15,11 @@
               <strong><%= @event.name %></strong>
             </h4>
             <h5>
-              <%= @event.description %>
-              <% if @event.event_type === "DD" %>
-              <span class="agroclub-alert">Évènement réservé aux adhérents "AgroClub"</span>
-              <% end %>
+              <%= @event.description %>>
             </h5>
-            <p>
+              <% if @event.event_type === "DD" %>
+              <class class="agroclub-alert"><p>Évènement réservé aux adhérents "AgroClub"</p></class>
+              <% end %>
               <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
             </p>
             <p>
