@@ -50,7 +50,8 @@ class EventsController < ApplicationController
       :image,
       :photo,
       :descriptionlong,
-      :affluence
+      :affluence,
+      :registerdoclink
       )
   end
 

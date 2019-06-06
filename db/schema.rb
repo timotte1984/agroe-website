@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_01_121808) do
+ActiveRecord::Schema.define(version: 2019_06_06_203947) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2019_06_01_121808) do
     t.string "photo"
     t.text "descriptionlong"
     t.integer "affluence"
+    t.string "registerdoclink"
   end
 
   create_table "users", force: :cascade do |t|

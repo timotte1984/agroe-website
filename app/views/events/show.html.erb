@@ -58,8 +58,15 @@
             <% if @event.registration_link === "" %>
               <p> Non ouvert aux inscriptions </p>
             <% else %>
-              <div class='sub-btn'>
-                <%= link_to('Inscription', @event.registration_link, class: "btn btn-success") %>
+            <% if @event.registerdoclink === "" %>
+            <% else %>
+              <div class='sub-btn-prim'>
+                <%= link_to('Télécharger le Bulletin Inscription', @event.registerdoclink, class: "btn btn-success") %>
+              </div>
+              <% end %>
+              <p> ou </p>
+              <div class='sub-btn-sec'>
+                <%= link_to('Inscription en ligne', @event.registration_link, class: "btn btn-default") %>
               </div>
               <% if user_signed_in? %>
               <p>
