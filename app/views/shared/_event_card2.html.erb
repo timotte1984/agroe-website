@@ -6,7 +6,16 @@
       <%  image = "agroe.png" %>
     <% end %>
 
+<% case event.event_type %>
+<% when "DD" %>
+  <div class="event engage-border-right">
+<% when "EXPORT" %>
+  <div class="event visionnary-border-right">
+<% when "RETAIL" %>
+  <div class="event experts-border-right">
+<% else %>
   <div class="event">
+<% end %>
     <div class="event-image">
        <img src=<%= image %> >
     </div>

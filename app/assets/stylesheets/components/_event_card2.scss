@@ -1,10 +1,38 @@
+.engage-border-right{
+  border-right-color: #6A9F31;
+  border-right-width: 10px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-style: solid;
+}
+
+.visionnary-border-right{
+  border-right-color: #C97064;
+  border-right-width: 10px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-style: solid;
+}
+
+.experts-border-right{
+  border-right-color: rgb(100,100,100);
+  border-right-width: 10px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-style: solid;
+}
+
+
  .event{
   height: 100px;
   margin: 10px auto;
   max-width: 800px;
   color: rgb(60,60,60);
   background-color: rgb(240,240,240);
-  opacity: 0.8;
+  opacity: 0.9;
   position: relative;
   border-radius: 4px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
@@ -92,7 +120,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100px;
+  height: 100%;
   width: calc(50px + 4vw);
   background-color: black;
     img{
