@@ -10,7 +10,7 @@
           </br>
           </br>
           </br>
-          <i class="fas fa-arrow-circle-down"></i>
+          <%= link_to " <i class='fas fa-arrow-circle-down fa-2x'></i>".html_safe, root_path(anchor: 'events'), class: 'btn btn-link-next-section' %>
        </h1>
       </div>
     </div>
@@ -21,8 +21,21 @@
           <% @events.where('date > ?', Date.today.to_s).order(:date).first(5).each do |e| %>
             <%= render 'shared/event_card2', event: e %>
           <% end %>
+          <div class="bottom-section">
+          <div>
           <%= link_to "+ d'évènements", events_path(), class: 'btn btn-link' %>
+        </div>
+      </br>
+        <div class= 'btn-link-next-section'>
+          Adhérer
+        </div>
+        <div>
+          <%= link_to " <i class='fas fa-arrow-circle-down fa-2x'></i>".html_safe, root_path(anchor: 'events'), class: 'btn btn-link-next-section' %>
+          </div>
+        </div>
+
       </div>
+
     </div>
 
     <div id="partenaires">
