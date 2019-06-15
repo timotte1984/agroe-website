@@ -1,7 +1,7 @@
 // GENERIQUE
 body {
   font: 20px Helvetica, sans-serif;
-  color: #333;
+  color: rgb(100,100,100);
   text-align: center;
   background-color: grey;
 }
@@ -20,7 +20,7 @@ body {
 
 h3{
     padding: 30px 0px 30px 0px;
-    color: rgb(150,150,150);
+    color: rgb(100,100,100);
   }
 
 .btn-register{
@@ -64,8 +64,9 @@ h3{
   text-align: center;
   h1{
     padding-top: 20px;
-    color: rgb(150,150,150);
+    color: rgb(100,100,100);
     font-size: calc(25px + 0.7vw);
+    font-weight: lighter;
   }
   h4{
     color: rgb(20,20,20);
@@ -77,6 +78,7 @@ h3{
   a{
     margin-top: 20px;
     font-size: 22px;
+    color: #9D9D9D;
   }
 }
 
@@ -96,7 +98,7 @@ h3{
 }
 
 .title-big{
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 
@@ -135,10 +137,9 @@ h3{
 
 
 #events{
-  padding: 10px 10px 70px 10px;
-  background-color: rgb(170,170,170);
+  background-color: #9D9D9E;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   a{
     color: rgb(200,200,200);
   }
@@ -152,8 +153,35 @@ h3{
 
 
 .events-content{
+  flex: 1;
+  padding: 20px 20px;
+}
+
+.events-image-container{
+  flex: 1;
+  object-fit: cover;
+  overflow:hidden;
+  img{
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  #events{
+  display: block;
+  }
+  .events-content{
   width: 100%;
 }
+  .events-image-container img{
+    width: 0%;
+  }
+}
+
+
+
 
 .sib-form-block button{
   font-size:16px;
@@ -231,17 +259,59 @@ h3{
 
 
 
-#garde-contact{
-  padding: 90px 10px 90px 10px;
-  background-color: rgb(128, 181, 68);
+#newsletter-container{
+  background-color: #9D9D9E;
+  display: flex;
+}
+
+#newsletter{
+  display: flex;
+  justify-content: space-around;
+  width: 100%
+}
+
+#newsletter-formulaire-container{
+  flex : 1;
+  padding: 30px 30px;
+}
+
+.newsletter-grid{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  h3{
-  color: white;
+  box-sizing: border-box;
 }
+
+#newsletter-image-container{
+  flex : 1;
+  overflow:hidden;
+  object-fit: cover;
+  width: 400px;
+  img{
+    object-fit: cover;
+    width: 700px;
+  }
 }
+
+
+@media screen and (max-width: 900px) {
+  #newsletter{
+  display: block;
+  }
+  .newsletter-grid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+  #newsletter-image-container img{
+    width: 0%;
+  }
+}
+
+
+
 
 
 //imgs-wall
@@ -323,48 +393,69 @@ h3{
 }
 
 //contact
+
+#contact-info-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #9D9D9E;
+}
+
 #contact-info{
-  padding: 80px 10px 90px 10px;
-  background-color: #C97064;
+  padding: 100px 20px;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   h3{
     margin: 0px;
     padding: 0px;
     padding-bottom: 20px;
     color: white;
   }
-  #contact-info-container{
-    display: flex;
-    justify-content: center;
+}
 
-    #contact-info-tel{
-      a{
-        color: white;
-      }
-          a:hover{
-      color: black;
-      }
-      margin: 10px auto;
-      width: 200px;
-    }
-    #contact-info-email{
-      margin: 10px auto;
-      width: 200px;
-      a{
-        color: white;
-      }
-          a:hover{
-      color: black;
-      }
-    }
+#contact-info-tel{
+  a{
+    color: white;
+  }
+      a:hover{
+  color: black;
+  }
+  margin: 10px auto;
+  width: 200px;
+}
+#contact-info-email{
+  margin: 10px auto;
+  width: 200px;
+  a{
+    color: white;
+  }
+      a:hover{
+  color: black;
+  }
 
+}
+#image-contact-info{
+  flex : 1;
+  overflow:hidden;
+  object-fit: cover;
+  width: 400px;
+  img{
+    object-fit: cover;
+    width: 700px;
   }
 }
 
+@media screen and (max-width: 900px) {
+  #contact-info-container{
+  display: block;
+  }
+
+  #image-contact-info img{
+    width: 0px;
+  }
+}
 
 
   // NOT USE
