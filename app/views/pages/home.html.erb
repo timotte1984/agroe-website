@@ -28,31 +28,19 @@
       </div>
     </div>
 
+
     <div id="partenaires">
-      <h3> Ils participent à nos évènements </h3>
-        <%= image_tag 'fizzy.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'daudruy.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'coopfrance.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'fdesprez.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'castelain.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'CGF_Charcuterie.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'logo_hdf.jpg', class:'logos-soutiens-resize hidden' %>
-        <%= image_tag 'odeli.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'logo_cac.jpg', class:'logos-soutiens-resize hidden' %>
-        <%= image_tag 'fruits_rouges.jpg', class:'logos-soutiens-resize' %>
-        <%= image_tag 'assemandeprez.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'davigel.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'fleurymichon.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'holder.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'Ingredia.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'jcdavid.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'lepetitcuisinier.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'lucullus.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'Marche_phalempin.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'novial.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'portdunkerque.png', class:'logos-soutiens-resize' %>
-        <%= image_tag 'tbvergers.gif', class:'logos-soutiens-resize' %>
-        <%= image_tag 'biscuit_mad.jpg', class:'logos-soutiens-resize' %>
+      <h3> Ils participent à nos évènements en 2019 </h3>
+        <% participants = ['FIZZY.png','daudruy.png','coopfrance.png','fdesprez.png',
+                   'castelain.png','BIO_DEMAIN.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
+                   'assemandeprez.png','davigel.png','fleurymichon.png','groupe_holder.png',
+                   'Ingredia.png','jcdavid.png','lepetitcuisinier.png','LUCULLUS.png',
+                   'Marche_phalempin.png','CROC_LA_VIE.png','COEUR_DE_PICARDIE.jpg','NOVIAL.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA PRESERVERIE.png','LE PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg'
+                   ] %>
+
+<% participants.each do |participant| %>
+<%= image_tag participant, class:'logos-soutiens-resize' %>
+<% end %>
     </div>
 
 <div id="newsletter-container">
