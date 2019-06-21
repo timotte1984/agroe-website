@@ -31,14 +31,14 @@
 
     <div id="partenaires">
       <h3> Ils participent à nos évènements en 2019 </h3>
-        <% participants = ['daudruy.png','coopfrance.png','fdesprez.png',
-                   'castelain.png','BIO_DEMAIN.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
+        <% participants = ['fizzy.png','daudruy.png','coopfrance.png','fdesprez.png',
+                   'castelain.png','bio_demain.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
                    'assemandeprez.png','davigel.png','fleurymichon.png','groupe_holder.png',
-                   'Ingredia.png','jcdavid.png','lepetitcuisinier.png','LUCULLUS.png',
-                   'Marche_phalempin.png','CROC_LA_VIE.png','COEUR_DE_PICARDIE.jpg','NOVIAL.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg'] %>
+                   'Ingredia.png','jcdavid.png','lepetitcuisinier.png','lucullus.png',
+                   'Marche_phalempin.png','croc_la_vie.png','coeur_de_picardie.jpg','NOVIAL.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg'] %>
 
 <% participants.each do |participant| %>
-<%= image_tag participant, class:'logos-soutiens-resize' %>
+<%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
 <% end %>
     </div>
 
