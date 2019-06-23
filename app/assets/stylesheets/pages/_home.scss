@@ -55,7 +55,7 @@ h3{
 // BANNER
 
 #banner{
-  background-color: white;
+  background-color: rgb(240,252,243);
   height: 90vh;
   display: flex;
   align-items: center;
@@ -139,14 +139,14 @@ h3{
 
 
 #events{
-  background-color: #9D9D9E;
+  background-color: #D0D0D0;
   display: flex;
   justify-content: space-around;
   a{
     color: rgb(200,200,200);
   }
   h3{
-    color: white;
+    color: rgb(100,100,100);
   }
 }
   #special-offer{
@@ -155,17 +155,20 @@ h3{
 
 
 .events-content{
-  flex: 1;
+  width: 600px;
   padding: 20px 20px;
 }
 
 .events-image-container{
-  width:  550px;
+  margin: 100px 20px;
+  width:  350px;
   object-fit: cover;
   overflow:hidden;
+  background-color: white;
   img{
     object-fit: cover;
     width: 100%;
+    border-radius: 5px;
   }
 }
 
@@ -262,7 +265,7 @@ h3{
 
 
 #newsletter-container{
-  background-color: #9D9D9E;
+  background-color: #F5FBEF;
   display: flex;
 }
 
@@ -287,10 +290,13 @@ h3{
 #newsletter-image-container{
   flex : 1;
   overflow:hidden;
+  margin: 100px 50px;
+  width: 100%;
   object-fit: cover;
   img{
     object-fit: cover;
-    width: 700px;
+    width: 100%;
+    border-radius: 5px;
 
   }
 }

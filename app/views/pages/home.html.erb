@@ -1,21 +1,9 @@
 <% if user_signed_in? %>
   <%= render '/shared/dashboard', user: current_user %>
 <% else %>
-    <div id="banner" style="background-image: linear-gradient(to bottom, rgba(270,270,270,1) 60%, rgba(270,270,270,1) 100%), url(<%= asset_path ''%>);">
-      <div id="banner-content">
-        <%= image_tag 'agroe.png' %>
-        <h1>
-          <span class="engage title-big">RSE</span>, <span class="visionnary title-big">Export</span> et <span class="experts title-big"> Retail </span></br>
-          pour les Entreprises Agroalimentaires des Hauts-de-France
-          </br>
-          <%= link_to " <i class='fas fa-arrow-circle-down fa-2x'></i>".html_safe, root_path(anchor: 'events'), class: 'btn btn-link-next-section' %>
-       </h1>
-      </div>
-    </div>
-
     <div id="events">
       <div class="events-content">
-        <h3>Évènements</h3>
+        <h3> Nos prochains Évènements</h3>
         <% @events.where('date > ?', Date.today.to_s).order(:date).first(5).each do |e| %>
           <%= render 'shared/event_card2', event: e %>
         <% end %>
