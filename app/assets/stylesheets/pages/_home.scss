@@ -160,7 +160,7 @@ h3{
 }
 
 .events-image-container{
-  margin: 140px 20px;
+  margin: 120px 20px;
   width:  400px;
   object-fit: cover;
   border-radius: 5px;
@@ -181,9 +181,12 @@ h3{
   .events-content{
   width: 100%;
 }
-  .events-image-container img{
+  .events-image-container{
+width:  0px;
+    img{
     width:  0px;
   }
+}
 }
 
 
