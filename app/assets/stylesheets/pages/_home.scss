@@ -182,7 +182,9 @@ h3{
   width: 100%;
 }
   .events-image-container{
-width:  0px;
+    margin: 0px;
+    padding:0px;
+    width: 0px;
     img{
     width:  0px;
   }
@@ -317,9 +319,15 @@ width:  0px;
   align-items: center;
   box-sizing: border-box;
 }
-  #newsletter-image-container img{
+  #newsletter-image-container{
+    margin: 0px;
+    padding:0px;
+    width: 0px;
+    img{
+    width:  0px;
     width: 0%;
   }
+}
 }
 
 
