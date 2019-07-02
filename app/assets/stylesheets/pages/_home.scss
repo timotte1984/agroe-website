@@ -55,7 +55,9 @@ h3{
 // BANNER
 
 #banner{
-  background-color: rgb(240,252,243);
+  background-color: rgb(220,240,210);
+  background-size: cover;
+  background-position: center;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -66,12 +68,12 @@ h3{
   text-align: center;
   h1{
     padding-top: 20px;
-    color: rgb(100,100,100);
-    font-size: calc(25px + 0.7vw);
-    font-weight: lighter;
+    color: rgb(240,240,240);
+    font-size: calc(30px + 0.7vw);
+    font-weight: bolder;
   }
-  h4{
-    color: rgb(20,20,20);
+  h2{
+    color: rgb(220,220,220);
     font-size: calc(25px);
     font-weight: lighter;
     padding-bottom: 10px;
@@ -79,8 +81,9 @@ h3{
   }
   a{
     margin-top: 20px;
-    font-size: 22px;
-    color: #9D9D9D;
+    font-size: 18px;
+    color: white;
+    box-shadow: 1px 1px 3px rgb(105,105,105);
   }
 }
 
@@ -135,11 +138,36 @@ h3{
   color: white;
 }
 
+
+
+// testimanial
+#testimanial{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 100px 20px;
+  background-color: rgb(20,20,20);
+  #testimanial-content{
+    width: 600px;
+    color: rgb(150,150,150);
+    .quote{
+      color: rgb(255,255,255);
+      font-style: italic;
+      font-weight: bolder;
+      line-height: 25px;
+    }
+  }
+}
+
+
 // events
 
 
 #events{
-  background-color: #D0D0D0;
+  background-color: rgb(240,240,240);
   display: flex;
   justify-content: space-around;
   a{
@@ -249,13 +277,26 @@ h3{
 // partenaires
 #partenaires{
   background-color: white;
-  padding: 10px 10px 70px 10px;
+  padding: 0px 0px 70px 0px;
+  .count-participants{
+    color: rgb(260,260,260);
+    font-weight: bolder;
+    vertical-align: text-top;
+  }
+  h3{
+    background-color: #6A9F31;
+    color: rgb(240,240,240);
+    padding: 50px 50px;
+    margin: 0px;
+    font-size: 30px;
+  }
   a{
     margin: 5vw 5vw;
     font-size: 30px;
     }
   .logos-soutiens-resize {
   max-height: 50px;
+  max-width: 130px;
   height: 7vw;
   margin: 2vw 3vw;
   }
@@ -273,7 +314,7 @@ h3{
 
 
 #newsletter-container{
-  background-color: #F5FBEF;
+  background-color: rgb(240,240,240);
   display: flex;
 }
 
@@ -476,6 +517,24 @@ h3{
 
   #image-contact-info img{
     width: 0px;
+  }
+}
+
+#partenaires-instit{
+  background-color: white;
+  margin : 0px;
+  h3{
+    margin-top: 0px;
+  }
+  a{
+    margin: 5vw 5vw;
+    font-size: 30px;
+    }
+  .logos-soutiens-resize {
+  max-height: 50px;
+  max-width: 130px;
+  height: 7vw;
+  margin: 2vw 3vw;
   }
 }
 

@@ -1,6 +1,25 @@
 <% if user_signed_in? %>
   <%= render '/shared/dashboard', user: current_user %>
 <% else %>
+  <div id="banner" style="background-image: linear-gradient(to bottom, rgba(50,50,50,0.7) 60%, rgba(50,50,50,0.3) 100%), url(<%= image_path 'planet.jpg' %>;">
+    <div id="banner-content">
+      <h1> Accompagne les entreprises agroalimentaires qui <span class="engage"> s'engagent </span>. </h1>
+      <h2> Évènements / Newsletter / Projets / Diagnostics </h2>
+      <p>
+        <a href="#events" class="btn btn-primary"> En savoir plus </a>
+      </p>
+    </div>
+  </div>
+  <div id="testimanial">
+    <div id="testimanial-content">
+      <p>
+        <span class="quote" >"Corporate social responsibility is a hard-edged business decision. </br>Not because it is a nice thing to do or because people are forcing us to do it...</br> because it is good for our business" </span></br></br>
+Niall Fitzerald, Former CEO, Unilever
+      </p>
+    </div>
+  </div>
+
+
     <div id="events">
       <div class="events-content">
         <h3> Nos prochains Évènements</h3>
@@ -16,21 +35,32 @@
       </div>
     </div>
 
+<% participants = ['3monts.gif','fizzy.png','daudruy.png','coopfrance.png','fdesprez.png',
+                   'castelain.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
+                   'assemandeprez.png','davigel.png','brasserie_legendes.png','fleurymichon.png','groupe_holder.png',
+                   'Ingredia.png','jcdavid.png','flo58.png','lepetitcuisinier.png','lucullus.png',
+                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg','desmazieres.jpg'] %>
 
     <div id="partenaires">
-      <h3> Ils participent à nos évènements en 2019 </h3>
-        <% participants = ['fizzy.png','daudruy.png','coopfrance.png','fdesprez.png',
-                   'castelain.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
-                   'assemandeprez.png','davigel.png','fleurymichon.png','groupe_holder.png',
-                   'Ingredia.png','jcdavid.png','lepetitcuisinier.png','lucullus.png',
-                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg'] %>
-
+      <h3> <span class="count-participants"><%= participants.count %> </span> Entreprises Agro ont déjà participées à nos évènements en 2019. </h3>
 <% participants.each do |participant| %>
 <%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
 <% end %>
     </div>
 
   <% participants_2 = ['bio_demain.png','croc_la_vie.png','coeur_de_picardie.jpg', 'NOVIAL.png',] %>
+
+
+
+<div id="testimanial">
+    <div id="testimanial-content">
+      <p>
+        <span class="quote" >"Greater transparency is an unstoppable force. It is the product of growing demands from everybody with an interest in any corporation - its stakeholder web - and of rapid technological change, above all the spread of the Internet, that makes it far easier for firms to supply information, and harder for them to keep secrets. Firms now know that their internal e-mails may one day become public knowledge, for instance, and many big companies must co-exist with independent websites where employees can meet anonymously to air their grievances. With greater transparency will come greater accountability and better corporate behaviour. Rather than engage in futile resistance to it, firms should actively embrace transparency and rethink their values and generally get in better shape." </span></br></br>
+Don Tapscott, co-author The Naked Corporation
+      </p>
+    </div>
+  </div>
+
 
 <div id="newsletter-container">
   <div id="newsletter">
@@ -94,6 +124,21 @@
         </div>
       </div>
     </div>
+
+
+
+<div id="testimanial">
+    <div id="testimanial-content">
+      <p>
+        <span class="quote" >"Companies that are breaking the mold are moving beyond corporate social responsibility to social innovation. These companies are the vanguard of the new paradigm. They view community needs as opportunities to develop ideas and demonstrate business technologies, to find and serve new markets, and to solve longstanding business problems."
+</span></br></br>
+Rosabeth Moss Kanter, Harvard Business Review.
+      </p>
+    </div>
+  </div>
+
+
+
      <div id="contact-info-container">
         <div id="contact-info">
           <h3>Contacts</h3>
@@ -111,7 +156,7 @@
       </div>
     </div>
 
-    <div id="partenaires">
+    <div id="partenaires-instit">
       <h3><strong> Ils nous soutiennent </strong></h3>
         <%= image_tag 'logo_hdf.jpg', class:'logos-soutiens-resize' %>
         <%= image_tag 'logo_arras.png', class:'logos-soutiens-resize' %>
