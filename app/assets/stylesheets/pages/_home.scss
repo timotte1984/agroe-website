@@ -314,7 +314,7 @@ h3{
 
 
 #newsletter-container{
-  background-color: rgb(240,240,240);
+  background-color: #6A9F31;
   display: flex;
 }
 
@@ -322,6 +322,7 @@ h3{
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-bottom: 25px;
 }
 
 #newsletter-formulaire-container{
@@ -351,7 +352,7 @@ h3{
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
   #newsletter{
   display: block;
   }
@@ -503,7 +504,7 @@ h3{
   flex : 1;
   overflow:hidden;
   object-fit: cover;
-  width: 400px;
+  width: 700px;
   img{
     object-fit: cover;
     width: 700px;
