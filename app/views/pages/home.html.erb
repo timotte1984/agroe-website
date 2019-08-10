@@ -3,21 +3,32 @@
 <% else %>
   <div id="banner" style="background-image: linear-gradient(to bottom, rgba(50,50,50,0.7) 60%, rgba(50,50,50,0.3) 100%), url(<%= image_path 'planet.jpg' %>;">
     <div id="banner-content">
-      <h1> Accompagne les entreprises agroalimentaires qui <span class="engage"> s'engagent </span>. </h1>
-      <h2> Évènements / Newsletter / Projets / Diagnostics </h2>
-      <p>
-        <a href="#events" class="btn btn-primary"> En savoir plus </a>
-      </p>
+      <h1> Tous les services pour les entreprises agroalimentaires <span class="engage"> engagées</span>. </h1>
+      <h2> Networking - Veille - Financement de projets RSE - Audit RSE - Accompagnement Stratégique </h2>
+
     </div>
   </div>
-  <div id="testimanial">
-    <div id="testimanial-content">
-      <p>
-        <span class="quote" >"Se lancer dans la Responsabilité Sociétale des Entreprises (RSE) est une décision stratégique ! </br> On ne parle pas ici de se donner bonne conscience ou de faire de la com.</br> C'est bon pour le business, point!" </span></br></br>
-Niall Fitzerald, Ancien PDG d' Unilever
+
+
+<% participants = ['3monts.gif','fizzy.png','daudruy.png','coopfrance.png','fdesprez.png',
+                   'castelain.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
+                   'assemandeprez.png','davigel.png','brasserie_legendes.png','fleurymichon.png','groupe_holder.png',
+                   'Ingredia.png','jcdavid.png','flo58.png','lepetitcuisinier.png','lucullus.png',
+                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg','desmazieres.jpg'] %>
+
+    <div id="partenaires">
+      <h3> <span class="count-participants"><%= participants.count %> </span> Entreprises Agro ont déjà participées à nos évènements en 2019. </h3>
+<% participants.each do |participant| %>
+<%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
+<% end %>
+        <p>
+        <a href="#events" class="btn engage-back"> Comment les rencontrer ? </a>
       </p>
     </div>
-  </div>
+
+  <% participants_2 = ['bio_demain.png','croc_la_vie.png','coeur_de_picardie.jpg', 'NOVIAL.png'] %>
+
+
 
 
     <div id="events">
@@ -35,122 +46,16 @@ Niall Fitzerald, Ancien PDG d' Unilever
       </div>
     </div>
 
-<% participants = ['3monts.gif','fizzy.png','daudruy.png','coopfrance.png','fdesprez.png',
-                   'castelain.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
-                   'assemandeprez.png','davigel.png','brasserie_legendes.png','fleurymichon.png','groupe_holder.png',
-                   'Ingredia.png','jcdavid.png','flo58.png','lepetitcuisinier.png','lucullus.png',
-                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg','desmazieres.jpg'] %>
-
-    <div id="partenaires">
-      <h3> <span class="count-participants"><%= participants.count %> </span> Entreprises Agro ont déjà participées à nos évènements en 2019. </h3>
-<% participants.each do |participant| %>
-<%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
-<% end %>
-    </div>
-
-  <% participants_2 = ['bio_demain.png','croc_la_vie.png','coeur_de_picardie.jpg', 'NOVIAL.png',] %>
-
-
-
-<div id="testimanial">
-    <div id="testimanial-content">
-      <p>
-        <span class="quote" >"La "transparence" est une tendance de fond. C'est le résultat d'une demande croissance des parties prenantes des entreprises et d'une révolution technologiqe, qui permet de facilement fournir de l'information sur ses activités, et de difficilement de garder des secrets. Aujourd'hui, les entreprises savent que leurs emails internes peuvent un jour être rendus publiques, et qu'elles doivent accepter l'existence de sites indépendants sur lesquels leurs employés peuvent anonymement s'exprimer. La transparence génère plus de responsabilité et finalement de meilleurs comportements. Au lieu de s'engager dans des résistances futiles, les entreprises devraient accepter la transparence et repenser leurs stratégies. Cela ne pourra avoir que des effets bénéfiques pour leur business." </span></br></br>
-Don Tapscott, co-author The Naked Corporation
-      </p>
-    </div>
-  </div>
-
-
-<div id="newsletter-container">
-  <div id="newsletter">
-    <div id="newsletter-image-container" class="newsletter-grid">
-      <div id="newletter-image">
-        <%= image_tag 'salad.jpg' %>
-      </div>
-    </div>
-    <div id="newsletter-formulaire-container" class="newsletter-grid">
-      <div id="newsletter-formulaire">
-          <%= render '/shared/form_email2' %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="adhesion-agroe">
-      <h3>Nous rejoindre</h3>
-      <div class="adhesion-content">
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="join offer1">
-              <div class="imgs-wall">
-                <%= image_tag 'Heineken-group-mini.jpg'%>
-              </div>
-              <h4><strong>Adhésion Agroé</strong></h4>
-              <p>Pour testez nos services et rencontrer la communauté.</p>
-              100 &#8364
-              <div class="offer-buttons">
-                <a href="https://res.cloudinary.com/julienmottet/image/upload/v1559853153/bulletin-adhesion_Agroe_06062019.pdf" class="btn btn-register"> Télécharger la fiche d'adhésion </a>
-                 <p>ou</p>
-                <a href="https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/adhesions/adhesion-agroe" class="btn btn-default"> Adhésion en ligne </a>
-
-              </div>
-              <h5><i class="fas fa-check"></i> 1 an d'accès aux évènements hors "AgroClub" </h5>
-              <h5><i class="fas fa-check"></i> 1 an d'abonnement à l'AgroNote. </br> <span class= minilien><a href="http://sh1.sendinblue.com/7rd6dn0jfsc.html?t=1557864962">-> exemplaire test <-</a></span> </h5>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="join offer2">
-              <div class="imgs-wall">
-                <%= image_tag 'agroe_club_davigel.JPG'%>
-              </div>
-              <h4><strong>Offre "Agro Club"</strong></h4>
-              <p>Pour échanger plus efficacement et monter des projets.</p>
-                  à partir de 100 &#8364
-              <div class="offer-buttons">
-                         <a href="https://res.cloudinary.com/julienmottet/image/upload/v1559370042/bulletin-adhesion_AgroClub.pdf" class="btn btn-register"> Télécharger la fiche d'adhésion </a>
-                         <p>ou</p>
-                <a href="https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/adhesions/adhesion-agroclub-1" class="btn btn-default"> Adhésion en ligne </a>
-
-
-              </div>
-              <h5><i class="fas fa-check"></i> Tous les évènements pendant 1 an.</h5>
-              <h5><i class="fas fa-check"></i> La veille sur nos thématiques rassemblée et triée.</h5>
-              <h5><i class="fas fa-check"></i> Les coordonnées des adhérents avec leurs compétences associées. </h5>
-              <h5><i class="fas fa-check"></i> Accès à la liste email et au WhatsApp. </h5>
-              <h5><i class="fas fa-check"></i> Accès à l'accompagnement dans le montage de dossiers de financement de projets collectifs. </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-<div id="testimanial">
-    <div id="testimanial-content">
-      <p>
-        <span class="quote" >"Les entreprises qui sont courageuses vont au delà des bonnes pratiques RSE et expérimentent de nouveaux modèles sociaux en interne. Ces entreprises sont des pionières. Elles voient les besoins de leur communauté comme des opportunités pour développer des idées, trouver et répondre aux besoins de nouveaux marchés et répondre à des problèmes de fond de notre société."
-</span></br></br>
-Rosabeth Moss Kanter, Harvard Business Review.
-      </p>
-    </div>
-  </div>
-
-
 
      <div id="contact-info-container">
         <div id="contact-info">
-          <h3>Contacts</h3>
+        <%= render '/shared/team' %>
           <div id="contact-info-tel">
               <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a>
           </div>
           <div id="contact-info-email">
               <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a>
           </div>
-        </div>
-        <div id="image-contact-info">
-          <%= image_tag 'peas-3.jpg'%>
         </div>
         </div>
       </div>

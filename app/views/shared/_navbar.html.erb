@@ -43,9 +43,8 @@
     <% else %>
 
     <%= link_to "Évènements", root_path(anchor: 'events'), class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Communauté", root_path(anchor: 'partenaires'), class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Ils nous font confiance", root_path(anchor: 'partenaires'), class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Nous Contacter", root_path(anchor: 'contact-info'), class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Nous Rejoindre", root_path(anchor: 'adhesion-agroe'), class: "navbar-wagon-item navbar-wagon-link navbar-wagon-item-special" %>
      <%= link_to new_user_session_path, class: "navbar-wagon-item navbar-wagon-link-secret" do %>
       <i class="fas fa-user-shield"> </i>
      <% end %>
@@ -77,10 +76,8 @@
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <li><a href=<%= root_path(anchor: 'events') %>>Évènements</a></li>
-        <li><a href=<%= root_path(anchor: 'partenaires') %>>Adhésion</a></li>
-        <li><a href=<%= root_path(anchor: 'contact-info')%>>La Communauté</a></li>
-        <li><a href=<%=root_path(anchor: 'adhesion-agroe')%>>Nous Contacter</a></li>
-        <li><a href=<%= new_user_session_path %>>CONNEXION</a></li>
+        <li><a href=<%= root_path(anchor: 'partenaires') %>>Entreprises</a></li>
+        <li><a href=<%=root_path(anchor: 'contact-info')%>>Nous Contacter</a></li>
       </ul>
     </div>
     <% end %>
