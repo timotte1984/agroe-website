@@ -3,7 +3,7 @@
 <% else %>
   <div id="banner" style="background-image: linear-gradient(to bottom, rgba(50,50,50,0.7) 60%, rgba(50,50,50,0.3) 100%), url(<%= image_path 'planet.jpg' %>;">
     <div id="banner-content">
-      <h1> Tous les services pour les entreprises agroalimentaires <span class="engage"> engagées</span>. </h1>
+      <h1> Tous les services pour les entreprises agroalimentaires <span class="engage"> engagées</span></h1>
       <h2> Networking - Veille - Financement de projets RSE - Audit RSE - Accompagnement Stratégique </h2>
 
     </div>
@@ -48,18 +48,17 @@
 
 
      <div id="contact-info-container">
+      <h3> Besoin d'un avis ? L'équipe est à votre service. </h3>
         <div id="contact-info">
-        <%= render '/shared/team' %>
           <div id="contact-info-tel">
               <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a>
           </div>
           <div id="contact-info-email">
               <a href="mailto:contact@agroe.fr.com", class=""><i class="fas fa-envelope"></i> contact@agroe.fr </a>
           </div>
-        </div>
+        <%= render '/shared/team' %>
         </div>
       </div>
-    </div>
 
     <div id="partenaires-instit">
       <h3><strong> Ils nous soutiennent </strong></h3>
