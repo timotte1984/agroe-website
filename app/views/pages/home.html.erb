@@ -17,7 +17,7 @@
                    'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg','desmazieres.jpg'] %>
 
     <div id="partenaires">
-      <h3> <span class="count-participants"><%= participants.count %> </span> Entreprises Agro ont déjà participées à nos évènements en 2019. </h3>
+      <h3> <span class="count-participants"><%= participants.count %> </span> Entreprises Agro ont déjà participées aux évènements Agroé en 2019. </h3>
 <% participants.each do |participant| %>
 <%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
 <% end %>
@@ -33,7 +33,7 @@
 
     <div id="events">
       <div class="events-content">
-        <h3> Nos prochains Évènements</h3>
+        <h3> Nos prochains Évènements d'Agroé</h3>
         <% @events.where('date > ?', Date.today.to_s).order(:date).first(5).each do |e| %>
           <%= render 'shared/event_card2', event: e %>
         <% end %>
@@ -48,7 +48,7 @@
 
 
      <div id="contact-info-container">
-      <h3> Besoin d'un avis ? L'équipe est à votre service. </h3>
+      <h3> Besoin d'un avis ? L'équipe d'Agroé est à votre service. </h3>
         <div id="contact-info">
           <div id="contact-info-tel">
               <a href="tel:+3332770158"><i class="fas fa-phone"></i> 03.27.70.15.80 </a>
