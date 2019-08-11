@@ -169,7 +169,10 @@ h3{
   display: flex;
   justify-content: space-around;
   a{
-    color: rgb(200,200,200);
+    color: rgb(150,150,150);
+  }
+  a:hover{
+    color: rgb(100,100,100);
   }
   h3{
     color: rgb(100,100,100);
@@ -178,7 +181,6 @@ h3{
   #special-offer{
     color: black;
 }
-
 
 .events-content{
   width: 600px;

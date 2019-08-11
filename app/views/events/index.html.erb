@@ -1,16 +1,17 @@
 <div class="events-list-container">
   <div class="events-list-content">
+    <h3>Évènements passés </h3>
+    <% @events.where('date < ?', Date.today.to_s).order(date: :desc).each do |e| %>
+       <%= render 'shared/event_card2', event: e %>
+    <% end %>
+  </div>
+  <div class="events-list-content">
     <h3>Évènements à venir </h3>
     <% @events.where('date >= ?', Date.today.to_s).order(:date).each do |e| %>
       <%= render 'shared/event_card2', event: e %>
     <% end %>
   </div>
-  <div class="events-list-content">
-    <h3>Évènements passés </h3>
-    <% @events.where('date < ?', Date.today.to_s).order(:date).each do |e| %>
-       <%= render 'shared/event_card2', event: e %>
-    <% end %>
-  </div>
+
 </div>
 
 
