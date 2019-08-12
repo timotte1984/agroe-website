@@ -4,20 +4,26 @@
   <div id="banner" style="background-image: linear-gradient(to bottom, rgba(50,50,50,0.7) 60%, rgba(50,50,50,0.3) 100%), url(<%= image_path 'planet.jpg' %>;">
     <div id="banner-content">
       <h1> Tous les services pour les entreprises agroalimentaires <span class="engage"> engagées</span></h1>
-      <h2> Networking - Veille - Financement de projets RSE - Audit RSE - Accompagnement Stratégique </h2>
-
+      <h2><a href="#events">#VenezVérifier</a></h2>
     </div>
   </div>
 
 
-<% participants = ['3monts.gif','fizzy.png','daudruy.png','coopfrance.png','fdesprez.png',
-                   'castelain.png','CGF_Charcuterie.png','odeli.png','fruits_rouges.jpg',
-                   'assemandeprez.png','davigel.png','brasserie_legendes.png','fleurymichon.png','groupe_holder.png',
-                   'Ingredia.png','jcdavid.png','flo58.png','lepetitcuisinier.png','lucullus.png',
-                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','biscuit_mad.jpg','DES_HOMMES_ET_DES_BOEUFS.png','CUEILLETTE_EN_BAIE_DE_SOMME.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FORT_ET_VERT.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg','desmazieres.jpg'] %>
+
+<% participants = ['3monts.gif',
+                   'assemandeprez.png',
+                   'brasserie_legendes.png','biscuit_mad.jpg',
+                   'castelain.png','CGF_Charcuterie.png', 'coopfrance.png','CUEILLETTE_EN_BAIE_DE_SOMME.png',
+                   'daudruy.png','davigel.png','desmazieres.jpg',
+                   'fizzy.png', 'fdesprez.png', 'fruits_rouges.jpg','fleurymichon.png','flo58.png','FORT_ET_VERT.png','GEORGETTE-CIBOULETTE.png'
+
+                   'odeli.png',
+                   'groupe_holder.png',
+                   'Ingredia.png','jcdavid.png','lepetitcuisinier.png','lucullus.png',
+                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','DES_HOMMES_ET_DES_BOEUFS.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg'] %>
 
     <div id="partenaires">
-      <h3> <span class="count-participants"><%= participants.count %> </span> Entreprises Agro ont déjà participées aux évènements Agroé en 2019. </h3>
+      <h3><i class="fas fa-arrow-circle-down"></i>   Ils ont déjà participées aux évènements Agroé en 2019    <i class="fas fa-arrow-circle-down"></i> </h3>
 <% participants.each do |participant| %>
 <%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
 <% end %>
@@ -33,7 +39,7 @@
 
     <div id="events">
       <div class="events-content">
-        <h3> Nos prochains Évènements d'Agroé</h3>
+        <h3> Les prochains Évènements Agroé </h3>
         <% @events.where('date > ?', Date.today.to_s).order(:date).first(5).each do |e| %>
           <%= render 'shared/event_card2', event: e %>
         <% end %>
