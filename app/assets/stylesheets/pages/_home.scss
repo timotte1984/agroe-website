@@ -74,9 +74,8 @@ h3{
   }
   h2{
     color: rgb(270,270,270);
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 10px;
-    font-style: italic;
   }
   a{
     font-size: 18px;
@@ -216,6 +215,12 @@ h3{
   }
   .events-content{
   width: 100%;
+  h5{
+    margin: 5px 5px 20px 5px;
+  }
+  h3{
+    padding-bottom: 0px;
+  }
 }
   .events-image-container{
     margin: 0px;
