@@ -3,29 +3,27 @@
     <p>
       Bonjour <%= current_user.first_name %>,
     </p>
-    <p>
-      Si ce n'est pas fait, merci de remplir votre <strong><%= link_to "profil", user_path(current_user) %></strong>.
-    </p>
     </br>
     <ul>
-      <li>Dans la section <strong> <%= link_to "évènements", events_path() %> </strong> permet de
-        <ul>
-          <li>s'inscrire aux futures évènements.</li>
-          <li>commenter sur les évènements déjà passés.</li>
-        </ul>
-      </li>
-      <li> Dans la section Adhérents
-        <ul>
-          <li>Un fichier excel liste tous les contacts des entreprises du club.</li>
-          <li>La vignette des personnes ayant déjà créé un profil sur l'espace "AgroClub".</li>
-        </ul>
-      </li>
-      <li> Ressources
-        <ul>
-          <li>Un fichier excel avec toutes les ressources issues des AgroNotes.</li>
-          <li>Notre Blog</li>
-        </ul>
+      <li>La section <strong> <%= link_to "évènements", events_path() %> </strong> permet de
+s'inscrire aux évènements.</li>
+      <li>La section <strong> <%= link_to "adhérents", users_path() %> </strong> rassemble les coordonnées des adhérents. </li>
+      <li>La section <strong> <%= link_to "ressources", ressources_path() %> </strong> rassemble toutes les ressources.
+      </li></br>
+      <li>Merci de remplir le <strong> <%= link_to "questionnaire", "https://forms.gle/y1XwxhWZgdj6H4kH7" %> </strong> de compétences RSE pour que la cartographie des compétences de l'ensemble des entreprises adhérentes soit à jour. </br></br>Cela prend 5 min. </br></br>Pour l'instant seul:</br>
+          acierpka@cgf-charcuterie.com </br>
+          qualite@asseman-deprez.com</br>
+          catherine-lenaers@daudruy.fr</br>
+          a.preuvot@lesfruitsrouges.com</br>
+          manon.laby@sciencespo-lille.eu</br>
+          ffruchart@mphalempin.com</br>
+          laboussieroise@gmail.com</br>
+          cecile.goutte@gmail.com</br> l'ont rempli.
       </li>
     </ul>
   </div>
 </div>
+
+
+
+

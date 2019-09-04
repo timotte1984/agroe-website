@@ -22,19 +22,15 @@
                    'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','DES_HOMMES_ET_DES_BOEUFS.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg'] %>
 
     <div id="partenaires">
-      <h3><i class="fas fa-arrow-circle-down"></i>   Ils ont déjà participés aux évènements Agroé en 2019    <i class="fas fa-arrow-circle-down"></i> </h3>
+      <h3><i class="fas fa-arrow-circle-down"></i>   Ils ont déjà participés aux évènements du pôle Agroé en 2019    <i class="fas fa-arrow-circle-down"></i> </h3>
 <% participants.each do |participant| %>
 <%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
 <% end %>
-        <p>
-        <a href="#events" class="btn engage-back"> Comment les rencontrer ? </a>
-      </p>
     </div>
 
   <% participants_2 = ['bio_demain.png','croc_la_vie.png','coeur_de_picardie.jpg', 'NOVIAL.png'] %>
 
-
-
+  <%= render '/shared/home_services' %>
 
     <div id="events">
       <div class="events-content">

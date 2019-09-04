@@ -1,0 +1,45 @@
+#services-container{
+  padding: 50px;
+  color: rgb(50,50,50);
+  background-color: #6A9F31;
+  #services-content{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    #services-title{
+      font-size: 30px;
+      padding: 20px;
+    }
+    .service-container{
+      margin: 30px;
+      border-radius: 4px;
+
+      .service-content{
+        .service-logo{
+
+          }
+        .service-title{
+          font-size: 25px;
+          font-weight: bolder;
+          margin: 15px;
+          }
+        .service-description{
+          font-size: 14px;
+          text-align: justify;
+          height: 130px;
+          }
+        .service-link a{
+          color: rgb(10,10,10);
+          font-size: 15px;
+          }
+        .service-link a:hover{
+          color: rgb(10,10,10);
+          font-size: 15px;
+          font-weight: bolder;
+          }
+        }
+      }
+    }
+  }

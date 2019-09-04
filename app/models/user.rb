@@ -20,7 +20,13 @@ class User < ApplicationRecord
                                       "mdubocage@novial-sa.com",
                                       "lbouchart@mphalempin.com",
                                       "a.preuvot@lesfruitsrouges.com",
-                                      "gaetan.savary@jbviande.com"
+                                      "gaetan.savary@jbviande.com",
+                                      "manon.laby@sciencespo-lille.eu",
+                                      "alice.delattre@davigel.fr",
+                                      "baptiste@promis-jure.fr",
+                                      "c.basset@perledunord.com",
+                                      " isabelle.lioene@norabio.fr",
+                                      "sdebeunne@francecaketradition.fr"
                                     ] }
 
   mount_uploader :company_img, PhotoUploader
