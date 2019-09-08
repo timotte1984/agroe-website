@@ -1,6 +1,6 @@
 #services-container{
   padding: 50px;
-  color: rgb(50,50,50);
+  color: rgb(230,230,230);
   background-color: #6A9F31;
   #services-content{
     width: auto;
@@ -29,15 +29,18 @@
           font-size: 14px;
           text-align: justify;
           height: 130px;
+          line-height: 20px;
           }
         .service-link a{
-          color: rgb(10,10,10);
           font-size: 15px;
+          border-style: solid;
+          border-radius: 4px;
+          padding: 3px 5px;
+          color: rgb(230,230,230);
           }
         .service-link a:hover{
-          color: rgb(10,10,10);
-          font-size: 15px;
-          font-weight: bolder;
+          font-size: 15.5px;
+          color: rgb(230,230,230);
           }
         }
       }
