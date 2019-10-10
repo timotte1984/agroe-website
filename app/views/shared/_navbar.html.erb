@@ -42,7 +42,7 @@
       </div>
     <% else %>
 
-    <%= link_to "Évènements", root_path(anchor: 'events'), class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Évènements", events_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Ils nous font confiance", root_path(anchor: 'partenaires'), class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Nous Contacter", root_path(anchor: 'contact-info-container'), class: "navbar-wagon-item navbar-wagon-link" %>
      <%= link_to new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" do %>
