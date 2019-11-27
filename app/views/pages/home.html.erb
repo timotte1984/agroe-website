@@ -31,12 +31,12 @@
 
 <div id="partenaires">
   <h3>
-    <i class="fas fa-arrow-circle-down"></i>   Ils ont déjà participés aux évènements du pôle Agroé en 2019    <i class="fas fa-arrow-circle-down"></i>
+      Comme...
   </h3>
   <% participants.first(10).each do |participant| %>
     <%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
   <% end %>
-  <h4><a href=<%= participants_path %>> + d'entreprises </a></h4>
+  <h4><a href=<%= participants_path %>> + d'entreprises engagées </a></h4>
 </div>
 
   <% participants_2 = ['bio_demain.png','croc_la_vie.png','coeur_de_picardie.jpg', 'NOVIAL.png'] %>
