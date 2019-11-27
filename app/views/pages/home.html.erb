@@ -9,43 +9,123 @@
   </div>
 
 
-
-<% participants = ['3monts.gif',
+<% participants = ['groupe_holder.png',
+                   'Ingredia.png',
+                   'castelain.png',
+                   'CGF_Charcuterie.png',
+                   'daudruy.png',
+                   'fruits_rouges.jpg',
+                   'davigel.png',
+                   'FRANCECAKETRADITION.gif',
+                   'tbvergers.gif',
+                   'logo-perle-du-nord.png',
+                   '3monts.gif',
                    'assemandeprez.png',
                    'brasserie_legendes.png','biscuit_mad.jpg',
-                   'castelain.png','CGF_Charcuterie.png', 'coopfrance.png','CUEILLETTE_EN_BAIE_DE_SOMME.png',
-                   'daudruy.png','davigel.png','desmazieres.jpg',
-                   'fizzy.png', 'fdesprez.png', 'fruits_rouges.jpg','fleurymichon.png','flo58.png','FORT_ET_VERT.png','GEORGETTE-CIBOULETTE.png',
+                   'coopfrance.png','CUEILLETTE_EN_BAIE_DE_SOMME.png',
+                   'Desmazieres_logo.png',
+                   'fizzy.png', 'fdesprez.png', 'fleurymichon.png','flo58.png','FORT_ET_VERT.png','GEORGETTE-CIBOULETTE.png',
                    'odeli.png',
-                   'groupe_holder.png',
-                   'Ingredia.png','jcdavid.png','lepetitcuisinier.png','lucullus.png',
-                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','tbvergers.gif','DES_HOMMES_ET_DES_BOEUFS.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FOURNIL_DES_SAVEURS.jpg','FRUITSROUGES.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg'] %>
+                   'jcdavid.png','lepetitcuisinier.png','lucullus.png',
+                   'Marche_phalempin.png','portdunkerque.png','CHOCMOD.png','DES_HOMMES_ET_DES_BOEUFS.png','DISTILLERIE_D_HAUTEFEUILLE.png','FLEUR_DE_SEL_DES_2_CAPS.jpg','FLORENSUC.png','FOREO.png','FOURNIL_DES_SAVEURS.jpg','GRAINE_DE_CHOC.png','IDEES_DE_SAISON.png','JEAN_BOUTEILLE.jpg','JOLIE_CONFITURE.png','LA_PRESERVERIE.png','LE_PATUREUR.png','MILLY_MACARONS.png','SOUPISSIME.jpg','norabio.jpg'] %>
 
-    <div id="partenaires">
-      <h3><i class="fas fa-arrow-circle-down"></i>   Ils ont déjà participés aux évènements du pôle Agroé en 2019    <i class="fas fa-arrow-circle-down"></i> </h3>
-<% participants.each do |participant| %>
-<%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
-<% end %>
-    </div>
+<div id="partenaires">
+  <h3>
+    <i class="fas fa-arrow-circle-down"></i>   Ils ont déjà participés aux évènements du pôle Agroé en 2019    <i class="fas fa-arrow-circle-down"></i>
+  </h3>
+  <% participants.first(10).each do |participant| %>
+    <%= image_tag participant, alt: '', class:'logos-soutiens-resize' %>
+  <% end %>
+  <h4><a href=<%= participants_path %>> + d'entreprises </a></h4>
+</div>
 
   <% participants_2 = ['bio_demain.png','croc_la_vie.png','coeur_de_picardie.jpg', 'NOVIAL.png'] %>
 
   <%= render '/shared/home_services' %>
 
-    <div id="events">
-      <div class="events-content">
-        <h3> Les prochains Évènements Agroé </h3>
-        <% @events.where('date > ?', Date.today.to_s).order(:date).first(5).each do |e| %>
-          <%= render 'shared/event_card2', event: e %>
-        <% end %>
-        <div class="bottom-section">
-          <%= link_to "découvrir nos anciens évènements", events_path(), class: 'btn' %>
-        </div>
-      </div>
-      <div class="events-image-container">
-        <%= image_tag 'recap.png' %>
+<div class="events-list-container">
+  <div class="events-list-content">
+    <h3>Prochains évènements</h3>
+    <% @events.where('date >= ?', Date.today.to_s).order(:date).each do |e| %>
+      <%= render 'shared/event_card2', event: e %>
+    <% end %>
+  </div>
+  <div class="events-list-content">
+    <h3>Derniers évènements passés </h3>
+    <% @events.where('date < ?', Date.today.to_s).order(date: :desc).first(5).each do |e| %>
+       <%= render 'shared/event_card2', event: e %>
+    <% end %>
+  </div>
+  <h4><a href=<%= events_path %>>Explorer tous nos évènements </a></h4>
+</div>
+
+
+
+<div id="newsletter-container">
+  <div id="newsletter">
+    <div id="newsletter-image-container" class="newsletter-grid">
+      <div id="newletter-image">
+        <%= image_tag 'salad.jpg' %>
       </div>
     </div>
+    <div id="newsletter-formulaire-container" class="newsletter-grid">
+      <div id="newsletter-formulaire">
+          <%= render '/shared/form_email2' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="adhesion-agroe">
+      <h3>Nous rejoindre</h3>
+      <div class="adhesion-content">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="join offer1">
+              <div class="imgs-wall">
+                <%= image_tag 'Heineken-group-mini.jpg'%>
+              </div>
+              <h4><strong>Adhésion Agroé</strong></h4>
+              <p>Pour testez nos services et rencontrer la communauté.</p>
+              100 &#8364
+              <div class="offer-buttons">
+                <a href="https://res.cloudinary.com/julienmottet/image/upload/v1559853153/bulletin-adhesion_Agroe_06062019.pdf" class="btn btn-register"> Télécharger la fiche d'adhésion </a>
+                 <p>ou</p>
+                <a href="https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/adhesions/adhesion-agroe" class="btn btn-default"> Adhésion en ligne </a>
+
+              </div>
+              <h5><i class="fas fa-check"></i> 1 an d'accès aux évènements hors "AgroClub" </h5>
+              <h5><i class="fas fa-check"></i> 1 an d'abonnement à l'AgroNote. </br> <span class= minilien><a href="http://sh1.sendinblue.com/7rd6dn0jfsc.html?t=1557864962">-> exemplaire test <-</a></span> </h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="join offer2">
+              <div class="imgs-wall">
+                <%= image_tag 'agroe_club_davigel.JPG'%>
+              </div>
+              <h4><strong>Offre "Agro Club"</strong></h4>
+              <p>Pour échanger plus efficacement et monter des projets.</p>
+                  à partir de 100 &#8364
+              <div class="offer-buttons">
+                         <a href="https://res.cloudinary.com/julienmottet/image/upload/v1559370042/bulletin-adhesion_AgroClub.pdf" class="btn btn-register"> Télécharger la fiche d'adhésion </a>
+                         <p>ou</p>
+                <a href="https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/adhesions/adhesion-agroclub-1" class="btn btn-default"> Adhésion en ligne </a>
+
+
+              </div>
+              <h5><i class="fas fa-check"></i> Tous les évènements pendant 1 an.</h5>
+              <h5><i class="fas fa-check"></i> La veille sur nos thématiques rassemblée et triée.</h5>
+              <h5><i class="fas fa-check"></i> Les coordonnées des adhérents avec leurs compétences associées. </h5>
+              <h5><i class="fas fa-check"></i> Accès à la liste email et au WhatsApp. </h5>
+              <h5><i class="fas fa-check"></i> Accès à l'accompagnement dans le montage de dossiers de financement de projets collectifs. </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
      <div id="contact-info-container">
