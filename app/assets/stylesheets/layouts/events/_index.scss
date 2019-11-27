@@ -1,7 +1,18 @@
 .events-list-container{
-  padding: 40px;
+  padding: 50px;
+  color: rgb(120,120,120);
+  background-color: white;
+  h1{
+    font-size: 60px;
+    padding: 20px;
+    color: rgb(60,60,60);
+    font-weight: bolder;
+  }
   h3{
-    color: white;
+      font-size: 25px;
+      font-weight: bolder;
+      margin: 15px;
+      color: rgb(120,120,120);
   }
 }
 .events-list-content{

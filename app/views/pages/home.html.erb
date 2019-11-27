@@ -3,7 +3,7 @@
 <% else %>
   <div id="banner" style="background-image: linear-gradient(to bottom, rgba(50,50,50,0.7) 60%, rgba(50,50,50,0.3) 100%), url(<%= image_path 'planet.jpg' %>;">
     <div id="banner-content">
-      <h1> Devenez une entreprise agroalimentaire <span class="engage"> engagée</span></h1>
+      <h1> Devenez <br/> une entreprise agroalimentaire <br/><span class="engage"> engagée</span></h1>
       <h2><a href=<%= events_path %>> Prochains évènements </a></h2>
     </div>
   </div>
@@ -44,6 +44,7 @@
   <%= render '/shared/home_services' %>
 
 <div class="events-list-container">
+  <h1>La communauté vous accueille</h1>
   <div class="events-list-content">
     <h3>Prochains évènements</h3>
     <% @events.where('date >= ?', Date.today.to_s).order(:date).each do |e| %>
@@ -79,7 +80,7 @@
 
 
 <div id="adhesion-agroe">
-      <h3>Nous rejoindre</h3>
+      <h1> Venez Tester </h1>
       <div class="adhesion-content">
         <div class="row">
           <div class="col-xs-12 col-md-6">
@@ -96,7 +97,7 @@
                 <a href="https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/adhesions/adhesion-agroe" class="btn btn-default"> Adhésion en ligne </a>
 
               </div>
-              <h5><i class="fas fa-check"></i> 1 an d'accès aux évènements hors "AgroClub" </h5>
+              <h5><i class="fas fa-check"></i> 1 essai gratuit a un évènement. </h5>
               <h5><i class="fas fa-check"></i> 1 an d'abonnement à l'AgroNote. </br> <span class= minilien><a href="http://sh1.sendinblue.com/7rd6dn0jfsc.html?t=1557864962">-> exemplaire test <-</a></span> </h5>
             </div>
           </div>
@@ -129,7 +130,7 @@
 
 
      <div id="contact-info-container">
-      <h3> L'équipe d'Agroé</h3>
+      <h3> L'équipe</h3>
         <div id="contact-info">
 
         <%= render '/shared/team' %>
@@ -143,7 +144,7 @@
       </div>
 
     <div id="partenaires-instit">
-      <h3><strong> Ils nous soutiennent </strong></h3>
+      <h3><strong> Ils nous permettent de travailler avec vous </strong></h3>
         <%= image_tag 'logo_hdf.jpg', class:'logos-soutiens-resize' %>
         <%= image_tag 'logo_arras.png', class:'logos-soutiens-resize' %>
         <%= image_tag 'logo_cac.jpg', class:'logos-soutiens-resize' %>

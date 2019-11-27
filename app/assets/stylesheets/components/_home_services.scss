@@ -1,7 +1,7 @@
 #services-container{
   padding: 50px;
-  color: rgb(260,260,260);
-  background-color: #6A9F31;
+  color: rgb(120,120,120);
+  background-color: #eaeaea;
   #services-content{
     width: auto;
     display: flex;
@@ -9,8 +9,10 @@
     text-align: center;
     justify-content: center;
     #services-title{
-      font-size: 30px;
+      font-size: 60px;
       padding: 20px;
+      color: rgb(60,60,60);
+      font-weight: bolder;
     }
     .service-container{
       margin: 30px;
@@ -21,7 +23,7 @@
 
           }
         .service-title{
-          font-size: 17px;
+          font-size: 25px;
           font-weight: bolder;
           margin: 15px;
           }
@@ -36,7 +38,7 @@
           border-style: solid;
           border-radius: 4px;
           padding: 3px 5px;
-          color: rgb(230,230,230);
+          color: rgb(200,200,200);
           }
         .service-link a:hover{
           font-size: 15.5px;
