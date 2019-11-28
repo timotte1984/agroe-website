@@ -40,7 +40,9 @@
   <%= render '/shared/home_services' %>
 
 <div class="events-list-container">
-  <h1>La communauté vous accueille</h1>
+  <div class="section-title">
+    La communauté vous accueille
+   </div>
   <div class="events-list-content">
     <h3>Prochains évènements</h3>
     <% @events.where('date >= ?', Date.today.to_s).order(:date).each do |e| %>
@@ -57,7 +59,9 @@
 </div>
 
 <div id="adhesion-agroe">
-  <h1> Venez Tester </h1>
+  <div class="section-title">
+    Venez Tester
+  </div>
   <div class="adhesion-content">
     <div class="join offer1">
       <div class="imgs-wall">
@@ -78,8 +82,10 @@
     </div>
   </div>
 </div>
-<div id="adhesion-agroeclub">
-  <h1> Puis rejoignez la communauté </h1>
+<div id="adhesion-agroclub">
+  <div class="section-title">
+  Puis rejoignez la communauté
+  </div>
   <div class="adhesion-content">
     <div class="join offer2">
       <div class="imgs-wall">
@@ -108,7 +114,9 @@
 
 
      <div id="contact-info-container">
-      <h3> L'équipe</h3>
+      <div class="section-title">
+        L'équipe
+      </div>
         <div id="contact-info">
 
         <%= render '/shared/team' %>
