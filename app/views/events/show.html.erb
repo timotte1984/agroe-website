@@ -52,7 +52,7 @@
       <div class="col-md-4 col-centered">
         <div class="event-show-links">
           <% if @event.date < Date.today %>
-            <p> Évènement terminée </p>
+            <p> Évènement terminé </p>
             <% if !@event.affluence.nil? %>
             <p> <strong> <%= @event.affluence %> personnes </strong> étaient présentes. </p>
             <% end %>
