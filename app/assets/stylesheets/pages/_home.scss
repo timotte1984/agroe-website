@@ -399,30 +399,24 @@ h3{
 
 .imgs-wall{
   img{
-    height: 200px;
+    height: 220px;
     object-fit: cover;
-    width: 360px;
+    width: 400px;
   }
 }
 
-
-//adhesion
-#adhesion-agroe{
+#adhesion-agroeclub{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color: #eaeaea;
-  padding: 30px 5px 100px 5px;
-  h1{
+  background-color: white;
+  padding-bottom: 70px;
+    h1{
     font-size: 60px;
     padding: 20px;
     color: rgb(60,60,60);
     font-weight: bolder;
-  }
-  .offer1{
-    background-color: rgb(240,240,240);
-    box-shadow: 1px 1px 3px rgb(100,100,100);
   }
   .offer2{
     background-color: rgb(40,40,40);
@@ -441,7 +435,7 @@ h3{
       font-style: italic;
     }
     margin: 20px auto;
-    width: 360px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,16 +467,75 @@ h3{
       color : black;
     }
   }
-  .join:hover{
-    opacity: 1;
-    transition: opacity 0.1s ease;
+}
+
+//adhesion
+#adhesion-agroe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-color: #eaeaea;
+  padding: 30px 5px 100px 5px;
+  h1{
+    font-size: 60px;
+    padding: 20px;
+    color: rgb(60,60,60);
+    font-weight: bolder;
+  }
+  .offer1{
+    background-color: rgb(240,240,240);
+    box-shadow: 1px 1px 3px rgb(100,100,100);
+  }
+
+  .join{
+    opacity: 0.9;
+    h4{
+      padding-top: 40px;
+    }
+    p{
+      font-size: 13px;
+      font-style: italic;
+    }
+    margin: 20px auto;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    .offer-buttons{
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-width: 1px;
+      margin: 30px 0px;
+      padding: 30px 0px;
+      width: 300px;
+      p{
+        margin: 10px 0px;
+        color: rgb(150,150,150);
+      }
+      a{
+        font-size: 14px;
+        margin: 10px 0px;
+      }
+    }
+    a{
+        font-size: 10px;
+      }
+    .minilien a{
+      color : grey;
+    }
+      .minilien a:hover{
+      color : black;
+    }
   }
 }
 
 //contact
 
 #contact-info-container{
-    background-color: white;
+    background-color: #eaeaea;
     padding: 50px;
     h3{
     font-size: 60px;
@@ -573,7 +626,6 @@ h3{
 #team-container{
   padding: 50px;
   color: rgb(120,120,120);
-  background-color: white;
   font-size: 15px;
   .team-elements{
     width-max: 1200px;
