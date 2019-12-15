@@ -10,6 +10,7 @@ e1 = Event.create(
   description: "Partez à la découverte des enseignes Belges",
   price_w_adhesion: 0,
   price_ext: 100,
+  agroclubrse_only: false,
   address: "Bruxelles (BEL)",
   registration_link: "",
   event_type: "Retail",
@@ -24,6 +25,7 @@ e2 = Event.create(
   description: "Présentation des comptes d'Agroé et intervention de Christian Gourlay",
   descriptionlong: "Au programme de l'AG, La présentation et la validation des comptes d'Agroé ainsi que la présentation de la nouvelle stratégie RSE de Fleury Michon par Christian Gourlay",
   price_w_adhesion: 0,
+  agroclubrse_only: false,
   price_ext: 100,
   address: "Tilloy-lez-Cambrai (59)",
   registration_link: "https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/evenements/assemblee-generale-agroe-chez-fleury-michon",
@@ -37,6 +39,7 @@ e3 = Event.create(
   date: "18-06-2019".to_datetime,
   description: "Rencontre entre les acteurs belges et français intéressés par la consigne dans la filière brassicole",
   price_w_adhesion: 0,
+  agroclubrse_only: false,
   price_ext: 100,
   address: "???",
   registration_link: "",
@@ -50,6 +53,7 @@ e4 = Event.create(
   date: "17-09-2019".to_datetime,
   description: "Venez rencontrer les experts du port de dunkerque pour affiner votre stratégie à l'export",
   price_w_adhesion: 100,
+  agroclubrse_only: false,
   price_ext: 200,
   address: "Dunkerque (59)",
   registration_link: "https://www.helloasso.com/associations/le-pole-d-excellence-regional-de-l-agroalimentaire-agroe/evenements/reussir-sa-strategie-a-l-export-avec-le-port-de-dunkerque",
@@ -64,6 +68,7 @@ e5 = Event.create(
   date: "23-05-2019".to_datetime,
   description: "Découvrez l'entreprise Fizzy Distribution et venez rencontrer Impact PLV, POPAI, Coopérative MU...",
   price_w_adhesion: 0,
+  agroclubrse_only: false,
   price_ext: 100,
   address: "Sars-et-Rosières (59)",
   registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
@@ -72,6 +77,38 @@ e5 = Event.create(
 url5 = "https://res.cloudinary.com/julienmottet/image/upload/v1558046741/dd.jpg"
 e5.remote_photo_url = url5
 e5.save
+
+e6 = Event.create(
+  name: "Event Test",
+  date: "23-05-2020".to_datetime,
+  agroclubrse_only: false,
+  description: "Découvrez l'entreprise Fizzy Distribution et venez rencontrer Impact PLV, POPAI, Coopérative MU...",
+  price_w_agroclubrse_adhesion: 0,
+  price_w_adhesion: 20,
+  price_ext: 100,
+  address: "Sars-et-Rosières (59)",
+  registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
+  event_type: "DD",
+  )
+url6 = "https://res.cloudinary.com/julienmottet/image/upload/v1558046741/dd.jpg"
+e6.remote_photo_url = url6
+e6.save
+
+e7 = Event.create(
+  name: "CR Event",
+  date: "23-05-2019".to_datetime,
+  agroclubrse_only: true,
+  description: "Découvrez l'entreprise Fizzy Distribution et venez rencontrer Impact PLV, POPAI, Coopérative MU...",
+  price_w_agroclubrse_adhesion: 0,
+  price_w_adhesion: 20,
+  price_ext: 100,
+  address: "Sars-et-Rosières (59)",
+  registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
+  event_type: "DD",
+  )
+url7 = "https://res.cloudinary.com/julienmottet/image/upload/v1558046741/dd.jpg"
+e7.remote_photo_url = url7
+e7.save
 
 
 # This file should contain all the record creation needed to seed the database with its default values.

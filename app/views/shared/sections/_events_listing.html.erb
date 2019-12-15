@@ -1,0 +1,17 @@
+<div class="section s-white">
+  <div class="section-title">
+    Prochains évènements
+  </div>
+  <div class="events-list-content">
+    <% @events.where('date >= ?', Date.today.to_s).order(:date).each do |e| %>
+      <%= render 'shared/event_card2', event: e %>
+    <% end %>
+  </div>
+  <div class="events-list-content">
+    <h3>Derniers évènements passés </h3>
+    <% @events.where('date < ?', Date.today.to_s).order(date: :desc).first(3).each do |e| %>
+       <%= render 'shared/event_card2', event: e %>
+    <% end %>
+  </div>
+  <h4><a href=<%= events_path %>> + évènements </a></h4>
+</div>

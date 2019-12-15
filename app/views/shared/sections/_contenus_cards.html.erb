@@ -1,0 +1,12 @@
+<div class="section s-white">
+  <div class="section-title">
+    Derniers Contenus
+  </div>
+  <div class="contenus_cards_container">
+    <div class="row">
+    <% @events.where('date >= ?', Date.today.to_s).order(:date).each do |e| %>
+      <%= render 'shared/event_card', event: e %>
+    <% end %>
+    </div>
+  </div>
+</div>

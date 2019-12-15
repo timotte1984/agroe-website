@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_06_203947) do
+ActiveRecord::Schema.define(version: 2019_12_15_161839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(version: 2019_06_06_203947) do
     t.text "descriptionlong"
     t.integer "affluence"
     t.string "registerdoclink"
+    t.decimal "price_w_agroclubrse_adhesion"
+    t.boolean "agroclubrse_only", default: true
   end
 
   create_table "users", force: :cascade do |t|

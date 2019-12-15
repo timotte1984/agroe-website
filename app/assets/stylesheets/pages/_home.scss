@@ -23,10 +23,22 @@ h3{
     color: rgb(100,100,100);
   }
 
+.section{
+  padding: 100px 0px;
+}
+
+.s-white{
+  background-color: white;
+}
+
+.s-grey{
+  background-color: rgb(240,240,240);
+
+}
 
 .section-title{
   font-size: 60px;
-  padding: 20px;
+  padding-bottom: 50px;
   color: rgb(60,60,60);
   font-weight: bolder;
 }
@@ -296,36 +308,12 @@ h3{
 
 
 // partenaires
-#partenaires{
-  background-color: white;
-  padding: 80px 30px;
-  .count-participants{
-    color: rgb(260,260,260);
-    font-weight: bolder;
-    vertical-align: text-top;
-  }
-  h2{
-    padding: 50px 50px;
-  }
-  h3{
-    background-color: white ;
-    color: rgb(120,120,120);
-    padding: 50px 50px;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    font-size: 20px;
-  }
-  a{
-    margin: 5vw 5vw;
-    font-size: 20px;
-    }
-  .logos-soutiens-resize {
+.logos-soutiens-resize {
   max-height: 70px;
   max-width: 200px;
   height: 8vw;
   margin: 1vw 2vw;
   }
-}
 
 .img-events{
   max-width: 600px;

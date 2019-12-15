@@ -1,0 +1,26 @@
+- agroe:
+    section_title : Venez Tester
+    image_path: Heineken-group-mini.jpg
+    fiche_title: Adhésion Agroé
+    fiche_subtitle: Pour testez nos services et rencontrer la communauté.
+    price_estim: 100
+    adhesion_fiche_link : v1559853153/bulletin-adhesion_Agroe_06062019.pdf
+    online_adhesion_link: adhesion-agroe
+    assets:
+      - Accès au premier évènement au prix "agroclubrse" (souvent gratuit).
+      - Accès à tous les évènements suivants au prix "agroe".
+    section_title: Puis rejoignez la communauté
+    image_path: agroe_club_davigel.JPG
+    fiche_title: Adhésion "AgroClubRSE"
+    fiche_subtitle: Pour échanger plus efficacement et monter des projets.
+    price_estim: à partir de 100
+    adhesion_fiche_link : v1559370042/bulletin-adhesion_AgroClub.pdf
+    online_adhesion_link: adhesion-agroclub-1
+    assets:
+      - Accès à tous les évènements au prix "agroeclubrse".
+      - Accès à La veille.
+      - Accès à l'intranet
+      - Accès aux dossiers thématiques "Emballage" "Commencer en RSE" ...
+      - Accès aux coordonnées de tous les adhérents.
+      - Accès à la cartographie des compétences RSE des adhérents AgroClubRSE.
+      - Accès à l'accompagnement individualisé (financement, AMO, expertise).

@@ -43,6 +43,8 @@ class EventsController < ApplicationController
       :date,
       :event_type,
       :description,
+      :agroclubrse_only,
+      :price_w_agroclubrse_adhesion,
       :price_w_adhesion,
       :price_ext,
       :address,
