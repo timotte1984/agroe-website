@@ -26,11 +26,16 @@
         font-size: 18px;
       }
     }
-      .sub-btn-sec{
-      text-align: center;
-      margin-bottom: 20px;
-      a{
-        font-size: 13px;
+    .sub-btn-sec{
+      display: flex;
+      justify-content: center;
+      .btn-register{
+        background-color: green;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px;
+        margin: 10px 20px;
+        font-size: 20px;
+        width: 250px;
       }
     }
 }

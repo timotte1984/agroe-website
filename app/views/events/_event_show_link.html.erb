@@ -11,20 +11,24 @@
       <% if @event.registerdoclink === "" %>
       <% else %>
         <div class='sub-btn-prim'>
-          <%= link_to("Télécharger le bulletin d'inscription", @event.registerdoclink, class: "btn btn-success") %>
+          <%= link_to("Télécharger le bulletin d'inscription", @event.registerdoclink, class: "btn btn-primary") %>
         </div>
         <p> ou </p>
       <% end %>
       <div class='sub-btn-sec'>
-        <%= link_to('Inscription en ligne', @event.registration_link, class: "btn btn-default") %>
+        <a href=<% @event.registration_link%>>
+        <div class="btn-register">
+          Inscription en ligne
+        </div>
+        </a>
       </div>
     <% end %>
     <% if user_signed_in? %>
       <p>Prix : <strong><%= @event.price_w_adhesion %> &#8364</strong></p>
     <% else %>
-      <p>Prix "adhérent AgroClubRSE" :<strong><%= @event.price_w_agroclubrse_adhesion %> &#8364</strong></p>
-      <p>Prix "adhérent Agroé" :<strong><%= @event.price_w_adhesion %> &#8364</strong></p>
-      <p>Prix non adhérents :<strong><%= @event.price_ext %> &#8364</strong></p>
+      <p>Prix "adhérent AgroClubRSE" : <strong><%= @event.price_w_agroclubrse_adhesion %> &#8364</strong></p>
+      <p>Prix "adhérent Agroé" : <strong><%= @event.price_w_adhesion %> &#8364</strong></p>
+      <p>Prix non adhérents : <strong><%= @event.price_ext %> &#8364</strong></p>
     <% end %>
   <% end %>
   <% if user_signed_in? && current_user.admin === true %>
