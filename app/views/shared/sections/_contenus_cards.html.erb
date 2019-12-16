@@ -3,6 +3,7 @@
   <div class="section-title">
     Contributions
   </div>
+  <% else %>
   <% end %>
   <div class="cards-content">
     <div class="row">
@@ -10,5 +11,8 @@
       <%= render 'shared/events/event_card', event: e %>
     <% end %>
     </div>
+  </div>
+  <div class="lock-information">
+    <i class="fas fa-lock"></i> : Contenu réservé aux adhérents "Agroé"" et "AgroclubRSE"
   </div>
 </div>
