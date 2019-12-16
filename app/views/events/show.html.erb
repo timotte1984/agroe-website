@@ -4,105 +4,48 @@
 
 <% if @event.event_type === 'contenu' %>
    <div class="event-profil-container">
-      <%= @event.descriptionlong.html_safe %>
-   </div>
-<% else %>
-  <div class="event-profil-container">
-    <div class="row">
-      <div class="col-md-8 col-centered">
-        <div class="event-main-info-container">
-          <div class="event-main-info-content">
-            <h4>
-              <strong><%= @event.name %></strong>
-            </h4>
-            <h5>
-              <%= @event.description %>
-            </h5>
-              <% if @event.event_type === "DD" %>
-              <class class="agroclub-alert"><p>Évènement réservé aux adhérents "AgroClub"</p></class>
-              <% end %>
-              <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong>
-            </p>
-            <p>
-              <strong><%= @event.address %></strong>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-centered">
-        <% if !@event.photo.nil? %>
-          <div class="img-event-profil">
-            <%= cl_image_tag(@event.photo) %>
-          </div>
+    <div class="event-profil-content">
+      <% if user_signed_in? && current_user.admin === true %>
+        <p>
+          <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
+        </p>
+        <p>
+          <%= link_to("Destroy", event_path(@event),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" },
+                  class: "btn btn-danger") %>
+        </p>
+      <% end %>
+      <div class="event-profil-descriptionlong">
+        <% if !@event.descriptionlong.nil? %>
+          <%= @event.descriptionlong.html_safe %>
         <% end %>
       </div>
     </div>
    </div>
-
-
-    <div class="row">
-      <div class="col-md-8 col-centered">
-        <div class="event-show-details">
-          <% if !@event.descriptionlong.nil? %>
-          <p>
-            <%= @event.descriptionlong.html_safe %>
-          </p>
-          <% end %>
-        </div>
+<% else %>
+  <div class="event-profil-container">
+    <div class="event-profil-content">
+      <h4><strong><%= @event.name %></strong></h4>
+      <h5><%= @event.description %></h5>
+      <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong></p>
+      <p><strong><%= @event.address %></strong></p>
+      <div class="img-event-profil">
+        <% if !@event.photo.nil? %>
+          <%= cl_image_tag("agroe.png") %>
+        <% else %>
+          <%= cl_image_tag(@event.photo) %>
+        <% end %>
       </div>
-      <div class="col-md-4 col-centered">
-        <div class="event-show-links">
-          <% if @event.date < Date.today %>
-            <p> Évènement terminé </p>
-            <% if !@event.affluence.nil? %>
-            <p> <strong> <%= @event.affluence %> personnes </strong> étaient présentes. </p>
-            <% end %>
-          <% else %>
-            <% if @event.registration_link === "" %>
-              <p> Non ouvert aux inscriptions </p>
-            <% else %>
-            <% if @event.registerdoclink === "" %>
-            <% else %>
-              <div class='sub-btn-prim'>
-                <%= link_to("Télécharger le bulletin d'inscription", @event.registerdoclink, class: "btn btn-success") %>
-              </div>
-              <p> ou </p>
-              <% end %>
-              <div class='sub-btn-sec'>
-                <%= link_to('Inscription en ligne', @event.registration_link, class: "btn btn-default") %>
-              </div>
-              <% if user_signed_in? %>
-              <p>
-                Prix : <strong><%= @event.price_w_adhesion %> &#8364</strong>
-              </p>
-              <% else %>
-              <p>
-                Prix "adhérent AgroClubRSE" : </br> <strong><%= @event.price_w_agroclubrse_adhesion %> &#8364</strong>
-              </p>
-              <p>
-                Prix "adhérent Agroé" : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
-              </p>
-              <p>
-                Prix non adhérents : </br> <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
-              </p>
-
-              <% end %>
-            <% end %>
-          <% end %>
-         <% if user_signed_in? && current_user.admin === true %>
-          <p>
-            <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
-          </p>
-          <p>
-            <%= link_to("Destroy", event_path(@event),
-                method: :delete,
-                data: { confirm: "Are you sure?" },
-                class: "btn btn-danger") %>
-          </p>
-          <% end %>
-        </div>
+      <%= render 'event_show_link'%>
+      <div class="event-profil-descriptionlong">
+        <% if !@event.descriptionlong.nil? %>
+          <%= @event.descriptionlong.html_safe %>
+        <% end %>
       </div>
     </div>
+  </div>
+
   </div>
 <% end %>
 

@@ -40,7 +40,14 @@
 }
 
 .event-profil-container{
-  text-align: left;
+  background-color: white;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.event-profil-content{
+  max-width: 800px;
 }
 
 .img-event-profil {
@@ -85,6 +92,10 @@
  }
 }
 
+
+.event-profil-descriptionlong{
+  text-align: left;
+}
 
 
 
