@@ -44,6 +44,7 @@ class EventsController < ApplicationController
       :event_type,
       :description,
       :agroclubrse_only,
+      :agroe_adhesion_protected,
       :price_w_agroclubrse_adhesion,
       :price_w_adhesion,
       :price_ext,

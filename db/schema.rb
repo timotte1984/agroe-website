@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_15_161839) do
+ActiveRecord::Schema.define(version: 2019_12_16_134240) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 2019_12_15_161839) do
     t.string "registerdoclink"
     t.decimal "price_w_agroclubrse_adhesion"
     t.boolean "agroclubrse_only", default: true
+    t.boolean "agroe_adhesion_protected", default: true
   end
 
   create_table "users", force: :cascade do |t|
@@ -72,6 +73,7 @@ ActiveRecord::Schema.define(version: 2019_12_15_161839) do
     t.string "person_img"
     t.string "address"
     t.string "siret"
+    t.string "adhesion_type", default: "agroe"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

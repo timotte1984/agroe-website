@@ -6,13 +6,40 @@
   <% end %>
 
   <% if !user_signed_in? %>
-    <% if event.agroclubrse_only === true %>
-  <div class="card-container">
+    <% if event.agroe_adhesion_protected === true %>
+      <% if event.agroclubrse_only === true %>
+        <div class="card-container">
+        <div class="lock-info">
+          <span style=font-size:10px>Exclu AgroClubRSE</span>
+          <i class="fas fa-lock"></i>
+        </div>
+
+      <% else %>
+        <div class="card-container">
+          <div class="lock-info">
+            <i class="fas fa-lock"></i>
+          </div>
+      <% end %>
     <% else %>
-  <div class="card-container clickable">
+      <div class="card-container clickable">
+      <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
     <% end %>
   <% else %>
-  <div class="card-container clickable">
+    <% if current_user.adhesion_type === 'agroe' %>
+      <% if event.agroclubrse_only === true %>
+        <div class="card-container">
+          <div class="lock-info">
+            AgroClubRSE
+            <i class="fas fa-lock"></i>
+          </div>
+        <% else %>
+        <div class="card-container clickable">
+        <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
+      <% end %>
+    <% else %>
+        <div class="card-container clickable">
+        <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
+    <% end %>
   <% end %>
     <div class="card-title">
       <%= event.name %>
@@ -20,10 +47,6 @@
     <div class="card-description">
         <%= event.description %>
     </div>
-    <div class="card-rse-only">
-      accès réservé aux membres agroclubrse
-    </div>
-    <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
   </div>
 </div>
 
