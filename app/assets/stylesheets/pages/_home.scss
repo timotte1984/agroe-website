@@ -401,13 +401,27 @@ h3{
   }
 }
 
+.fiches{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  }
+
+@media (min-width: 576px) {
+  .fiches {
+  }
+}
+
+.offer-services-listings{
+  text-align: left;
+  margin: 0px 40px;
+}
+
 #adhesion-agroclub{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color: white;
-  padding: 70px 0px;
     h1{
     font-size: 60px;
     padding: 20px;
@@ -471,8 +485,6 @@ h3{
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color: #eaeaea;
-  padding: 70px 0px;
   h1{
     font-size: 60px;
     padding: 20px;

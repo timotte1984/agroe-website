@@ -1,0 +1,31 @@
+<div class="col-xs-12 col-md-4">
+  <% if !event.photo.nil? %>
+    <%  image = event.photo %>
+  <% else %>
+    <%  image = "agroe.png" %>
+  <% end %>
+
+  <% if !user_signed_in? %>
+    <% if event.agroclubrse_only === true %>
+  <div class="card-container">
+    <% else %>
+  <div class="card-container clickable">
+    <% end %>
+  <% else %>
+  <div class="card-container clickable">
+  <% end %>
+    <div class="card-title">
+      <%= event.name %>
+    </div>
+    <div class="card-description">
+        <%= event.description %>
+    </div>
+    <div class="card-rse-only">
+      accès réservé aux membres agroclubrse
+    </div>
+    <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
+  </div>
+</div>
+
+
+

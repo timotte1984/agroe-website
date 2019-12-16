@@ -5,8 +5,10 @@
         <%= f.input :event_type, label: 'type de document ["contenu" ou "event"]' %>
         <%= f.input :date, label: 'date jour et heure de début' %>
         <%= f.input :description, label: 'Description en 1 ligne de event' %>
+        <%= f.input :agroclubrse_only, label: 'Seulement pour intranet ?' %>
         <%= f.input :descriptionlong, label: 'Détails de event' %>
         <%= f.input :price_w_adhesion, label: 'Prix pour les adhérents Agroé (euros)' %>
+        <%= f.input :price_w_agroclubrse_adhesion, label: 'Prix pour les adhérents Agroé (euros)' %>
         <%= f.input :price_ext, label: 'Prix pour les extérieurs (euros)' %>
         <%= f.input :address, label: 'Lieu' %>
         <%= f.input :registration_link, label: 'lien vers la page helloasso de event' %>

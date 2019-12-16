@@ -1,17 +1,15 @@
 <% if user_signed_in? %>
-  <%= render 'shared/sections/contenus_cards' %>
   <%= render 'shared/sections/events_listing'%>
-  <%= render 'shared/sections/agroe_en_hdf'%>
+  <%= render 'shared/sections/contenus_cards' %>
   <%= render 'shared/sections/contacts'%>
   <%= render 'shared/sections/financeurs'%>
 <% else %>
   <%= render 'shared/sections/home_banner' %>
+  <%= render 'shared/sections/events_listing'%>
   <%= render 'shared/sections/contenus_cards' %>
   <%= render 'shared/sections/socialproof' %>
   <%= render 'shared/sections/services_agroe' %>
-  <%= render 'shared/sections/events_listing'%>
   <%= render 'shared/sections/adhesion_fiche_agroe'%>
-  <%= render 'shared/sections/adhesion_fiche_agroclubrse'%>
   <%= render 'shared/sections/contacts'%>
   <%= render 'shared/sections/financeurs'%>
 <% end %>

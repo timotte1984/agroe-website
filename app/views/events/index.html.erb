@@ -1,14 +1,16 @@
-<div class="events-list-container">
+<div class="section s-white">
   <div class="events-list-content">
-    <h3>Évènements à venir </h3>
+    <% if !user_signed_in? %>
+    <div class="section-title">Évènements à venir </div>
+    <% end %>
     <% @events.where('date >= ?', Date.today.to_s).order(:date).each do |e| %>
-      <%= render 'shared/event_card2', event: e %>
+      <%= render 'shared/events/event_listing_card', event: e %>
     <% end %>
   </div>
   <div class="events-list-content">
     <h3>Évènements passés </h3>
     <% @events.where('date < ?', Date.today.to_s).order(date: :desc).each do |e| %>
-       <%= render 'shared/event_card2', event: e %>
+       <%= render 'shared/events/event_listing_card', event: e %>
     <% end %>
   </div>
 </div>

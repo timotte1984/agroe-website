@@ -72,7 +72,7 @@ e5 = Event.create(
   price_ext: 100,
   address: "Sars-et-Rosières (59)",
   registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
-  event_type: "DD",
+  event_type: "contenu",
   )
 url5 = "https://res.cloudinary.com/julienmottet/image/upload/v1558046741/dd.jpg"
 e5.remote_photo_url = url5
@@ -88,7 +88,7 @@ e6 = Event.create(
   price_ext: 100,
   address: "Sars-et-Rosières (59)",
   registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
-  event_type: "DD",
+  event_type: "event",
   )
 url6 = "https://res.cloudinary.com/julienmottet/image/upload/v1558046741/dd.jpg"
 e6.remote_photo_url = url6
@@ -96,7 +96,7 @@ e6.save
 
 e7 = Event.create(
   name: "CR Event",
-  date: "23-05-2019".to_datetime,
+  date: "22-05-2019".to_datetime,
   agroclubrse_only: true,
   description: "Découvrez l'entreprise Fizzy Distribution et venez rencontrer Impact PLV, POPAI, Coopérative MU...",
   price_w_agroclubrse_adhesion: 0,
@@ -104,7 +104,7 @@ e7 = Event.create(
   price_ext: 100,
   address: "Sars-et-Rosières (59)",
   registration_link: "https://www.eventbrite.fr/e/billets-rencontre-n7-de-lagroclubrse-plv-et-developpement-durable-59814588043",
-  event_type: "DD",
+  event_type: "contenu",
   )
 url7 = "https://res.cloudinary.com/julienmottet/image/upload/v1558046741/dd.jpg"
 e7.remote_photo_url = url7

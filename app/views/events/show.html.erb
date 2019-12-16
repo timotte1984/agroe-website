@@ -1,11 +1,12 @@
   <div class="retour">
-    <% if user_signed_in? %>
-     <% route =  events_path %>
-      <% else %>
-      <% route = root_path(anchor: "events") %>
-    <% end %>
-     <%= link_to('Retour', route, class: "btn btn-default") %>
+     <%= link_to('Retour', root_path, class: "btn btn-default") %>
   </div>
+
+<% if @event.event_type === 'contenu' %>
+   <div class="event-profil-container">
+      <%= @event.descriptionlong.html_safe %>
+   </div>
+<% else %>
   <div class="event-profil-container">
     <div class="row">
       <div class="col-md-8 col-centered">
@@ -104,5 +105,5 @@
       </div>
     </div>
   </div>
-
+<% end %>
 

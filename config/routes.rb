@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'ressources', to: 'pages#ressources', as: :ressources
   get 'participants', to: 'pages#participants', as: :participants
-  get 'news', to: 'pages#news', as: :news
-  get 'adhesions', to: 'pages#adhesions', as: :adhesions
+  get 'adhesion', to: 'pages#adhesion', as: :adhesion
   resources 'associations', only: [:new, :create, :show, :index]
   resources 'events', only: [:new, :edit, :create, :update, :index, :show, :destroy]
   resources 'users', only: [:show,:index]
