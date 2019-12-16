@@ -47,7 +47,9 @@
     <%= link_to "Contact", root_path(anchor: 'contact-info'), class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Adhérer", adhesion_path, class: "navbar-wagon-item navbar-wagon-link" %>
      <%= link_to new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" do %>
-      <i class="fas fa-user-shield"> </i>
+     <div class="btn-connexion">
+       <span style="font-weight: bolder">Connexion</span>
+     </div>
      <% end %>
       <!-- Login link (when logged out) -->
 
