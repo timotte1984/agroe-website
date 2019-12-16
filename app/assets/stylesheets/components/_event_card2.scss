@@ -45,7 +45,11 @@
   transition: opacity 0.1s ease;
   }
 
- .event{
+  .events-list-content{
+    margin: 0px 20px;
+  }
+
+ .events-list-element{
   height: 100px;
   margin: 10px auto;
   max-width: 800px;

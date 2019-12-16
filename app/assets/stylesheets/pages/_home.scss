@@ -407,8 +407,9 @@ h3{
   align-items:flex-start;
   }
 
-@media (min-width: 576px) {
+@media (man-width: 576px) {
   .fiches {
+    flex-direction: column;
   }
 }
 

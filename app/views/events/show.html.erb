@@ -77,16 +77,15 @@
               </p>
               <% else %>
               <p>
-                Prix "adhérent" : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
+                Prix "adhérent AgroClubRSE" : </br> <strong><%= @event.price_w_agroclubrse_adhesion %> &#8364</strong>
               </p>
-
-                <% if @event.event_type === "DD" %>
-                <% else %>
-
-                <p>
+              <p>
+                Prix "adhérent Agroé" : </br> <strong><%= @event.price_w_adhesion %> &#8364</strong>
+              </p>
+              <p>
                 Prix non adhérents : </br> <strong><%= @event.price_ext %> &#8364</strong> (<%= link_to('Adhérer', root_path(anchor: 'adhesion-agroe'), class: "btn btn-link") %>)
               </p>
-              <% end %>
+
               <% end %>
             <% end %>
           <% end %>

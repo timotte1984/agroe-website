@@ -6,9 +6,9 @@
       <%  image = "agroe.png" %>
     <% end %>
    <% if event.date < Date.today %>
-  <div class="event bg-done">
+  <div class="events-list-element bg-done">
     <% else %>
-  <div class="event bg-live">
+  <div class="events-list-element bg-live">
     <% end %>
     <div class="event-image">
        <img src=<%= image %> >
@@ -42,25 +42,18 @@
       </div>
       <% else %>
       <% if user_signed_in? %>
-        <% if event.price_w_adhesion === 0 %>
+        <% if event.price_w_agroclubrse_adhesion === 0 %>
           <div class="event-price-ext engage hidden-xs">Gratuit </div>
         <% else %>
-          <div class="event-price-ext engage hidden-xs"><%= event.price_w_adhesion %> &#8364</div>
+          <div class="event-price-ext engage hidden-xs"><%= event.price_w_agroclubrse_adhesion %> &#8364</div>
         <% end %>
       <% else %>
-      <% if event.event_type === "DD" %>
-      <div class="event-price-ext engage hidden-xs" >AGROCLUB</div>
-                <% else %>
         <div class="event-price-ext engage hidden-xs" ><%= event.price_ext %> &#8364</div>
-        <% end %>
-        <% if event.price_w_adhesion === 0 %>
-          <div class="event-price-adhesion engage hidden-xs">Tarif Adhérent : Gratuit </div>
+        <% if event.price_w_agroclubrse_adhesion === 0 %>
+          <div class="event-price-adhesion engage hidden-xs">Adhérent AgroClubRSE : Gratuit </div>
         <% else %>
-          <div class="event-price-adhesion engage hidden-xs"> Tarif Adhérent : <%= event.price_w_adhesion %> &#8364</div>
+          <div class="event-price-adhesion engage hidden-xs"> Adhérent AgroClubRSE : <%= event.price_w_agroclubrse_adhesion %> &#8364</div>
         <% end %>
-        <div class="event-registration-button hidden">
-          <%= link_to('Inscription', event.registration_link, class: "btn visionnary-back") %>
-        </div>
       <% end %>
       <% end %>
 
