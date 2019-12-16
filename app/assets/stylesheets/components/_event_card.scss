@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-color: white;
-  opacity: 1;
+  opacity: 0.6;
   color: white;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -34,7 +34,6 @@
 }
 
 .clickable:hover{
-  border-radius: 10px;
   transition: 0.2s ease;
 }
 
