@@ -25,9 +25,9 @@
     <% end %>
     <% if user_signed_in? %>
       <% if current_user.adhesion_type === "agroe" %>
-        <p>Prix : <strong><%= @event.price_w_agroclubrse_adhesion %> &#8364</strong></p>
+        <p>Prix : <strong><%= @event.price_w_adhesion %> &#8364</strong></p>
       <% else %>
-      <p>Prix : <strong><%= @event.price_w_adhesion %> &#8364</strong></p>
+      <p>Prix : <strong><%= @event.price_w_agroclubrse_adhesion %> &#8364</strong></p>
       <% end %>
     <% else %>
       <p>Prix "adhérent AgroClubRSE" : <strong><%= @event.price_w_agroclubrse_adhesion %> &#8364</strong></p>
