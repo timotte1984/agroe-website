@@ -1,35 +1,26 @@
-
-
-    <% if !event.photo.nil? %>
-      <%  image = event.photo %>
-    <% else %>
-      <%  image = "agroe.png" %>
-    <% end %>
-   <% if event.date < Date.today %>
+<% if !event.photo.nil? %>
+  <%  image = event.photo %>
+<% else %>
+  <%  image = "agroe.png" %>
+<% end %>
+<% if event.date < Date.today %>
   <div class="events-list-element bg-done">
-    <% else %>
+<% else %>
   <div class="events-list-element bg-live">
-    <% end %>
-    <div class="event-image">
-       <img src=<%= image %> >
-    </div>
+<% end %>
+    <div class="event-image"><img src=<%= image %> ></div>
     <div class="event-date">
       <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
     </div>
     <div class="event-title">
       <p><%= event.name %></p>
-      <div class="event-description hidden">
-        <%= event.description %>
-      </div>
+      <div class="event-description hidden"><%= event.description %></div>
     </div>
     <div class="event-address">
       <%= event.address %>
     </div>
-
     <% if event.date < Date.today %>
-      <div class="event-registration-button hidden">
-        <p> évènement terminé </p>
-      </div>
+      <div class="event-registration-button hidden"><p> évènement terminé </p></div>
       <% if !event.affluence.nil? %>
         <div class="event-price-ext experts event-indisponible-message">
           <%= event.affluence %> pers. présentes
@@ -41,22 +32,21 @@
          Non ouvert
       </div>
       <% else %>
-      <% if user_signed_in? %>
-        <% if event.price_w_agroclubrse_adhesion === 0 %>
-          <div class="event-price-ext engage hidden-xs">Gratuit </div>
+        <% if user_signed_in? %>
+          <% if event.price_w_agroclubrse_adhesion === 0 %>
+            <div class="event-price-ext engage hidden-xs"> Gratuit </div>
+          <% else %>
+            <div class="event-price-ext engage hidden-xs"> <%= event.price_w_agroclubrse_adhesion %> &#8364 </div>
+          <% end %>
         <% else %>
-          <div class="event-price-ext engage hidden-xs"><%= event.price_w_agroclubrse_adhesion %> &#8364</div>
-        <% end %>
-      <% else %>
-        <div class="event-price-ext engage hidden-xs" ><%= event.price_ext %> &#8364</div>
-        <% if event.price_w_agroclubrse_adhesion === 0 %>
-          <div class="event-price-adhesion engage hidden-xs">Adhérent AgroClubRSE : Gratuit </div>
-        <% else %>
-          <div class="event-price-adhesion engage hidden-xs"> Adhérent AgroClubRSE : <%= event.price_w_agroclubrse_adhesion %> &#8364</div>
+          <% if event.price_w_agroclubrse_adhesion === 0 %>
+            <div class="event-price-adhesion engage hidden-xs"> Adhérent AgroClubRSE : Gratuit </div>
+          <% else %>
+            <div class="event-price-adhesion engage hidden-xs"> Adhérent AgroClubRSE : <%= event.price_w_agroclubrse_adhesion %> &#8364</div>
+          <% end %>
+          <div class="event-price-ext engage hidden-xs" ><%= event.price_ext %> &#8364</div>
         <% end %>
       <% end %>
-      <% end %>
-
     <% end %>
     <div class="event-liencard"><a href=<%= event_path(event) %> ></a></div>
   </div>
