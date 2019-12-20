@@ -26,7 +26,7 @@
 }
 
 .bg-live{
-  background-color: rgb(240,240,240);
+  background-color: #F1EEEC;
   opacity: 0.9;
 }
 
@@ -36,7 +36,7 @@
   }
 
 .bg-done{
-  background-color: rgb(240,240,240);
+  background-color: #F1EEEC;
   opacity: 0.5;
 }
 
@@ -50,20 +50,21 @@
   }
 
  .events-list-element{
-  height: 100px;
+  height: 130px;
   margin: 10px auto;
-  max-width: 800px;
+  max-width: 700px;
   color: rgb(60,60,60);
   position: relative;
   .event-date{
     position: absolute;
+    color: black;
     top: 5px;
     left : 5px;
     border-right: solid;
-    height: 90px;
-    padding: 33px 10px; ;
+    height: 120px;
+    padding: 40px 10px; ;
     p{
-      font-size: 16px;
+      font-size: 30px;
       font-weight: bolder;
       opacity: 1;
     }
@@ -82,27 +83,30 @@
 }
 .event-description{
   position: absolute;
-  font-size: 16px;
-  top: 35px;
+  top: 30px;
   left : 120px;
-  font-weight: lighter;
   text-align: left;
-  opacity: 0.6;
-  width: 500px;
+  font-size: 18px;
+  color: black;
+  opacity: 0.4;
+  letter-spacing: 1px;
+  line-height: 23px;
   }
 .event-title{
   position: absolute;
+  letter-spacing: 1.1px;
   color: black;
-  top: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  opacity: 0.7;
+  top: 5px;
   left : 120px;
   display: flex;
-  height: 62px;
-  align-items: center;
-  opacity: 0.9;
 }
 .event-address{
   position: absolute;
-  top : 80px;
+  bottom : 5px;
   right : 5px;
   font-size: 12px;
   opacity: 0.7;

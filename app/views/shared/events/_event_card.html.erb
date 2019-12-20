@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-3">
   <% if !event.photo.nil? %>
     <%  image = event.photo %>
   <% else %>
@@ -9,6 +9,7 @@
     <% if event.agroe_adhesion_protected === true %>
       <% if event.agroclubrse_only === true %>
         <div class="card-container" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image %>);">
+        <div class="event-liencard"><a href=<%= new_user_session_path %> ></a></div>
         <div class="lock-info">
           <span style=font-size:10px>Exclu AgroClubRSE</span>
           <i class="fas fa-lock"></i>
@@ -16,6 +17,7 @@
 
       <% else %>
         <div class="card-container" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image %>);">
+          <div class="event-liencard"><a href=<%= new_user_session_path %> ></a></div>
           <div class="lock-info">
             <i class="fas fa-lock"></i>
           </div>
@@ -28,6 +30,7 @@
     <% if current_user.adhesion_type === 'agroe' %>
       <% if event.agroclubrse_only === true %>
         <div class="card-container" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image %>);">
+          <div class="event-liencard"><a href=<%= new_user_session_path %> ></a></div>
           <div class="lock-info">
             AgroClubRSE
             <i class="fas fa-lock"></i>

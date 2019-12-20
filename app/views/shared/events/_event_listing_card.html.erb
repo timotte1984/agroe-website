@@ -9,7 +9,7 @@
   <div class="events-list-element bg-live">
 <% end %>
     <div class="event-date">
-      <p><%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %></p>
+      <p><%= event.date.strftime("%d/%m") if !event.date.nil? %></p>
     </div>
     <div class="event-title">
       <p><%= event.name %></p>
