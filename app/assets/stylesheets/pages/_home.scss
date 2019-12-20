@@ -2,26 +2,21 @@
 body {
   font: 20px Helvetica, sans-serif;
   color: rgb(100,100,100);
+  background-color: white;
   text-align: center;
-  background-color: grey;
 }
 
- a {
-   text-decoration: none;
-   letter-spacing: 1px;
-   color:rgb(220,220,220);
-  }
+a {
+ text-decoration: none;
+ letter-spacing: 1px;
+ color:rgb(120,120,120);
+}
 
- a:hover {
-   color: rgb(200,200,200);
-   text-decoration: none;
+a:hover {
+ color: rgb(60,60,60);
+ text-decoration: none;
 //   letter-spacing: 1px;
-  }
-
-h3{
-    padding: 30px 0px 30px 0px;
-    color: rgb(100,100,100);
-  }
+}
 
 .section{
   padding: 100px 0px;
@@ -33,14 +28,22 @@ h3{
 
 .s-grey{
   background-color: rgb(240,240,240);
-
 }
 
 .section-title{
-  font-size: 60px;
-  padding-bottom: 50px;
-  color: rgb(60,60,60);
-  font-weight: bolder;
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-description{
+  width: 800px;
+  margin: 0px auto 50px auto;
+  font-size: 18px;
+  color: black;
+  opacity: 0.5;
 }
 
 .btn-register{
@@ -72,45 +75,54 @@ h3{
   color: #c0ccda;
 }
 
+.highlight-text{
+  font-weight: bolder;
+  background-color: #6A9F31;
+  padding: 2px 4px;
+}
+
 // BANNER
 
-#banner{
-  background-color: rgb(220,240,210);
+
+ #banner {
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify: center;
 }
 
-#banner-content {
-  text-align: left;
-  h1{
-    padding-top: 60px;
-    color: rgb(210,210,210);
-    font-size: calc(45px + 0.7vw);
-    font-weight: bolder;
-  }
-  h2{
-    color: rgb(270,270,270);
-    font-size: 22px;
-    padding-bottom: 10px;
-  }
-  a{
-    font-size: 15px;
-    color: white;
-    box-shadow: 1px 1px 3px rgb(105,105,105);
-    background-color: rgb(60,60,60);
-    opacity: 0.9;
-    padding: 10px 20px;
-    border-radius: 4px
-  }
-  a:hover{
-    opacity: 1;
-    font-weight: bolder;
-  }
+#banner-container{
+  width: 1000px;
+  margin: 0 auto;
+  border-left: solid;
 }
+
+#banner-container h1 {
+  margin: 0px 10px;
+  letter-spacing: 1.5px;
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+
+}
+
+#banner-container p {
+  width: 470px;
+  margin: 30px 10px 0px 10px;
+  font-size: 18px;
+  color: black;
+  opacity: 0.5;
+  letter-spacing: 1px;
+  line-height: 23px;
+  text-align: left;
+}
+
+
+
+
 
 .engage{
   color: #6A9F31;
@@ -429,10 +441,10 @@ h3{
     color: rgb(60,60,60);
     font-weight: bolder;
   }
-  .offer2{
-    background-color: rgb(40,40,40);
+  .offer1{
+    background-color: rgb(240,240,240);
     box-shadow: 1px 1px 3px rgb(100,100,100);
-    color: rgb(220,220,220);
+    color: rgb(20,20,20);
     h5
     {font-weight: lighter;}
   }

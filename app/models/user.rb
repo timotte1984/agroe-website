@@ -9,6 +9,8 @@ class User < ApplicationRecord
                                       "m.viot@perledunord.com",
                                       "a.terlynck@agroe.fr",
                                       "k.pietrzak@agroe.fr",
+                                      "f.hoschede@agroe.fr",
+                                      "stetin@duyck.com",
                                       "cecile.goutte@lucullus.fr",
                                       "acierpka@cgf-charcuterie.com",
                                       "matthieu.grimaux@davigel.fr",
@@ -25,7 +27,7 @@ class User < ApplicationRecord
                                       "alice.delattre@davigel.fr",
                                       "baptiste@promis-jure.fr",
                                       "c.basset@perledunord.com",
-                                      " isabelle.lioene@norabio.fr",
+                                      "isabelle.lioene@norabio.fr",
                                       "sdebeunne@francecaketradition.fr"
                                     ] }
 
