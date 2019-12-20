@@ -447,11 +447,11 @@ a:hover {
     font-weight: bolder;
   }
   .offer1{
-    background-color: #F0EDEB;
-    box-shadow: 1px 1px 3px rgb(100,100,100);
+    background-color: white;
+
     color: rgb(20,20,20);
     h5
-    {font-weight: lighter;}
+    {}
   }
   .join{
     opacity: 0.9;
@@ -463,7 +463,7 @@ a:hover {
       font-style: italic;
     }
     margin: 20px auto;
-    width: 400px;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
