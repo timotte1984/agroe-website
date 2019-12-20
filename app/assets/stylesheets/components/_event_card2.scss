@@ -81,17 +81,6 @@
   font-style: italic;
   font-weight: lighter;
 }
-.event-description{
-  position: absolute;
-  top: 30px;
-  left : 120px;
-  text-align: left;
-  font-size: 18px;
-  color: black;
-  opacity: 0.4;
-  letter-spacing: 1px;
-  line-height: 23px;
-  }
 .event-title{
   position: absolute;
   letter-spacing: 1.1px;
@@ -101,9 +90,16 @@
   text-align: left;
   opacity: 0.7;
   top: 5px;
-  left : 120px;
-  display: flex;
+  left: 120px;
 }
+.event-description{
+  text-align: left;
+  font-size: 18px;
+  color: black;
+  opacity: 0.4;
+  letter-spacing: 1px;
+  line-height: 23px;
+  }
 .event-address{
   position: absolute;
   bottom : 5px;

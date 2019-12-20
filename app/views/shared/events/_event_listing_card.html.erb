@@ -12,9 +12,8 @@
       <p><%= event.date.strftime("%d/%m") if !event.date.nil? %></p>
     </div>
     <div class="event-title">
-      <p><%= event.name %></p>
-    </div>
-    <div class="event-description"><%= event.description %>
+      <%= event.name %>
+      <div class="event-description"><%= event.description %></div>
     </div>
     <div class="event-address">
       <%= event.address %>
