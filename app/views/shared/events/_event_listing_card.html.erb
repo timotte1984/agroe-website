@@ -8,13 +8,13 @@
 <% else %>
   <div class="events-list-element bg-live">
 <% end %>
-    <div class="event-image"><img src=<%= image %> ></div>
     <div class="event-date">
-      <%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %>
+      <p><%= event.date.strftime("%d/%m/%Y") if !event.date.nil? %></p>
     </div>
     <div class="event-title">
       <p><%= event.name %></p>
-      <div class="event-description hidden"><%= event.description %></div>
+    </div>
+    <div class="event-description"><%= event.description %>
     </div>
     <div class="event-address">
       <%= event.address %>
@@ -28,23 +28,23 @@
       <% end %>
     <% else %>
       <% if event.registration_link === "" %>
-      <div class="event-price-ext visionnary event-indisponible-message hidden-xs">
+      <div class="event-price-ext visionnary event-indisponible-message hidden">
          Non ouvert
       </div>
       <% else %>
         <% if user_signed_in? %>
           <% if event.price_w_agroclubrse_adhesion === 0 %>
-            <div class="event-price-ext engage hidden-xs"> Gratuit </div>
+            <div class="event-price-ext engage hidden"> Gratuit </div>
           <% else %>
-            <div class="event-price-ext engage hidden-xs"> <%= event.price_w_agroclubrse_adhesion %> &#8364 </div>
+            <div class="event-price-ext engage hidden"> <%= event.price_w_agroclubrse_adhesion %> &#8364 </div>
           <% end %>
         <% else %>
           <% if event.price_w_agroclubrse_adhesion === 0 %>
-            <div class="event-price-adhesion engage hidden-xs"> Adhérent AgroClubRSE : Gratuit </div>
+            <div class="event-price-adhesion engage hidden"> Adhérent AgroClubRSE : Gratuit </div>
           <% else %>
-            <div class="event-price-adhesion engage hidden-xs"> Adhérent AgroClubRSE : <%= event.price_w_agroclubrse_adhesion %> &#8364</div>
+            <div class="event-price-adhesion engage hidden"> Adhérent AgroClubRSE : <%= event.price_w_agroclubrse_adhesion %> &#8364</div>
           <% end %>
-          <div class="event-price-ext engage hidden-xs" ><%= event.price_ext %> &#8364</div>
+          <div class="event-price-ext engage hidden" ><%= event.price_ext %> &#8364</div>
         <% end %>
       <% end %>
     <% end %>

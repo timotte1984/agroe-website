@@ -31,7 +31,7 @@
 }
 
 .bg-live:hover{
-  opacity: 1;
+  opacity: 0.7;
   transition: opacity 0.1s ease;
   }
 
@@ -55,14 +55,18 @@
   max-width: 800px;
   color: rgb(60,60,60);
   position: relative;
-  border-radius: 4px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
   .event-date{
-  position: absolute;
-  top: 5px;
-  left : calc(60px + 4vw);
-  font-size: 16px;
-  opacity: 0.9;
+    position: absolute;
+    top: 5px;
+    left : 5px;
+    border-right: solid;
+    height: 90px;
+    padding: 33px 10px; ;
+    p{
+      font-size: 16px;
+      font-weight: bolder;
+      opacity: 1;
+    }
   }
  .event-type{
   position: absolute;
@@ -76,24 +80,30 @@
   font-style: italic;
   font-weight: lighter;
 }
+.event-description{
+  position: absolute;
+  font-size: 16px;
+  top: 35px;
+  left : 120px;
+  font-weight: lighter;
+  text-align: left;
+  opacity: 0.6;
+  width: 500px;
+  }
 .event-title{
   position: absolute;
-  color: rgb(100,100,100);
-  top: 24px;
-  left : calc(60px + 4vw);
+  color: black;
+  top: 0px;
+  left : 120px;
   display: flex;
   height: 62px;
   align-items: center;
-  p{
-    text-align: left;
-    font-size: calc(16px + 0.3vw);
-    line-height: 17px;
-  }
+  opacity: 0.9;
 }
 .event-address{
   position: absolute;
   top : 80px;
-  left : calc(60px + 4vw);
+  right : 5px;
   font-size: 12px;
   opacity: 0.7;
   height: 13px;
@@ -123,13 +133,7 @@
   font-size: 13px;
   text-align: right;
   }
-  .event-description{
-  position: absolute;
-  font-size: 16px;
-  font-weight: lighter;
-  text-align: left;
-  opacity: 0;
-  }
+
  }
 
 .event-image{
