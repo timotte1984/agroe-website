@@ -26,8 +26,6 @@
 }
 
 .bg-live{
-  background-color: #F1EEEC;
-  opacity: 0.9;
 }
 
 .bg-live:hover{
@@ -36,8 +34,6 @@
   }
 
 .bg-done{
-  background-color: #F1EEEC;
-  opacity: 0.5;
 }
 
 .bg-done:hover{
@@ -50,21 +46,20 @@
   }
 
  .events-list-element{
-  height: 130px;
-  margin: 10px auto;
-  max-width: 900px;
+  height: 80px;
+  margin: 20px auto;
+  max-width: 500px;
   color: rgb(60,60,60);
   position: relative;
   .event-date{
     position: absolute;
-    color: black;
+    color: rgb(60,60,60);
     top: 5px;
     left : 5px;
-    border-right: solid;
-    height: 120px;
-    padding: 40px 10px; ;
+    height: 70px;
+    padding: 5px 10px; ;
     p{
-      font-size: 30px;
+      font-size: 16px;
       font-weight: bolder;
       opacity: 1;
     }
@@ -85,29 +80,27 @@
   position: absolute;
   letter-spacing: 1.1px;
   color: black;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 16px;
   text-align: left;
   opacity: 0.7;
-  top: 5px;
-  left: 120px;
+  top: 10px;
+  left: 95px;
 }
 .event-description{
   text-align: left;
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: lighter;
   color: black;
   opacity: 0.4;
   letter-spacing: 1px;
-  line-height: 23px;
+  line-height: 14px;
   }
 .event-address{
-  position: absolute;
-  bottom : 5px;
-  right : 5px;
   font-size: 12px;
   opacity: 0.7;
   height: 13px;
   text-align: left;
+  margin-bottom: 5px;
 }
   .event-registration-button{
    position: absolute;

@@ -1,12 +1,12 @@
 <div class="section s-white">
-  <div class="events-list-content">
     <% if !user_signed_in? %>
-    <div class="section-title">Évènements à venir </div>
+    <div class="section-description">
+    Évènements à venir
+    </div>
     <% end %>
     <% @events.where('date >= ?', Date.today.to_s).where('event_type != ?', 'contenu').order(:date).each do |e| %>
       <%= render 'shared/events/event_listing_card', event: e %>
     <% end %>
-  </div>
   <div class="events-list-content">
     <h3>Évènements passés </h3>
     <% @events.where('date < ?', Date.today.to_s).where('event_type != ?', 'contenu').order(date: :desc).each do |e| %>
@@ -14,25 +14,6 @@
     <% end %>
   </div>
 </div>
-
-
-
-<div id="newsletter-container">
-  <div id="newsletter">
-    <div id="newsletter-image-container" class="newsletter-grid">
-      <div id="newletter-image">
-        <%= image_tag 'salad.jpg' %>
-      </div>
-    </div>
-    <div id="newsletter-formulaire-container" class="newsletter-grid">
-      <div id="newsletter-formulaire">
-          <%= render '/shared/form_email2' %>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 <div id="adhesion-agroe">
       <h3>Nous rejoindre</h3>

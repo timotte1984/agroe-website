@@ -9,15 +9,14 @@
   <div class="events-list-element bg-live">
 <% end %>
     <div class="event-date">
-      <p><%= event.date.strftime("%d/%m") if !event.date.nil? %></p>
+      <p><%= event.date.strftime("%d/%m/%y") if !event.date.nil? %></p>
     </div>
     <div class="event-title">
       <%= event.name %>
+      <div class="event-address"><%= event.address %></div>
       <div class="event-description"><%= event.description %></div>
     </div>
-    <div class="event-address">
-      <%= event.address %>
-    </div>
+
     <% if event.date < Date.today %>
       <div class="event-registration-button hidden"><p> évènement terminé </p></div>
       <% if !event.affluence.nil? %>
