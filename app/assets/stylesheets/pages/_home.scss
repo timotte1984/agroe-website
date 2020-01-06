@@ -443,12 +443,11 @@ a:hover {
   align-items:center;
     h1{
     font-size: 60px;
-    padding: 20px;
     color: rgb(60,60,60);
     font-weight: bolder;
   }
   .offer1{
-    background-color: rgb(240,240,240);
+    background-color: white;
     color: rgb(20,20,20);
   }
   .join{
@@ -457,10 +456,9 @@ a:hover {
       padding-top: 40px;
     }
     p{
-      font-size: 13px;
-      font-style: italic;
+      font-size: 16px;
     }
-    margin: 20px auto;
+    margin: -80px auto;
     max-width: 800px;
     display: flex;
     justify-content: center;
@@ -468,9 +466,6 @@ a:hover {
     flex-direction: column;
     padding-bottom: 50px;
     .offer-buttons{
-      border-top-style: solid;
-      border-bottom-style: solid;
-      border-width: 1px;
       margin: 30px 0px;
       padding: 30px 0px;
       width: 300px;
@@ -620,8 +615,7 @@ a:hover {
 @media screen and (max-width: 900px) {
   #contact-info-container{
   display: block;
-  }
-
+}
   #image-contact-info img{
     width: 0px;
   }
