@@ -5,15 +5,15 @@
   .service-content{
     margin: 0px 20px;
     .service-logo{
-    margin: 20px 0px;
+    margin: 25px 0px 0px;
       }
     .service-title-container{
       height: 70px;
       display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-    }
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      }
     .service-title{
       font-size: 25px;
       font-weight: bolder;
