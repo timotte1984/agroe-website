@@ -2,7 +2,7 @@
   height: 280px;
   position: relative;
   color: black;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,12 +32,12 @@
     font-size: 18px;
     text-align: left;
     opacity: 0.9;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     .card-description{
       font-size: 12px;
       font-weight: lighter;
       color: black;
-      opacity: 0.6;
+      opacity: 0.9;
       letter-spacing: 1px;
       line-height: 16px;
     }
