@@ -3,6 +3,7 @@
   <%= render 'shared/sections/contacts'%>
   <%= render 'shared/sections/financeurs'%>
 <% else %>
+  <%= render 'shared/sections/home_banner'%>
   <%= render 'shared/sections/events_listing'%>
   <%= render 'shared/sections/contenus_cards' %>
   <%= render 'shared/sections/socialproof' %>
@@ -14,64 +15,24 @@
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="text/javascript">
-  $('#myNavTabs a').click(function (evt) {
-  evt.preventDefault();
-  $(this).tab('show');
-});
 
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  //new tab
-  console.log(e.target);
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
 
-  //previous tab
-  console.log(e.relatedTarget);
-})
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
+
+  window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
+
+  window.GENERIC_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} liste sélectionnée',
+      selectedLists: '{quantity} listes sélectionnées'
+    }
+  };
+
+  var AUTOHIDE = Boolean(1);
 </script>
-
-      <script>
-        window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
-
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-
-        window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
-
-        window.GENERIC_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-
-
-
-
-        window.translation = {
-          common: {
-            selectedList: '{quantity} liste sélectionnée',
-            selectedLists: '{quantity} listes sélectionnées'
-          }
-        };
-
-        var AUTOHIDE = Boolean(1);
-      </script>
-      <script src="https://sibforms.com/forms/end-form/build/main.js">
-      </script>
-      <script>
-        window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
-
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-
-        window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
-
-        window.GENERIC_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-
-
-
-
-        window.translation = {
-          common: {
-            selectedList: '{quantity} liste sélectionnée',
-            selectedLists: '{quantity} listes sélectionnées'
-          }
-        };
-
-        var AUTOHIDE = Boolean(1);
-      </script>
-      <script src="https://sibforms.com/forms/end-form/build/main.js">
-      </script>
+<script src="https://sibforms.com/forms/end-form/build/main.js">
+</script>

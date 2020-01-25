@@ -3,7 +3,6 @@ import "bootstrap";
 //= require popper
 //= require turbolinks
 //= require bootstrap
-//= require_tree.
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 initUpdateNavbarOnScroll();
