@@ -33,12 +33,17 @@
     font-size: 18px;
     text-align: left;
     opacity: 0.9;
+    .card-date{
+      color: black;
+      opacity: 0.8;
+      font-style: italic;
+    }
     .card-description{
       margin-top: 5px;
       font-size: 12px;
       font-weight: lighter;
       color: black;
-      opacity: 0.9;
+      opacity: 0.8;
       letter-spacing: 1px;
       line-height: 16px;
     }

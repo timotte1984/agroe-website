@@ -5,17 +5,7 @@
   <i class="fas fa-lock"></i> : Contenu réservé
   </div>
   <div class="title-cards-section">
-    Contenus Gratuits
-  </div>
-  <div class="cards-content">
-    <div class="row">
-    <% @events.where('event_type = ?', 'Gratuit').order(date: :desc).each do |e| %>
-      <%= render 'shared/events/event_card', event: e %>
-    <% end %>
-    </div>
-  </div>
-  <div class="title-cards-section">
-    Veille
+    Veille Numérique et RSE
   </div>
   <div class="cards-content">
     <div class="row">
@@ -60,17 +50,6 @@
   <div class="cards-content">
     <div class="row">
     <% @events.where('event_type = ?', '2019').order(date: :desc).each do |e| %>
-      <%= render 'shared/events/event_card', event: e %>
-    <% end %>
-    </div>
-  </div>
-</div>
-  <div class="title-cards-section">
-    contenu
-  </div>
-  <div class="cards-content">
-    <div class="row">
-    <% @events.where('event_type = ?', 'contenu').order(date: :desc).each do |e| %>
       <%= render 'shared/events/event_card', event: e %>
     <% end %>
     </div>
