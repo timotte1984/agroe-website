@@ -16,6 +16,10 @@
                   class: "btn btn-danger") %>
         </p>
       <% end %>
+      <h4><strong><%= @event.name %></strong></h4>
+      <h5><%= @event.description %></h5>
+      <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong></p>
+      <p><strong><%= @event.address %></strong></p>
       <div class="event-profil-descriptionlong">
         <% if !@event.descriptionlong.nil? %>
           <%= @event.descriptionlong.html_safe %>
