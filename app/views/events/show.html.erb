@@ -2,7 +2,7 @@
      <%= link_to('Retour', root_path, class: "btn btn-default") %>
   </div>
 
-<% if @event.event_type !== 'Bientôt' %>
+<% if !(@event.event_type === 'Bientôt') %>
    <div class="event-profil-container">
     <div class="event-profil-content">
       <% if user_signed_in? && current_user.admin === true %>
