@@ -20,6 +20,7 @@
       <h5><%= @event.description %></h5>
       <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong></p>
       <p><strong><%= @event.address %></strong></p>
+      <%= render 'event_show_link'%>
       <div class="event-profil-descriptionlong">
         <% if !@event.descriptionlong.nil? %>
           <%= @event.descriptionlong.html_safe %>
