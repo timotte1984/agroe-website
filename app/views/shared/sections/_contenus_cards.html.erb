@@ -1,18 +1,67 @@
-<div class="section s-grey">
-  <% if !user_signed_in? %>
-  <div class="section-description">
-    Agroé créé <span class=highlight-text>des contenus et des outils </span> qui répondent aux attentes de ses adhérents.
+
+
+<div class="section s-white">
+  <div class="lock-information">
+  <i class="fas fa-lock"></i> : Contenu réservé
   </div>
-  <% else %>
-  <% end %>
+  <div class="title-cards-section">
+    Contenus Gratuits
+  </div>
   <div class="cards-content">
     <div class="row">
-    <% @events.where('event_type = ?', 'contenu').order(:date).each do |e| %>
+    <% @events.where('event_type = ?', 'Gratuit').order(date: :desc).each do |e| %>
       <%= render 'shared/events/event_card', event: e %>
     <% end %>
     </div>
   </div>
-  <div class="lock-information">
-    <i class="fas fa-lock"></i> : Contenu réservé
+  <div class="title-cards-section">
+    Veille
+  </div>
+  <div class="cards-content">
+    <div class="row">
+    <% @events.where('event_type = ?', 'Veille').order(date: :desc).each do |e| %>
+      <%= render 'shared/events/event_card', event: e %>
+    <% end %>
+    </div>
+  </div>
+  <div class="title-cards-section">
+    AgroClubs
+  </div>
+  <div class="cards-content">
+    <div class="row">
+    <% @events.where('event_type = ?', 'AgroClub').order(date: :desc).each do |e| %>
+      <%= render 'shared/events/event_card', event: e %>
+    <% end %>
+    </div>
+  </div>
+  <div class="title-cards-section">
+    Visites
+  </div>
+  <div class="cards-content">
+    <div class="row">
+    <% @events.where('event_type = ?', 'Visite').order(date: :desc).each do |e| %>
+      <%= render 'shared/events/event_card', event: e %>
+    <% end %>
+    </div>
+  </div>
+  <div class="title-cards-section">
+    Webinaires
+  </div>
+  <div class="cards-content">
+    <div class="row">
+    <% @events.where('event_type = ?', 'Webinaire').order(date: :desc).each do |e| %>
+      <%= render 'shared/events/event_card', event: e %>
+    <% end %>
+    </div>
+  </div>
+  <div class="title-cards-section">
+    2019
+  </div>
+  <div class="cards-content">
+    <div class="row">
+    <% @events.where('event_type = ?', '2019').order(date: :desc).each do |e| %>
+      <%= render 'shared/events/event_card', event: e %>
+    <% end %>
+    </div>
   </div>
 </div>
