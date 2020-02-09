@@ -10,7 +10,7 @@
     </div>
     <div class="card-title">
       <%= event.name %>
-      <div class="card-date"><%= event.date %></div>
+      <div class="card-date"><%= event.date.strftime("%d/%m/%Y")  %></div>
       <div class="card-description"><p><%= event.description[0..110].gsub(/\s\w+\s*$/,'...') %></p></div>
     </div>
     <% if !user_signed_in? %>
