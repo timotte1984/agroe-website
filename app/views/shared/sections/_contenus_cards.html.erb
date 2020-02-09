@@ -65,3 +65,14 @@
     </div>
   </div>
 </div>
+  <div class="title-cards-section">
+    contenu
+  </div>
+  <div class="cards-content">
+    <div class="row">
+    <% @events.where('event_type = ?', 'contenu').order(date: :desc).each do |e| %>
+      <%= render 'shared/events/event_card', event: e %>
+    <% end %>
+    </div>
+  </div>
+</div>
