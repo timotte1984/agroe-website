@@ -30,7 +30,8 @@ class User < ApplicationRecord
                                       "isabelle.lioene@norabio.fr",
                                       "marketing@francecaketradition.fr",
                                       "melodie.lesage@les-jardinsdelocean.com",
-                                      "rh@fizzy.fr"
+                                      "rh@fizzy.fr",
+                                      "contact@lepatureur.com"
                                     ] }
 
   mount_uploader :company_img, PhotoUploader
