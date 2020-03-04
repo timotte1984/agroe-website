@@ -28,7 +28,9 @@ class User < ApplicationRecord
                                       "baptiste@promis-jure.fr",
                                       "c.basset@perledunord.com",
                                       "isabelle.lioene@norabio.fr",
-                                      "marketing@francecaketradition.fr"
+                                      "marketing@francecaketradition.fr",
+                                      "melodie.lesage@les-jardinsdelocean.com",
+                                      "rh@fizzy.fr"
                                     ] }
 
   mount_uploader :company_img, PhotoUploader
