@@ -29,29 +29,35 @@
     </div>
    </div>
 <% else %>
-  <div class="event-profil-container">
-    <div class="event-profil-content">
-      <h4><strong><%= @event.name %></strong></h4>
-      <h5><%= @event.description %></h5>
-      <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong></p>
-      <p><strong><%= @event.address %></strong></p>
-      <div class="img-event-profil">
-        <% if !@event.photo.nil? %>
-          <%= cl_image_tag(@event.photo) %>
-        <% else %>
-          <%= cl_image_tag("agroe.png") %>
-        <% end %>
+<% if !(@event.event_type === 'Veille') %>
+    <% if !@event.descriptionlong.nil? %>
+      <%= @event.descriptionlong.html_safe %>
+    <% end %>
+  </div>
+<% else %>
+    <div class="event-profil-container">
+      <div class="event-profil-content">
+        <h4><strong><%= @event.name %></strong></h4>
+        <h5><%= @event.description %></h5>
+        <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong></p>
+        <p><strong><%= @event.address %></strong></p>
+        <div class="img-event-profil">
+          <% if !@event.photo.nil? %>
+            <%= cl_image_tag(@event.photo) %>
+          <% else %>
+            <%= cl_image_tag("agroe.png") %>
+          <% end %>
+        </div>
+        <%= render 'event_show_link'%>
+        <div class="event-profil-descriptionlong">
+          <% if !@event.descriptionlong.nil? %>
+            <%= @event.descriptionlong.html_safe %>
+          <% end %>
+        </div>
+
       </div>
-      <%= render 'event_show_link'%>
-      <div class="event-profil-descriptionlong">
-        <% if !@event.descriptionlong.nil? %>
-          <%= @event.descriptionlong.html_safe %>
-        <% end %>
-      </div>
+    </div>
 
     </div>
-  </div>
-
-  </div>
 <% end %>
 
