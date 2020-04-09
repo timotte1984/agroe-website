@@ -29,11 +29,11 @@
     </div>
    </div>
 <% else %>
-<% if !(@event.event_type === 'Veille') %>
+  <% if (@event.event_type === 'Veille') %>
     <% if !@event.descriptionlong.nil? %>
       <%= @event.descriptionlong.html_safe %>
     <% end %>
-  </div>
+  <% end %>
 <% else %>
     <div class="event-profil-container">
       <div class="event-profil-content">
