@@ -1,3 +1,10 @@
+<% if (@event.event_type === 'Veille') %>
+  <% if !@event.descriptionlong.nil? %>
+      <%= @event.descriptionlong.html_safe %>
+      <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
+  <% end %>
+<% else %>
+
   <div class="retour">
      <%= link_to('Retour', root_path, class: "btn btn-default") %>
   </div>
@@ -29,12 +36,6 @@
     </div>
    </div>
 <% else %>
-  <% if (@event.event_type === 'Veille') %>
-    <% if !@event.descriptionlong.nil? %>
-      <%= @event.descriptionlong.html_safe %>
-    <% end %>
-  <% end %>
-<% else %>
     <div class="event-profil-container">
       <div class="event-profil-content">
         <h4><strong><%= @event.name %></strong></h4>
@@ -60,4 +61,5 @@
 
     </div>
 <% end %>
+ <% end %>
 
