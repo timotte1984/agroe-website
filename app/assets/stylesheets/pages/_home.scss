@@ -19,7 +19,7 @@ a:hover {
 }
 
 .section{
-  padding: 100px 0px;
+  padding: 100px 50px;
 }
 
 .s-white{
@@ -29,6 +29,36 @@ a:hover {
 .s-grey{
   background-color: #F1EEEC;
 }
+
+#home-title{
+  max-width: 600px;
+  color: black;
+  font-size: 32px;
+  font-weight: lighter;
+  margin: 100px auto;
+  opacity: 0.9;
+}
+
+#home-title-icon{
+  font-size: 80px;
+}
+
+.section-title-content a{
+font-size: 18px;
+}
+
+.section-title-content{
+padding: 5px 10px;
+margin: 10px 10px;
+}
+
+.sections-titles-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 130px 50px;
+}
+
 
 .section-title{
   color: black;
