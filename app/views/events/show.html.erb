@@ -1,8 +1,17 @@
 <% if (@event.event_type === 'Veille') %>
   <div class="event-veille">
   <% if !@event.descriptionlong.nil? %>
+    <% if user_signed_in? %>
       <%= @event.descriptionlong.html_safe %>
+    <% else %>
+    <br/>
+    <br/>
+    <br/>
+      <p> Si vous souhaitez accéder, merci de vous connectez à <%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
+    <% end %>
+    <% if user_signed_in? && current_user.admin %>
       <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
+    <% end %>
   <% end %>
   </div>
 <% else %>
@@ -32,7 +41,14 @@
       <%= render 'event_show_link'%>
       <div class="event-profil-descriptionlong">
         <% if !@event.descriptionlong.nil? %>
-          <%= @event.descriptionlong.html_safe %>
+              <% if user_signed_in? %>
+      <%= @event.descriptionlong.html_safe %>
+    <% else %>
+    <br/>
+    <br/>
+    <br/>
+      <p> Si vous souhaitez accéder, merci de vous connectez à <%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
+    <% end %>
         <% end %>
       </div>
     </div>
@@ -54,7 +70,14 @@
         <%= render 'event_show_link'%>
         <div class="event-profil-descriptionlong">
           <% if !@event.descriptionlong.nil? %>
-            <%= @event.descriptionlong.html_safe %>
+                <% if user_signed_in? %>
+      <%= @event.descriptionlong.html_safe %>
+    <% else %>
+    <br/>
+    <br/>
+    <br/>
+      <p> Si vous souhaitez accéder, merci de vous connectez à <%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
+    <% end %>
           <% end %>
         </div>
 
