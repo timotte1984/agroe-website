@@ -12,7 +12,7 @@
         <% if user_signed_in? %>
           <%= @event.descriptionlong.html_safe %>
         <% else %>
-          <p> Si vous souhaitez accéder, merci de vous connectez à <br/><%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
+          <p> Accédez au contenu en vous <br/><%= link_to("connectant", new_user_session_path, class: "btn btn-default") %></p>
         <% end %>
         <% if user_signed_in? && current_user.admin %>
           <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
