@@ -7,17 +7,17 @@
         <%= cl_image_tag("agroe.png") %>
       <% end %>
     </div>
-    <div class="event-veille">
       <% if !@event.descriptionlong.nil? %>
         <% if user_signed_in? %>
-          <%= @event.descriptionlong.html_safe %>
+          <div class="event-veille">
+            <%= @event.descriptionlong.html_safe %>
+          </div>
         <% else %>
-          <p> Accédez au contenu en vous <br/><%= link_to("connectant", new_user_session_path, class: "btn btn-default") %></p>
+          <%= link_to("Accédez au contenu", new_user_session_path, class: "btn btn-default") %>
         <% end %>
         <% if user_signed_in? && current_user.admin %>
           <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
         <% end %>
       <% end %>
-    </div>
   </div>
 </div>
