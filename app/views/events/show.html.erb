@@ -1,90 +1,23 @@
-<% if (@event.event_type === 'Veille') %>
-  <div class="event-veille">
-  <% if !@event.descriptionlong.nil? %>
-    <% if user_signed_in? %>
-      <%= @event.descriptionlong.html_safe %>
-    <% else %>
-    <br/>
-    <br/>
-    <br/>
-      <p> Si vous souhaitez accéder, merci de vous connectez à <%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
-    <% end %>
-    <% if user_signed_in? && current_user.admin %>
-      <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
-    <% end %>
-  <% end %>
-  </div>
-<% else %>
-
-  <div class="retour">
-     <%= link_to('Retour', root_path, class: "btn btn-default") %>
-  </div>
-
-<% if !(@event.event_type === 'Bientôt') %>
-   <div class="event-profil-container">
-    <div class="event-profil-content">
-      <% if user_signed_in? && current_user.admin === true %>
-        <p>
-          <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
-        </p>
-        <p>
-          <%= link_to("Destroy", event_path(@event),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" },
-                  class: "btn btn-danger") %>
-        </p>
+<div class="event-profil-container">
+  <div class="event-profil-content">
+    <div class="img-event-profil">
+      <% if !@event.photo.nil? %>
+        <%= cl_image_tag(@event.photo) %>
+      <% else %>
+        <%= cl_image_tag("agroe.png") %>
       <% end %>
-      <h4><strong><%= @event.name %></strong></h4>
-      <h5><%= @event.description %></h5>
-      <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong></p>
-      <p><strong><%= @event.address %></strong></p>
-      <%= render 'event_show_link'%>
-      <div class="event-profil-descriptionlong">
-        <% if !@event.descriptionlong.nil? %>
-              <% if user_signed_in? %>
-      <%= @event.descriptionlong.html_safe %>
-    <% else %>
-    <br/>
-    <br/>
-    <br/>
-      <p> Si vous souhaitez accéder, merci de vous connectez à <%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
-    <% end %>
+    </div>
+    <div class="event-veille">
+      <% if !@event.descriptionlong.nil? %>
+        <% if user_signed_in? %>
+          <%= @event.descriptionlong.html_safe %>
+        <% else %>
+          <p> Si vous souhaitez accéder, merci de vous connectez à <br/><%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
         <% end %>
-      </div>
+        <% if user_signed_in? && current_user.admin %>
+          <%= link_to("Edit", edit_event_path(@event), class: "btn btn-info") %>
+        <% end %>
+      <% end %>
     </div>
-   </div>
-<% else %>
-    <div class="event-profil-container">
-      <div class="event-profil-content">
-        <h4><strong><%= @event.name %></strong></h4>
-        <h5><%= @event.description %></h5>
-        <strong><%= @event.date.strftime("%d/%m/%Y") if !@event.date.nil? %></strong></p>
-        <p><strong><%= @event.address %></strong></p>
-        <div class="img-event-profil">
-          <% if !@event.photo.nil? %>
-            <%= cl_image_tag(@event.photo) %>
-          <% else %>
-            <%= cl_image_tag("agroe.png") %>
-          <% end %>
-        </div>
-        <%= render 'event_show_link'%>
-        <div class="event-profil-descriptionlong">
-          <% if !@event.descriptionlong.nil? %>
-                <% if user_signed_in? %>
-      <%= @event.descriptionlong.html_safe %>
-    <% else %>
-    <br/>
-    <br/>
-    <br/>
-      <p> Si vous souhaitez accéder, merci de vous connectez à <%= link_to("l'espace adhérent", new_user_session_path, class: "btn btn-default") %></p>
-    <% end %>
-          <% end %>
-        </div>
-
-      </div>
-    </div>
-
-    </div>
-<% end %>
- <% end %>
-
+  </div>
+</div>
