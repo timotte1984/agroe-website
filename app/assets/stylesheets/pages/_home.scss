@@ -32,10 +32,10 @@ a:hover {
 
 #home-title{
   max-width: 600px;
-  color: black;
-  font-size: 32px;
+  color: rgb(10,10,10);
+  font-size: 42px;
   font-weight: lighter;
-  margin: 100px auto;
+  margin: 180px auto;
   opacity: 0.9;
 }
 
@@ -50,6 +50,26 @@ font-size: 18px;
 .section-title-content{
 padding: 5px 10px;
 margin: 10px 10px;
+}
+
+#veille {
+  height: 50px;
+}
+
+#agroclub{
+  height: 50px;
+}
+
+#visite{
+  height: 50px;
+}
+
+#divers{
+  height: 50px;
+}
+
+ #webinaire{
+    height: 50px;
 }
 
 .sections-titles-container{
