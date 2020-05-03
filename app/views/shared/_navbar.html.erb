@@ -3,6 +3,7 @@
   <div class="navbar-wagon-brand">
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
   <%= image_tag "agroe.png"%>
+  <span class="navbar-wagon-item">Activités </span>
   <% end %>
   </div>
 
@@ -40,8 +41,12 @@
         </div>
       </div>
     <% else %>
-    <%= link_to "Activités", ressources_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Adhérer", adhesion_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "🗞 Veille", "#veille", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "💬 AgroClub", "#agroclub", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "🚶 Visites", "#visite", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "💻 Webinaires", "#webinaire", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "🗄 Divers", "#divers", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "✍️ Adhérer", adhesion_path, class: "navbar-wagon-item navbar-wagon-link" %>
      <%= link_to new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" do %>
      <div class="btn-connexion">
        <span style="font-weight: bolder">Espace Adhérent</span>
