@@ -31,7 +31,8 @@ class User < ApplicationRecord
                                       "marketing@francecaketradition.fr",
                                       "melodie.lesage@les-jardinsdelocean.com",
                                       "rh@fizzy.fr",
-                                      "contact@lepatureur.com"
+                                      "contact@lepatureur.com";
+                                      "pierre.capelle@pirkpl.fr"
                                     ] }
 
   mount_uploader :company_img, PhotoUploader
