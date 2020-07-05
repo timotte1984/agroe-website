@@ -32,7 +32,8 @@ class User < ApplicationRecord
                                       "melodie.lesage@les-jardinsdelocean.com",
                                       "rh@fizzy.fr",
                                       "contact@lepatureur.com",
-                                      "pierre.capelle@pirkpl.fr"
+                                      "pierre.capelle@pirkpl.fr",
+                                      "bruno.desprez@florimond-desprez.fr"
                                     ] }
 
   mount_uploader :company_img, PhotoUploader
