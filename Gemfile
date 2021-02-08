@@ -17,7 +17,7 @@ gem 'uglifier'
 gem 'webpacker', '~> 4.0'
 gem 'popper_js', '~> 1.14.3'
 gem 'cloudinary', '~> 1.9.1'
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 1.3'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development do
